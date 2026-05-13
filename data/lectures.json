@@ -1,0 +1,1215 @@
+{
+  "course": {
+    "title_zh": "Robert Shiller《金融市場》（Yale ECON 252, 2011）",
+    "title_en": "Financial Markets (Yale ECON 252, 2011) — Robert J. Shiller",
+    "source": "Open Yale Courses",
+    "lectures_count": 23
+  },
+  "lectures": [
+    {
+      "id": "L01",
+      "num": 1,
+      "title_zh": "課程簡介與金融的目的",
+      "title_en": "Introduction & What This Course Will Do",
+      "track": "intro",
+      "guest": null,
+      "date": "2011-01-10",
+      "file": "transcripts/L01.md",
+      "youtube_id": "WQui_3Hpmmc",
+      "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-1",
+      "chapters": [
+        {
+          "n": 1,
+          "en": "Introduction to the Course",
+          "zh": "第 1 章：課程簡介"
+        },
+        {
+          "n": 2,
+          "en": "Broader Context of the Course",
+          "zh": "第 2 章：課程的更廣脈絡"
+        },
+        {
+          "n": 3,
+          "en": "Finance as an Occupation",
+          "zh": "第 3 章：金融作為一種職業"
+        },
+        {
+          "n": 4,
+          "en": "Using Wealth for a Purpose",
+          "zh": "第 4 章：把財富用在目的上"
+        },
+        {
+          "n": 5,
+          "en": "Outside Speakers and Teaching Assistants",
+          "zh": "第 5 章：外賓講者與助教"
+        },
+        {
+          "n": 6,
+          "en": "Outline of the Lectures",
+          "zh": "第 6 章：各講大綱"
+        }
+      ],
+      "value": "先建立金融作為「文明支柱」與資源配置技術的觀念，避免只把工作當成業績。"
+    },
+    {
+      "id": "L02",
+      "num": 2,
+      "title_zh": "風險、機率論與金融危機",
+      "title_en": "Risk, Probability & Financial Crises",
+      "track": "intro",
+      "guest": null,
+      "date": "2011-01-26",
+      "file": "transcripts/L02.md",
+      "youtube_id": "QbosMr2JVrc",
+      "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-2",
+      "chapters": [
+        {
+          "n": 1,
+          "en": "Financial Crisis of 2007-2008 and Its Connection to Probability Theory",
+          "zh": "第 1 章：2007–2008 金融危機及其與機率論的連結"
+        },
+        {
+          "n": 2,
+          "en": "Introduction to Probability Theory",
+          "zh": "第 2 章：機率論導論"
+        },
+        {
+          "n": 3,
+          "en": "Financial Return and Basic Statistical Concepts",
+          "zh": "第 3 章：金融報酬與基本統計概念"
+        },
+        {
+          "n": 4,
+          "en": "Independence and Failure of Independence as a Cause for Financial Crises",
+          "zh": "第 4 章：獨立性及其失效作為金融危機成因"
+        },
+        {
+          "n": 5,
+          "en": "Regression Analysis, Systematic vs. Idiosyncratic Risk",
+          "zh": "第 5 章：迴歸分析、系統性與特異風險"
+        },
+        {
+          "n": 6,
+          "en": "Fat-Tailed Distributions and Their Role during Financial Crises",
+          "zh": "第 6 章：肥尾分配及其在金融危機中的角色"
+        }
+      ],
+      "value": "理解肥尾、相依性失效——客戶恐慌時你能解釋為何「歷史 VaR」失效。"
+    },
+    {
+      "id": "L03",
+      "num": 3,
+      "title_zh": "科技與金融發明（公司／指數化／Swap）",
+      "title_en": "Technology & Financial Invention",
+      "track": "institutions",
+      "guest": null,
+      "date": "2011-01-18",
+      "file": "transcripts/L03.md",
+      "youtube_id": "Iij2mpilSJo",
+      "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-3",
+      "chapters": [
+        {
+          "n": 1,
+          "en": "Introduction",
+          "zh": "開場"
+        },
+        {
+          "n": 2,
+          "en": "Review of Probability Theory and the Central Limit Theorem",
+          "zh": "複習機率論與中央極限定理"
+        },
+        {
+          "n": 3,
+          "en": "The Role of Finance in Society",
+          "zh": "金融在社會中的角色"
+        },
+        {
+          "n": 4,
+          "en": "A Selection of Modern Inventions",
+          "zh": "幾個現代發明選例"
+        },
+        {
+          "n": 5,
+          "en": "Corporations and Limited Liability",
+          "zh": "公司與有限責任"
+        },
+        {
+          "n": 6,
+          "en": "Inflation Indexation",
+          "zh": "通膨指數化"
+        },
+        {
+          "n": 7,
+          "en": "Swap Contracts",
+          "zh": "交換契約（Swap）"
+        }
+      ],
+      "value": "掌握有限責任、通膨指數化、Swap 的歷史，向客戶說明金融商品為什麼存在。"
+    },
+    {
+      "id": "L04",
+      "num": 4,
+      "title_zh": "投組分散與 CAPM",
+      "title_en": "Portfolio Diversification & Supporting Institutions",
+      "track": "tools",
+      "guest": null,
+      "date": "2011-02-16",
+      "file": "transcripts/L04.md",
+      "youtube_id": "_B_24GUWdSM",
+      "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-4",
+      "chapters": [
+        {
+          "n": 1,
+          "en": "Introduction",
+          "zh": "導論"
+        },
+        {
+          "n": 2,
+          "en": "United East India Company and Amsterdam Stock Exchange",
+          "zh": "United East India Company 與 Amsterdam Stock Exchange"
+        },
+        {
+          "n": 3,
+          "en": "The Equity Premium Puzzle",
+          "zh": "股權溢價謎題（The Equity Premium Puzzle）"
+        },
+        {
+          "n": 4,
+          "en": "Harry Markowitz and the Origins of Portfolio Analysis",
+          "zh": "Harry Markowitz 與投組分析的起源"
+        },
+        {
+          "n": 5,
+          "en": "Leverage and the Trade-Off between Risk and Return",
+          "zh": "槓桿與風險報酬抵換"
+        },
+        {
+          "n": 6,
+          "en": "Efficient Portfolio Frontiers",
+          "zh": "有效投組前沿（Efficient Portfolio Frontiers）"
+        },
+        {
+          "n": 7,
+          "en": "Tangency Portfolio and Mutual Fund Theorem",
+          "zh": "切線投組（Tangency Portfolio）與共同基金定理（Mutual Fund Theorem）"
+        },
+        {
+          "n": 8,
+          "en": "Capital Asset Pricing Model (CAPM)",
+          "zh": "資本資產定價模型（CAPM）"
+        }
+      ],
+      "value": "解釋為什麼「不要把雞蛋放同一個籃子」有數學基礎；切線投組是核心配置語言。"
+    },
+    {
+      "id": "L05",
+      "num": 5,
+      "title_zh": "保險：典型風險管理機構與 AIG",
+      "title_en": "Insurance: Risk Management & AIG",
+      "track": "institutions",
+      "guest": null,
+      "date": "2011-02-21",
+      "file": "transcripts/L05.md",
+      "youtube_id": "qfK9rCDCicE",
+      "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-5",
+      "chapters": [
+        {
+          "n": 1,
+          "en": "Introduction",
+          "zh": "導論"
+        },
+        {
+          "n": 2,
+          "en": "Concepts and Principles of Insurance",
+          "zh": "保險的概念與原理"
+        },
+        {
+          "n": 3,
+          "en": "The Story behind AIG",
+          "zh": "AIG 的故事"
+        },
+        {
+          "n": 4,
+          "en": "Regulation of the Insurance Industry",
+          "zh": "保險業的監理"
+        },
+        {
+          "n": 5,
+          "en": "Specific Branches of the Insurance Industry - Life and Health Insurances",
+          "zh": "保險業的具體分支——壽險與健保"
+        },
+        {
+          "n": 6,
+          "en": "Insurance in the Face of Catastrophes",
+          "zh": "面對巨災的保險"
+        }
+      ],
+      "value": "保險與證券同源——理解 risk pooling、巨災尾部風險，跨售保單時更有底氣。"
+    },
+    {
+      "id": "L06",
+      "num": 6,
+      "title_zh": "嘉賓 David Swensen：捐贈基金與 Yale Model",
+      "title_en": "Guest: David Swensen on the Yale Endowment Model",
+      "track": "tools",
+      "guest": "David Swensen",
+      "date": "2011-02-02",
+      "file": "transcripts/L06.md",
+      "youtube_id": "wRdx7kVNQ_E",
+      "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-6",
+      "chapters": [
+        {
+          "n": 1,
+          "en": "Introduction, Overview, and Barron's Criticism",
+          "zh": "導論、概述與 Barron's 對 Swensen Approach 的批評"
+        },
+        {
+          "n": 2,
+          "en": "Asset Allocation",
+          "zh": "資產配置"
+        },
+        {
+          "n": 3,
+          "en": "Market Timing",
+          "zh": "擇時"
+        },
+        {
+          "n": 4,
+          "en": "Security Selection",
+          "zh": "選股（證券選擇）"
+        },
+        {
+          "n": 5,
+          "en": "Barron's Criticism Revisited",
+          "zh": "再談 Barron's 的批評"
+        },
+        {
+          "n": 6,
+          "en": "Questions & Answers",
+          "zh": "問答"
+        }
+      ],
+      "value": "頂級投資人的資產配置觀；理解為何高淨值客戶談 alternatives。"
+    },
+    {
+      "id": "L07",
+      "num": 7,
+      "title_zh": "有效市場假說、Sharpe ratio、隨機漫步",
+      "title_en": "Efficient Markets, Sharpe Ratio & Random Walk",
+      "track": "tools",
+      "guest": null,
+      "date": "2011-02-28",
+      "file": "transcripts/L07.md",
+      "youtube_id": "3EzdvkRgToY",
+      "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-7",
+      "chapters": [
+        {
+          "n": 1,
+          "en": "Swensen's Lecture in Retrospect and Manipulations of the Sharpe Ratio",
+          "zh": "回顧 Swensen 的演講與操弄 Sharpe ratio"
+        },
+        {
+          "n": 2,
+          "en": "History of the Efficient Markets Hypothesis",
+          "zh": "有效市場假說的歷史"
+        },
+        {
+          "n": 3,
+          "en": "Testing the Efficient Markets Hypothesis",
+          "zh": "檢驗有效市場假說"
+        },
+        {
+          "n": 4,
+          "en": "Technical Analysis and the Head and Shoulders Pattern",
+          "zh": "技術分析與頭肩頂型態"
+        },
+        {
+          "n": 5,
+          "en": "Random Walk vs. First-Order Autoregressive Process as Stock Price Model",
+          "zh": "隨機漫步與一階自我迴歸：股價模型"
+        }
+      ],
+      "value": "客戶問「為什麼基金經理人打不贏指數」——這堂課給你完整論述。"
+    },
+    {
+      "id": "L08",
+      "num": 8,
+      "title_zh": "債務、利率與槓桿循環",
+      "title_en": "Debt, Interest & the Leverage Cycle",
+      "track": "tools",
+      "guest": null,
+      "date": "2011-03-09",
+      "file": "transcripts/L08.md",
+      "youtube_id": "3Ir6sbDAx4c",
+      "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-8",
+      "chapters": [
+        {
+          "n": 1,
+          "en": "Introduction",
+          "zh": "導論"
+        },
+        {
+          "n": 2,
+          "en": "Theories for the Determinants of Interest Rates",
+          "zh": "利率決定因素之理論"
+        },
+        {
+          "n": 3,
+          "en": "Present Discounted Values, Compounding, and Pricing Bond Contracts",
+          "zh": "現值折現、複利與債券契約定價"
+        },
+        {
+          "n": 4,
+          "en": "Forward Rates and the Term Structure of Interest Rates",
+          "zh": "遠期利率與利率期限結構"
+        },
+        {
+          "n": 5,
+          "en": "The Ancient History of Interest Rates and Usurious Loans",
+          "zh": "利率的古代史與高利貸式放款"
+        },
+        {
+          "n": 6,
+          "en": "Elizabeth Warren and the Consumer Financial Protection Bureau",
+          "zh": "Elizabeth Warren 與 Consumer Financial Protection Bureau"
+        }
+      ],
+      "value": "債券殖利率怎麼來、期限結構、為何高利貸古來爭議——固收業務必修。"
+    },
+    {
+      "id": "L09",
+      "num": 9,
+      "title_zh": "公司普通股",
+      "title_en": "Corporate Stocks",
+      "track": "institutions",
+      "guest": null,
+      "date": "2011-03-23",
+      "file": "transcripts/L09.md",
+      "youtube_id": "78_GRGjlL6E",
+      "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-9",
+      "chapters": [
+        {
+          "n": 1,
+          "en": "Introduction",
+          "zh": "導論"
+        },
+        {
+          "n": 2,
+          "en": "Professor Shiller's Personal Experiences of Founding a Corporation",
+          "zh": "Shiller 創辦公司的個人經驗"
+        },
+        {
+          "n": 3,
+          "en": "Worldwide Importance of Corporate Stocks",
+          "zh": "公司普通股的全球重要性"
+        },
+        {
+          "n": 4,
+          "en": "The Structure of a Corporation",
+          "zh": "公司的結構"
+        },
+        {
+          "n": 5,
+          "en": "Corporate Financing through Equity",
+          "zh": "透過股權（權益）進行的公司融資"
+        },
+        {
+          "n": 6,
+          "en": "Different Forms of Corporate Financing",
+          "zh": "公司融資的不同形式"
+        },
+        {
+          "n": 7,
+          "en": "The Interplay between Corporate Decisions and Financial Markets",
+          "zh": "公司決策與金融市場的交互作用"
+        },
+        {
+          "n": 8,
+          "en": "The Balance Sheets of Xerox and Microsoft",
+          "zh": "Xerox 與 Microsoft 的資產負債表"
+        }
+      ],
+      "value": "股權結構、優先股、ESOP、回購——客戶問股票背後到底是什麼，你能講清楚。"
+    },
+    {
+      "id": "L10",
+      "num": 10,
+      "title_zh": "不動產金融、房貸與證券化",
+      "title_en": "Real Estate, Mortgages & Securitization",
+      "track": "institutions",
+      "guest": null,
+      "date": "2011-03-16",
+      "file": "transcripts/L10.md",
+      "youtube_id": "y_IMH8erqds",
+      "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-10",
+      "chapters": [
+        {
+          "n": 1,
+          "en": "Early History of Real Estate Finance & the Role of Property Rights",
+          "zh": "不動產金融的早期歷史與產權角色"
+        },
+        {
+          "n": 2,
+          "en": "Commercial Real Estate and Investment Partnerships",
+          "zh": "商用不動產與投資合伙"
+        },
+        {
+          "n": 3,
+          "en": "Residential Real Estate Financing before the Great Depression",
+          "zh": "大蕭條之前的住宅不動產融資"
+        },
+        {
+          "n": 4,
+          "en": "Residential Real Estate Financing after the Great Depression",
+          "zh": "大蕭條之後的住宅不動產融資"
+        },
+        {
+          "n": 5,
+          "en": "Mortgage Securitization & Government Support of Mortgage Markets",
+          "zh": "房貸證券化與政府對房貸市場的支持"
+        },
+        {
+          "n": 6,
+          "en": "Mortgage Securities & the Financial Crisis from 2007-2008",
+          "zh": "房貸證券與 2007–2008 金融危機"
+        }
+      ],
+      "value": "2008 金融海嘯怎麼來；REITs、MBS、CDO——理財商品背後的真實風險。"
+    },
+    {
+      "id": "L11",
+      "num": 11,
+      "title_zh": "行為財務、心理學與判斷偏差",
+      "title_en": "Behavioral Finance & Psychology",
+      "track": "intro",
+      "guest": null,
+      "date": "2011-02-21",
+      "file": "transcripts/L11.md",
+      "youtube_id": "chSHqogx2CI",
+      "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-11",
+      "chapters": [
+        {
+          "n": 1,
+          "en": "Human Failings & People's Desire for Praise-Worthiness",
+          "zh": "人性弱點與人對「值得被讚許」的渴望"
+        },
+        {
+          "n": 2,
+          "en": "Personality Psychology",
+          "zh": "人格心理學"
+        },
+        {
+          "n": 3,
+          "en": "Prospect Theory and its Implications for Everyday Decision Making",
+          "zh": "展望理論與日常決策的意涵"
+        },
+        {
+          "n": 4,
+          "en": "Regret Theory and Gambling Behavior",
+          "zh": "後悔理論與賭博行為"
+        },
+        {
+          "n": 5,
+          "en": "Overconfidence, and Related Anomalies, Opportunities for Manipulation",
+          "zh": "過度自信、相關異象與操弄機會"
+        },
+        {
+          "n": 6,
+          "en": "Cognitive Dissonance, Anchoring, Representativeness Heuristic, and Social Contagion",
+          "zh": "認知失調、錨定、代表性捷思與社會傳染"
+        },
+        {
+          "n": 7,
+          "en": "Moral Judgment in the Business World",
+          "zh": "商業世界的道德判斷"
+        }
+      ],
+      "value": "客戶為什麼追高殺低、為什麼後悔——你能用展望理論／錨定來引導對話。"
+    },
+    {
+      "id": "L12",
+      "num": 12,
+      "title_zh": "失序、危機、監管與自律",
+      "title_en": "Misbehavior, Regulation & Self-Regulation",
+      "track": "institutions",
+      "guest": null,
+      "date": "2011-02-23",
+      "file": "transcripts/L12.md",
+      "youtube_id": "W2BURItNYmI",
+      "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-12",
+      "chapters": [
+        {
+          "n": 1,
+          "en": "The Importance of Regulation and Its Challenges",
+          "zh": "監管的重要性與其挑戰"
+        },
+        {
+          "n": 2,
+          "en": "Firm Level Regulation: The Board and Its Duties",
+          "zh": "公司層級監管：董事會及其職責"
+        },
+        {
+          "n": 3,
+          "en": "Trade Group Level Regulation and Its Controversies",
+          "zh": "同業團體層級監管及其爭議"
+        },
+        {
+          "n": 4,
+          "en": "Local Regulation: The Progressive Era",
+          "zh": "地方監管：進步時代（Progressive Era）"
+        },
+        {
+          "n": 5,
+          "en": "National Regulation: The Securities and Exchange Commission",
+          "zh": "國家層級監管：美國證券交易委員會（SEC）"
+        },
+        {
+          "n": 6,
+          "en": "Minimal Regulation: Hedge Funds",
+          "zh": "極小監管：避險基金（Hedge Funds）"
+        },
+        {
+          "n": 7,
+          "en": "Market Surveillance: Preventing Manipulation",
+          "zh": "市場監控：防止操縱"
+        },
+        {
+          "n": 8,
+          "en": "Regulatory Pushes at Home and Abroad",
+          "zh": "國內外監管推力"
+        }
+      ],
+      "value": "SEC、董事會、Sarbanes-Oxley——理解你的合規規則為什麼存在。"
+    },
+    {
+      "id": "L13",
+      "num": 13,
+      "title_zh": "銀行：流動性、擠兌與 Basel",
+      "title_en": "Banks: Liquidity, Bank Runs & Basel",
+      "track": "institutions",
+      "guest": null,
+      "date": "2011-04-20",
+      "file": "transcripts/L13.md",
+      "youtube_id": "1mDL1fKEVZM",
+      "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-13",
+      "chapters": [
+        {
+          "n": 1,
+          "en": "Introduction",
+          "zh": "導論"
+        },
+        {
+          "n": 2,
+          "en": "Basic Principles of Banking",
+          "zh": "銀行業的基本原則"
+        },
+        {
+          "n": 3,
+          "en": "The Beginnings of Banking: Types of Banks",
+          "zh": "銀行的開端與銀行類型"
+        },
+        {
+          "n": 4,
+          "en": "Theory of Banks: Liquidity, Adverse Selection, Moral Hazard",
+          "zh": "銀行理論——流動性、逆選擇、道德風險"
+        },
+        {
+          "n": 5,
+          "en": "Bank Runs, Deposit Insurance and Maintaining Confidence",
+          "zh": "銀行擠兌、存款保險與維持信心"
+        },
+        {
+          "n": 6,
+          "en": "Bank Regulation: Risk-Weighted Assets and Basel Agreements",
+          "zh": "銀行監管——風險加權資產與 Basel 協定"
+        },
+        {
+          "n": 7,
+          "en": "Common Equity Requirements and Its Critics",
+          "zh": "普通股資本要求及其批評"
+        },
+        {
+          "n": 8,
+          "en": "Recent International Bank Crises",
+          "zh": "近年國際銀行危機"
+        }
+      ],
+      "value": "存款保險、銀行擠兌、巴塞爾資本——金融客戶談對手風險時的底層觀念。"
+    },
+    {
+      "id": "L14",
+      "num": 14,
+      "title_zh": "嘉賓 Hank Greenberg：AIG 與危機",
+      "title_en": "Guest: Hank Greenberg on AIG & the Crisis",
+      "track": "institutions",
+      "guest": "Maurice 'Hank' Greenberg",
+      "date": "2011-04-27",
+      "file": "transcripts/L14.md",
+      "youtube_id": "72qUcUAtRZc",
+      "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-14",
+      "chapters": [
+        {
+          "n": 1,
+          "en": "Introduction of Maurice \"Hank\" Greenberg",
+          "zh": "介紹 Maurice「Hank」Greenberg"
+        },
+        {
+          "n": 2,
+          "en": "The Start of a Career in the Insurance Industry",
+          "zh": "保險業職涯的起點"
+        },
+        {
+          "n": 3,
+          "en": "Creating AIG and Its Basic Principles of Operation",
+          "zh": "創立 AIG 與基本營運原則"
+        },
+        {
+          "n": 4,
+          "en": "The Connection between Foreign Policy and Business",
+          "zh": "外交政策與商業的連結"
+        },
+        {
+          "n": 5,
+          "en": "AIG's Growth and the Expansion into Financial Services",
+          "zh": "AIG 的成長與跨入金融服務"
+        },
+        {
+          "n": 6,
+          "en": "Eliot Spitzer and Greenberg's Parting from AIG",
+          "zh": "Eliot Spitzer 與 Greenberg 離開 AIG"
+        },
+        {
+          "n": 7,
+          "en": "AIG Shortly before and during the Financial Crisis",
+          "zh": "金融危機前後的 AIG"
+        },
+        {
+          "n": 8,
+          "en": "Assessment of the Causes of the Financial Crisis",
+          "zh": "對金融危機成因的評估"
+        },
+        {
+          "n": 9,
+          "en": "Questions & Answers",
+          "zh": "問答"
+        }
+      ],
+      "value": "從 AIG 創辦人視角看保險帝國的興衰；當你面對企業客戶談保險，能講出深度。"
+    },
+    {
+      "id": "L15",
+      "num": 15,
+      "title_zh": "遠期與期貨市場",
+      "title_en": "Forward & Futures Markets",
+      "track": "tools",
+      "guest": null,
+      "date": "2011-03-21",
+      "file": "transcripts/L15.md",
+      "youtube_id": "rxHu93YzHpc",
+      "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-15",
+      "chapters": [
+        {
+          "n": 1,
+          "en": "Forwards vs. Futures Contracts; Speculation in Derivative Markets",
+          "zh": "遠期與期貨；衍生市場的投機"
+        },
+        {
+          "n": 2,
+          "en": "The First Futures Market and the Role of Standardization",
+          "zh": "第一個期貨市場與標準化的角色"
+        },
+        {
+          "n": 3,
+          "en": "Rice Futures and Contango vs. Backwardation",
+          "zh": "稻米期貨與 Contango／Backwardation"
+        },
+        {
+          "n": 4,
+          "en": "Counterparty Risk and Margin Accounts",
+          "zh": "交易對手風險與保證金帳戶"
+        },
+        {
+          "n": 5,
+          "en": "Wheat Futures and the Fair Value Formula for Futures Pricing",
+          "zh": "小麥期貨與公平價值定價公式"
+        },
+        {
+          "n": 6,
+          "en": "Oil Futures",
+          "zh": "原油期貨"
+        },
+        {
+          "n": 7,
+          "en": "The History of the Oil Market",
+          "zh": "石油市場簡史"
+        },
+        {
+          "n": 8,
+          "en": "Financial Futures and the Difficulty of Forecasting",
+          "zh": "金融期貨與預測之難"
+        }
+      ],
+      "value": "期貨怎麼定價、保證金、Contango／Backwardation——衍生品業務的入門。"
+    },
+    {
+      "id": "L16",
+      "num": 16,
+      "title_zh": "嘉賓 Laura Cha：公私部門與新興市場",
+      "title_en": "Guest: Laura Cha on Public/Private Markets & Emerging Markets",
+      "track": "institutions",
+      "guest": "Laura Cha",
+      "date": "2011-05-11",
+      "file": "transcripts/L16.md",
+      "youtube_id": "vucQ8ila814",
+      "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-16",
+      "chapters": [
+        {
+          "n": 1,
+          "en": "The Private and the Public Sector of Financial Markets",
+          "zh": "金融市場的私部門與公部門"
+        },
+        {
+          "n": 2,
+          "en": "China's Public Sector and Opportunities in Other Emerging Markets",
+          "zh": "中國的公部門與其他新興市場的機會"
+        },
+        {
+          "n": 3,
+          "en": "Motivations to Work in the Public Sector",
+          "zh": "在公部門工作的動機"
+        },
+        {
+          "n": 4,
+          "en": "The Interplay between the Western Business World and Emerging Markets",
+          "zh": "西方商業世界與新興市場的互動"
+        },
+        {
+          "n": 5,
+          "en": "A Brief History of the Hong Kong Shanghai Banking Corporation (HSBC)",
+          "zh": "HSBC 簡史"
+        },
+        {
+          "n": 6,
+          "en": "The Role and the Enforcement of Regulation in China",
+          "zh": "中國監管的角色與執法"
+        },
+        {
+          "n": 7,
+          "en": "State-Owned Enterprises and Support for Start-Up Companies in China",
+          "zh": "中國國企與對新創公司的支持"
+        },
+        {
+          "n": 8,
+          "en": "Mergers of Stock Exchanges",
+          "zh": "證券交易所的整併"
+        },
+        {
+          "n": 9,
+          "en": "Overseas Registration of Chinese Companies and the International Board in Shanghai",
+          "zh": "中國公司的海外註冊與上海國際板"
+        },
+        {
+          "n": 10,
+          "en": "The Regulatory Impact of Basel III",
+          "zh": "Basel III 的監管影響"
+        }
+      ],
+      "value": "從香港證監會視角看亞洲金融、HSBC 史、Basel III 的監管實務。"
+    },
+    {
+      "id": "L17",
+      "num": 17,
+      "title_zh": "選擇權市場與 Black-Scholes",
+      "title_en": "Options Markets & Black-Scholes",
+      "track": "tools",
+      "guest": null,
+      "date": "2011-05-04",
+      "file": "transcripts/L17.md",
+      "youtube_id": "VkUEWUxI6u0",
+      "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-17",
+      "chapters": [
+        {
+          "n": 1,
+          "en": "Examples of Options Markets and Core Terms",
+          "zh": "選擇權市場示例與核心術語"
+        },
+        {
+          "n": 2,
+          "en": "Purposes of Option Contracts",
+          "zh": "選擇權合約的目的"
+        },
+        {
+          "n": 3,
+          "en": "Quoted Prices of Options and the Role of Derivatives Markets",
+          "zh": "選擇權報價與衍生性市場的角色"
+        },
+        {
+          "n": 4,
+          "en": "Call and Put Options and the Put-Call Parity",
+          "zh": "買權、賣權與買賣權平價"
+        },
+        {
+          "n": 5,
+          "en": "Boundaries on the Price of a Call Option",
+          "zh": "買權價格的上下界"
+        },
+        {
+          "n": 6,
+          "en": "Pricing Options with the Binomial Asset Pricing Model",
+          "zh": "以二項式資產定價模型為選擇權定價"
+        },
+        {
+          "n": 7,
+          "en": "The Black-Scholes Option Pricing Formula",
+          "zh": "Black-Scholes 選擇權定價公式"
+        },
+        {
+          "n": 8,
+          "en": "Implied Volatility - The VIX Index in Comparison to Actual Market Volatility",
+          "zh": "隱含波動率——VIX 與實際市場波動的比較"
+        },
+        {
+          "n": 9,
+          "en": "The Potential for Options in the Housing Market",
+          "zh": "住宅市場中的選擇權潛力"
+        }
+      ],
+      "value": "買權／賣權、買賣權平價、隱含波動率、VIX——結構型商品銷售必懂。"
+    },
+    {
+      "id": "L18",
+      "num": 18,
+      "title_zh": "貨幣政策與中央銀行",
+      "title_en": "Monetary Policy & Central Banking",
+      "track": "institutions",
+      "guest": null,
+      "date": "2011-05-25",
+      "file": "transcripts/L18.md",
+      "youtube_id": "_SpIaGTq0u8",
+      "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-18",
+      "chapters": [
+        {
+          "n": 1,
+          "en": "The Origins of Central Banking: The Bank of England",
+          "zh": "中央銀行的起源：Bank of England"
+        },
+        {
+          "n": 2,
+          "en": "The Suffolk System and the National Banking Era in the U.S.",
+          "zh": "Suffolk System 與美國 National Banking Era"
+        },
+        {
+          "n": 3,
+          "en": "The Founding of the Federal Reserve System",
+          "zh": "Federal Reserve System 的成立"
+        },
+        {
+          "n": 4,
+          "en": "The Move to Make Central Banks Independent",
+          "zh": "央行走向獨立"
+        },
+        {
+          "n": 5,
+          "en": "U.S. Monetary Policy: Federal Funds Rate and Reserve Requirements",
+          "zh": "美國貨幣政策：Federal Funds Rate 與法定準備"
+        },
+        {
+          "n": 6,
+          "en": "Capital Requirements, Basel III and Rating Agencies",
+          "zh": "資本要求、Basel III 與評等機構"
+        },
+        {
+          "n": 7,
+          "en": "Capital Requirements and Reserve Requirements in the Context of a Simple Example",
+          "zh": "用簡例看資本要求與準備要求"
+        },
+        {
+          "n": 8,
+          "en": "Capital Requirements to Stabilize the Financial System in Crisis Times",
+          "zh": "危機時刻：資本要求與金融體系穩定"
+        }
+      ],
+      "value": "Fed funds rate、準備金、QE、央行獨立性——客戶問利率走向時的本質框架。"
+    },
+    {
+      "id": "L19",
+      "num": 19,
+      "title_zh": "投資銀行與影子銀行（嘉賓 Jon Fougner）",
+      "title_en": "Investment Banking & Shadow Banking",
+      "track": "institutions",
+      "guest": "Jon Fougner",
+      "date": "2011-04-06",
+      "file": "transcripts/L19.md",
+      "youtube_id": "2yycGEFCNYE",
+      "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-19",
+      "chapters": [
+        {
+          "n": 1,
+          "en": "Key Elements of Investment Banking",
+          "zh": "投資銀行的核心要素"
+        },
+        {
+          "n": 2,
+          "en": "Principles and Culture of Investment Banking",
+          "zh": "投資銀行的原則與文化"
+        },
+        {
+          "n": 3,
+          "en": "Regulation of Investment Banking",
+          "zh": "投資銀行的監管"
+        },
+        {
+          "n": 4,
+          "en": "Shadow Banking and the Repo Market",
+          "zh": "影子銀行與回購市場（Repo）"
+        },
+        {
+          "n": 5,
+          "en": "Fougner: From ECON 252 to Wall Street",
+          "zh": "Fougner——從 ECON 252 到華爾街"
+        },
+        {
+          "n": 6,
+          "en": "Fougner: Steps to Take Today to Work on Wall Street",
+          "zh": "今天就能做的幾步——往 Wall Street"
+        },
+        {
+          "n": 7,
+          "en": "Fougner: From Wall Street to Silicon Valley, Experiences at Facebook",
+          "zh": "從 Wall Street 到矽谷——在 Facebook 的經驗"
+        },
+        {
+          "n": 8,
+          "en": "Fougner: Question and Answer Session",
+          "zh": "問與答"
+        }
+      ],
+      "value": "投行業務模型、Repo 市場、Glass-Steagall 興廢——理解承銷／併購世界。"
+    },
+    {
+      "id": "L20",
+      "num": 20,
+      "title_zh": "專業資金管理者：信託、退休金、家族辦公室",
+      "title_en": "Professional Money Managers",
+      "track": "institutions",
+      "guest": null,
+      "date": "2011-06-08",
+      "file": "transcripts/L20.md",
+      "youtube_id": "txTaBKZ8qrs",
+      "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-20",
+      "chapters": [
+        {
+          "n": 1,
+          "en": "Assets and Liabilities of U.S. Households and Nonprofit Organizations",
+          "zh": "美國家戶與非營利組織的資產與負債"
+        },
+        {
+          "n": 2,
+          "en": "Human Capital and Modern Societal Changes",
+          "zh": "人資本與現代社會變遷"
+        },
+        {
+          "n": 3,
+          "en": "The Fiduciary Duty of Investment Managers",
+          "zh": "投資經理人的受託責任"
+        },
+        {
+          "n": 4,
+          "en": "Financial Advisors, Financial Planners, and Mortgage Brokers",
+          "zh": "理財顧問、理財規劃師與房貸仲介"
+        },
+        {
+          "n": 5,
+          "en": "Comparison of Mutual Funds between the U.S. and Europe",
+          "zh": "美國與歐洲 mutual fund 的比較"
+        },
+        {
+          "n": 6,
+          "en": "Trusts - Providing the Opportunity to Care for Your Children",
+          "zh": "信託——讓你能照顧子女的方式"
+        },
+        {
+          "n": 7,
+          "en": "Pension Funds and Defined Contribution Plans",
+          "zh": "退休金基金與確定提撥制"
+        },
+        {
+          "n": 8,
+          "en": "History of Endowment Investing",
+          "zh": "捐贈基金投資史"
+        },
+        {
+          "n": 9,
+          "en": "Family Offices and Family Foundations",
+          "zh": "家族辦公室與家族基金會"
+        }
+      ],
+      "value": "信託、共同基金、退休金、家族辦公室——高淨值客戶的服務地圖。"
+    },
+    {
+      "id": "L21",
+      "num": 21,
+      "title_zh": "交易所、經紀商、自營商、清算機構",
+      "title_en": "Exchanges, Brokers, Dealers & Clearinghouses",
+      "track": "institutions",
+      "guest": null,
+      "date": "2011-06-15",
+      "file": "transcripts/L21.md",
+      "youtube_id": "kAl8DezwLAE",
+      "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-21",
+      "chapters": [
+        {
+          "n": 1,
+          "en": "Exchange as the Key Component of Economic Activity",
+          "zh": "交換作為經濟活動的關鍵環節"
+        },
+        {
+          "n": 2,
+          "en": "Brokers vs. Dealers",
+          "zh": "經紀商（Broker）與自營商（Dealer）"
+        },
+        {
+          "n": 3,
+          "en": "History of Stock Exchanges around the World",
+          "zh": "世界各地證交所簡史"
+        },
+        {
+          "n": 4,
+          "en": "Market Orders, Limit Orders, and Stop Orders",
+          "zh": "市價單、限價單與停損單"
+        },
+        {
+          "n": 5,
+          "en": "The Growing Importance of Electronic Trading",
+          "zh": "電子交易日益重要"
+        },
+        {
+          "n": 6,
+          "en": "Instabilities Related to High Frequency Trading",
+          "zh": "與高頻交易相關的不穩定"
+        },
+        {
+          "n": 7,
+          "en": "The Frustrations of Trading as a Dealer",
+          "zh": "以自營商身分交易的挫折"
+        }
+      ],
+      "value": "**世界級金融家必修**：你的角色定位、市價／限價／停損單、電子交易與高頻的衝擊。"
+    },
+    {
+      "id": "L22",
+      "num": 22,
+      "title_zh": "公共與非營利部門金融",
+      "title_en": "Public & Nonprofit Finance",
+      "track": "institutions",
+      "guest": null,
+      "date": "2011-05-25",
+      "file": "transcripts/L22.md",
+      "youtube_id": "YAO0St7mPQM",
+      "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-22",
+      "chapters": [
+        {
+          "n": 1,
+          "en": "Organizations Supporting Individual Causes",
+          "zh": "支持個人志業的組織"
+        },
+        {
+          "n": 2,
+          "en": "Nonprofits: Pursuing Common Interests",
+          "zh": "非營利：追求共同利益"
+        },
+        {
+          "n": 3,
+          "en": "Government Involvement in For-Profits",
+          "zh": "政府對營利事業的介入"
+        },
+        {
+          "n": 4,
+          "en": "Social Entrepreneurship and Distinguishing between Nonprofits and For-Profits",
+          "zh": "社會創業與非營利／營利之分"
+        },
+        {
+          "n": 5,
+          "en": "Municipal, State and Local Finance",
+          "zh": "市、州與地方財政"
+        },
+        {
+          "n": 6,
+          "en": "Tax-Exemption of Municipal Bonds",
+          "zh": "市政債的免稅優惠"
+        },
+        {
+          "n": 7,
+          "en": "Government Social Insurance – From Progressive Taxes to OASDI",
+          "zh": "政府社會保險——從累進稅到 OASDI"
+        },
+        {
+          "n": 8,
+          "en": "The Invention of Social Insurance in Germany",
+          "zh": "社會保險在德國的發明"
+        },
+        {
+          "n": 9,
+          "en": "Review of the Social Purpose of Finance and of Behavioral Finance",
+          "zh": "金融的社會目的與行為金融學——收束"
+        }
+      ],
+      "value": "市政債、社會保險、社會企業——客戶談 ESG／公益信託時的背景知識。"
+    },
+    {
+      "id": "L23",
+      "num": 23,
+      "title_zh": "在金融資本主義中找尋你的使命",
+      "title_en": "Finding Your Purpose in Financial Capitalism",
+      "track": "intro",
+      "guest": null,
+      "date": "2011-04-20",
+      "file": "transcripts/L23.md",
+      "youtube_id": "2_pDTWgJg94",
+      "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-23",
+      "chapters": [
+        {
+          "n": 1,
+          "en": "The Course and Its Major Themes in Retrospect",
+          "zh": "課程與主要主題的回顧"
+        },
+        {
+          "n": 2,
+          "en": "The Morality of Finance",
+          "zh": "金融的道德性"
+        },
+        {
+          "n": 3,
+          "en": "Hopelessness: Challenging Malthus's Dismal Law",
+          "zh": "絕望——挑戰 Malthus 的黯淡法則"
+        },
+        {
+          "n": 4,
+          "en": "The Endurance and Survival of Financial Contracts",
+          "zh": "金融契約的韌性與存續"
+        },
+        {
+          "n": 5,
+          "en": "The Importance of Financial Theory",
+          "zh": "金融理論的重要性"
+        },
+        {
+          "n": 6,
+          "en": "Welfare and Poverty",
+          "zh": "福利與貧窮"
+        },
+        {
+          "n": 7,
+          "en": "The Democratization of Finance",
+          "zh": "金融的民主化"
+        },
+        {
+          "n": 8,
+          "en": "Advice for the Right Career",
+          "zh": "關於「對的職涯」的建議"
+        }
+      ],
+      "value": "Shiller 給未來金融人的終堂課——金融的道德、民主化、職涯選擇。"
+    }
+  ]
+}

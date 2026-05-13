@@ -1,0 +1,1502 @@
+{
+  "_note": "Shiller《金融市場》(ECON 252, 2011) 100 個核心名詞；每條附定義與從原始逐字稿擷取的真實引用段落。",
+  "_total": 121,
+  "categories": {
+    "risk": "風險與機率",
+    "behavior": "行為財務",
+    "markets": "市場與制度",
+    "instruments": "金融工具",
+    "policy": "監管與政策"
+  },
+  "terms": [
+    {
+      "term_en": "Risk Pooling",
+      "term_zh": "風險匯集",
+      "category": "risk",
+      "def_zh": "保險的根本原理——只要許多保戶的風險彼此獨立，大數法則就會讓總體結果可預測，即使個別事件無法預測。",
+      "def_en": "Insurance's core principle: independent risks across many policyholders allow the law of large numbers to make aggregate outcomes predictable.",
+      "sources": [
+        "L05"
+      ],
+      "shiller_quote": "The fundamental concept, again, is risk pooling. The idea of insurance goes back to ancient Rome, but only in very limited forms. But the idea of risk pooling is kind of an obvious one. People form organizations partly to risk-pool. So, in ancient Rome, a common form of insurance was death insurance that would pay funeral bills. People in the ancient world believed that you had to get a proper burial, or your soul would wander forever.",
+      "quote_source": "L05"
+    },
+    {
+      "term_en": "Law of Large Numbers",
+      "term_zh": "大數法則",
+      "category": "risk",
+      "def_zh": "大量獨立同分布隨機事件的平均，會收斂到其期望值。保險與分散投資的數學基礎。",
+      "def_en": "The average of many independent identically distributed random variables converges to its expected value—the math behind insurance and diversification.",
+      "sources": [
+        "L02",
+        "L05"
+      ],
+      "shiller_quote": "Actually, you can find an approximate statement of the law of large numbers--and I'm thinking of Aristotle, the philosopher. This is in ancient times, and I'm quoting from De Caelo, his book. Aristotle: \"To succeed in many things or many times is difficult.",
+      "quote_source": "L05"
+    },
+    {
+      "term_en": "Central Limit Theorem",
+      "term_zh": "中央極限定理",
+      "category": "risk",
+      "def_zh": "許多獨立隨機變數之和（或平均）會趨近常態分配，無論原本分配為何。常被當成「為什麼許多金融現象呈鐘形」的理由。",
+      "def_en": "Sums (or averages) of many independent random variables tend toward a normal distribution—often invoked to justify normality assumptions in finance.",
+      "sources": [
+        "L02",
+        "L03"
+      ],
+      "shiller_quote": "I don't know if I gave enough emphasis to the central limit theorem last lecture. This is a fundamental theorem from probability theory, which says that if you have independent identically distributed random variables. That is, every random variable is independent of the other, and they're all of the same distribution, and if it has a finite variance, then the distribution of an average of these variables converges to the normal distribution as the number of elements in the average is increased.",
+      "quote_source": "L03"
+    },
+    {
+      "term_en": "Expected Value",
+      "term_zh": "期望值",
+      "category": "risk",
+      "def_zh": "一個隨機變數的機率加權平均；對連續分配是 ∫x·f(x)dx。所有風險—報酬權衡的起點。",
+      "def_en": "Probability-weighted average of a random variable's possible outcomes; the starting point of all risk-return analysis.",
+      "sources": [
+        "L02"
+      ],
+      "shiller_quote": "We're going to substitute in what they are. So, the expectation of x, or the mean of x, μ_x is another term for it, is the weighted sum of all possible values of x weighted by their probabilities. And the probabilities have to sum to 1. They're positive numbers, or zero or positive numbers, reflecting the likelihood of that random variable occurring, that value of the random variable occurring.",
+      "quote_source": "L02"
+    },
+    {
+      "term_en": "Variance & Covariance",
+      "term_zh": "變異數與共變異數",
+      "category": "risk",
+      "def_zh": "變異數衡量單一變數圍繞期望值的散布；共變異數衡量兩變數同向／反向移動的程度。Markowitz 投組理論的兩個關鍵原料。",
+      "def_en": "Variance measures spread of one variable; covariance measures how two variables move together. The two ingredients Markowitz needs to compute optimal portfolios.",
+      "sources": [
+        "L02",
+        "L04"
+      ],
+      "shiller_quote": "It's a positive number if, when x is high relative to its mean, y is high relative to its mean also. And it's a negative number if they tend to go in opposite directions. If GM tends to do well when IBM does poorly, then we have a negative covariance. Because, if one is above its mean, and the other is below its mean, the product is going to be a negative number. If we get a lot of negative products like that, it means that they tend to move opposite each other.",
+      "quote_source": "L02"
+    },
+    {
+      "term_en": "Standard Deviation",
+      "term_zh": "標準差",
+      "category": "risk",
+      "def_zh": "變異數的平方根；金融上把它當作「風險」最常用的單一數字。",
+      "def_en": "Square root of variance; the most common one-number summary of 'risk' in finance.",
+      "sources": [
+        "L02"
+      ],
+      "shiller_quote": "So, I have plotted two normal distributions, and I have them for two different standard deviations. One of them, black line, is the standard deviation of 3, and the other one, the pink line, is the standard deviation of 1. But they both look the same; they're just scaled differently.",
+      "quote_source": "L02"
+    },
+    {
+      "term_en": "Independence (statistical)",
+      "term_zh": "統計獨立性",
+      "category": "risk",
+      "def_zh": "兩事件機率相乘不變——彼此不影響。Shiller 強調：金融危機的本質就是「以為獨立、結果不獨立」。",
+      "def_en": "Two events are independent when one gives no information about the other. Shiller stresses: financial crises happen because supposedly independent risks turn out correlated.",
+      "sources": [
+        "L02"
+      ],
+      "shiller_quote": "The fundamental concept of insurance relies on this intuitive idea. And the idea was intuitive enough that insurance was known and practiced in ancient times. But the insurance concept depends on independence. And so, independence is something that apparently breaks down at times like these. Like these big down crises that we've seen in the stock market, in the two episodes in the beginning of the 20th century.",
+      "quote_source": "L02"
+    },
+    {
+      "term_en": "Fat Tails",
+      "term_zh": "肥尾分配",
+      "category": "risk",
+      "def_zh": "極端事件機率比常態分配預測得高的分配；金融資產報酬普遍是肥尾，意味「不可能發生」的事其實常發生。",
+      "def_en": "Distributions where extreme events are more probable than the normal distribution predicts; financial returns are notoriously fat-tailed.",
+      "sources": [
+        "L02"
+      ],
+      "shiller_quote": "I'm going to talk today about probability, and variance, and covariance, and regression, and idiosyncratic risk, and systematic risk. Things like that which are core concepts in finance. But I'm also going to, in the context of the crisis, emphasize in this lecture, breakdowns of some of the most popular assumptions that underlie financial theory. And I'm thinking particularly of two breakdowns. And we'll emphasize these as other interpretations of the crisis. One is the failure of independence. I'll come back and redefine that.",
+      "quote_source": "L02"
+    },
+    {
+      "term_en": "Excess Volatility",
+      "term_zh": "超額波動",
+      "category": "risk",
+      "def_zh": "Shiller 1981 年標誌性發現：股價波動遠大於其後續股利現值所能解釋；對有效市場假說的最強反駁之一。",
+      "def_en": "Shiller's signature 1981 finding: stock prices fluctuate far more than the present value of subsequent dividends can justify—a key challenge to the efficient markets hypothesis.",
+      "sources": [
+        "L06",
+        "L07"
+      ],
+      "shiller_quote": "But the risks that exist in the portfolio aren't really captured by the standard deviation of the returns. Just a quick example: If you look at real estate, or timber, or even any of our illiquid assets, they're appraised relatively infrequently. There tends to be a huge stability bias in the appraisals. If somebody looks at a piece of real estate 12 months ago, six months ago, and today, they're likely to see pretty much the same thing that they saw over that period.",
+      "quote_source": "L06"
+    },
+    {
+      "term_en": "Random Walk",
+      "term_zh": "隨機漫步",
+      "category": "risk",
+      "def_zh": "每期價格變動皆獨立隨機，過去不含未來資訊。被當成「市場有效」的推論，但 Shiller 認為實證上並不成立。",
+      "def_en": "Model in which each price change is an independent random draw—often treated as a consequence of market efficiency, though Shiller disputes its empirical basis.",
+      "sources": [
+        "L07"
+      ],
+      "shiller_quote": "This is different. This is a different world. You can see the difference, right? This pink line doesn't look as much like the actual stock market, because it really wants this trend. We saw trendy ones occasionally, by chance with a Random Walk, but here we're seeing it's always on a trend. And so, in this world, if the stock market were an AR-1, there would be a profitable strategy. Always buy when it's below trend, and sell when it's above trend. Because you know it'll come back, you see how reliable this comes back to a trend?",
+      "quote_source": "L07"
+    },
+    {
+      "term_en": "Mean Reversion",
+      "term_zh": "均值回歸",
+      "category": "risk",
+      "def_zh": "價格／報酬長期會回到歷史平均的傾向，與隨機漫步矛盾。CAPE 比率高時長期報酬偏低，是 Shiller 的典型案例。",
+      "def_en": "Tendency of prices/returns to revert toward long-run averages—contradicting random walk. High CAPE predicting low long-run returns is Shiller's textbook case.",
+      "sources": [
+        "L07"
+      ],
+      "shiller_quote": "So, I want I want to contrast that with an alternative, which is called a ''First-Order Autoregressive.'' Let me get my notation here. Let's take a process that starts at 100--that's like the lamppost. We'll say \\(x_t = 100(1-\\rho) + \\rho x_{t-1} + \\varepsilon_t\\). So, this is an AR-1. That's First-Order Autoregressive. It's like a regression model where \\(100(1-\\rho)\\) is the constant term. And the coefficient of the lagged x is \\(\\rho\\). And we usually require that \\(\\rho\\) is between -1 and 1. Normally, \\(\\rho\\) is positive.",
+      "quote_source": "L07"
+    },
+    {
+      "term_en": "Sharpe Ratio",
+      "term_zh": "Sharpe 比率",
+      "category": "risk",
+      "def_zh": "（報酬 − 無風險利率）÷ 標準差。每承擔一單位風險換到多少報酬；可被賣尾部風險的策略短期粉飾。",
+      "def_en": "(Return − risk-free rate) ÷ standard deviation. Reward per unit of risk; can be gamed by writing tail-risk options that look smooth until they aren't.",
+      "sources": [
+        "L07"
+      ],
+      "shiller_quote": "OK, but what you do it you make it, so that if there's really a bad year, it's going to be a doozer bad year for your investors. And if there's ever a good year, then, hey, you won't get it. But these good or bad years occur only infrequently. So, in the meantime, you're making profits from these sales and you have a high Sharpe ratio. But little do they know that you sold off the tails. And so, nothing happens for many years and you just look like the best guy there. So, it turns out that this is not just academic.",
+      "quote_source": "L07"
+    },
+    {
+      "term_en": "Beta (β)",
+      "term_zh": "Beta 係數",
+      "category": "risk",
+      "def_zh": "個別資產報酬對市場報酬的迴歸係數，衡量「無法分散掉的市場風險」。CAPM 中只有 beta 該被定價。",
+      "def_en": "Regression slope of an asset's return on the market's; measures undiversifiable market risk. In CAPM, only beta should be priced.",
+      "sources": [
+        "L04",
+        "L02"
+      ],
+      "shiller_quote": "So, that's measured by β. The β is the regression--the slope coefficient, when you regress the return on the i-th asset on the return of the market. So, high β stocks are stocks that go with the market. We found out that Apple has a β of 1.5, or roughly that. That means, they respond in an exaggerated way. It's not 1, it's greater than 1, they more than move with the market. And so, investors will demand a higher return on Apple stock, because its β is greater than for other stocks. That's the core idea that underlies it.",
+      "quote_source": "L04"
+    },
+    {
+      "term_en": "Systematic vs. Idiosyncratic Risk",
+      "term_zh": "系統性與特異風險",
+      "category": "risk",
+      "def_zh": "系統性風險影響所有資產（無法分散）；特異風險只影響單一資產（可分散）。CAPM 假設只有前者得到溢酬。",
+      "def_en": "Systematic risk affects all assets (can't be diversified away); idiosyncratic risk is asset-specific (diversifiable). CAPM says only systematic risk earns a premium.",
+      "sources": [
+        "L02",
+        "L04"
+      ],
+      "shiller_quote": "I'm going to talk today about probability, and variance, and covariance, and regression, and idiosyncratic risk, and systematic risk. Things like that which are core concepts in finance. But I'm also going to, in the context of the crisis, emphasize in this lecture, breakdowns of some of the most popular assumptions that underlie financial theory. And I'm thinking particularly of two breakdowns. And we'll emphasize these as other interpretations of the crisis. One is the failure of independence. I'll come back and redefine that.",
+      "quote_source": "L02"
+    },
+    {
+      "term_en": "Efficient Markets Hypothesis (EMH)",
+      "term_zh": "有效市場假說",
+      "category": "risk",
+      "def_zh": "資產價格已反映所有可得資訊，主動分析無法持續超越市場。Shiller 認為這是「半真理」——適合當基準，當教條會誤事。",
+      "def_en": "The idea that prices fully reflect available information. Shiller treats it as a 'half-truth'—useful benchmark, dangerous dogma.",
+      "sources": [
+        "L07",
+        "L11"
+      ],
+      "shiller_quote": "The problem is that the real world seems, maybe, to be more like the drunk with the loose elastic. And so, it's kind of unsatisfying. You can beat the market, but simple trading rules like Edwards and McGee are not powerful, short-run profit opportunities. In that sense, the Efficient Markets Hypothesis is right. So, don't forget the Efficient Markets Hypothesis. I'll repeat what I said at the beginning. It's a half-truth, it's half true. Remember that, but don't put too much faith in it, either.",
+      "quote_source": "L07"
+    },
+    {
+      "term_en": "Capital Asset Pricing Model (CAPM)",
+      "term_zh": "資本資產定價模型",
+      "category": "risk",
+      "def_zh": "資產預期報酬 = 無風險利率 + β × 市場風險溢酬。建立在「所有人都持有市場組合」的前提上。",
+      "def_en": "E[Ri] = Rf + β(Rm − Rf). The foundational pricing model assuming all investors hold the market portfolio.",
+      "sources": [
+        "L04"
+      ],
+      "shiller_quote": "OK, so this is the fourth lecture for Economics 252, Financial Markets. And I wanted today to talk about some really basic concepts, about portfolios. A portfolio is a collection of investments. And I want to talk about risk and return, and eventually get into the core theory, which is the Capital Asset Pricing Model, in finance.",
+      "quote_source": "L04"
+    },
+    {
+      "term_en": "Efficient Portfolio Frontier",
+      "term_zh": "有效投組前沿",
+      "category": "risk",
+      "def_zh": "在每個風險水準下擁有最高預期報酬的投組集合；由 Markowitz 提出。",
+      "def_en": "Set of portfolios offering the highest expected return for each level of risk; introduced by Markowitz.",
+      "sources": [
+        "L04"
+      ],
+      "shiller_quote": "But I could get even higher returns, if my client wants that, by leveraging. I would borrow and buy even more of this risky portfolio. So, this portfolio here is called the Tangency Portfolio. And what Markowitz's theory shows is that, once you add the risky asset [correction: riskless asset], the relevant Efficient Portfolio Frontier is now really this tangency line. And so, I want to do a mixture of the riskless asset and the Tangency Portfolio that accords with my risk preferences.",
+      "quote_source": "L04"
+    },
+    {
+      "term_en": "Tangency Portfolio",
+      "term_zh": "切線投組",
+      "category": "risk",
+      "def_zh": "從無風險利率畫切線與有效前沿的切點；理論上「人人都該持有」的唯一風險投組，再依風險偏好混入現金。",
+      "def_en": "Point on the efficient frontier tangent to the line from the risk-free rate—the unique risky portfolio everyone should hold, mixed with cash to taste.",
+      "sources": [
+        "L04"
+      ],
+      "shiller_quote": "I have just one more slide here. It's named after William Sharpe, who is the inventor, with Lintner, of the Capital Asset Pricing Model. The Sharpe ratio is, for any portfolio, the average return on the portfolio minus the risk-free rate, divided by the standard deviation of the portfolio. And if you take the CAPM model, the Sharpe ratio is constant along the tangency line.",
+      "quote_source": "L04"
+    },
+    {
+      "term_en": "Mutual Fund Theorem",
+      "term_zh": "共同基金定理",
+      "category": "risk",
+      "def_zh": "Tobin 證明：在有無風險資產時，所有投資人最佳風險投組相同（即切線投組），差別只在槓桿。",
+      "def_en": "Tobin's result: with a risk-free asset, all investors hold the same risky portfolio (the tangency one); they differ only in leverage.",
+      "sources": [
+        "L04"
+      ],
+      "shiller_quote": "I don't know if it was clear in Markowitz's paper, but it became clear soon after. There really is, in a sense, an optimal portfolio. It's the Tangency Portfolio. Because everyone wants to invest on this line, and any point on this line is a mixture of the riskless asset and the Tangency Portfolio. And so, everyone wants to invest in the same portfolio. So, there is an optimal portfolio, in a sense. It's in a sense that everybody wants to do the same risky investments.",
+      "quote_source": "L04"
+    },
+    {
+      "term_en": "Equity Premium Puzzle",
+      "term_zh": "股權溢價謎題",
+      "category": "risk",
+      "def_zh": "歷史上股票報酬遠高於債券，幅度大到無法用合理風險趨避偏好解釋。Mehra & Prescott (1985) 提出。",
+      "def_en": "The historical excess return of stocks over bonds is too large to fit reasonable risk-aversion preferences—the puzzle posed by Mehra & Prescott (1985).",
+      "sources": [
+        "L04"
+      ],
+      "shiller_quote": "It's not just a United States phenomenon. The London Business School professors Dimson, Marsh, and Staunton wrote a book called The Triumph of the Optimists. That is, optimists about the stock market. And they looked at the equity premium in many different countries around the world. And they found that all of the countries, and this is looking over much of the twentieth century, all of the countries had an equity premium, that the stocks did better than the bonds of that country.",
+      "quote_source": "L04"
+    },
+    {
+      "term_en": "Head and Shoulders Pattern",
+      "term_zh": "頭肩頂型態",
+      "category": "risk",
+      "def_zh": "技術分析中三峰反轉型態。Shiller 用它示範技術分析的薄弱——人眼會在隨機漫步中看出根本不存在的型態。",
+      "def_en": "Three-peak reversal pattern in technical analysis. Shiller uses it to illustrate how the eye 'sees' patterns in random walks that aren't there.",
+      "sources": [
+        "L07"
+      ],
+      "shiller_quote": "But it got into finance later. And in the Efficient Markets revolution, they started to realize that stock prices look more like more like a Random Walk than a Head and Shoulders. You look at these Head and Shoulders patterns and they're hard to find. So, what is a Random Walk? Let me just define it. A Random Walk is where you have a series in which the level equals the previous level plus unforecastable noise: \\(x_t = x_{t-1} + \\varepsilon_t\\), where \\(\\varepsilon_t\\) is noise—mean zero and some standard deviation.",
+      "quote_source": "L07"
+    },
+    {
+      "term_en": "Prospect Theory",
+      "term_zh": "展望理論",
+      "category": "behavior",
+      "def_zh": "Kahneman & Tversky 提出：人以「參考點」評估得失，損失痛感大於同額獲利的快感（損失趨避），且對機率非線性加權。",
+      "def_en": "Kahneman & Tversky: people evaluate gains/losses relative to a reference point, weight losses more than equivalent gains, and weight probabilities nonlinearly.",
+      "sources": [
+        "L11"
+      ],
+      "shiller_quote": "Now I wanted to move--that was my introduction. I wanted to move now to discussing some particular aspects of Behavioral Finance, or more broadly Behavioral Economics. And about human failings that are exploitable by somebody and are somewhat exploited, but remain. I wanted to start out with what's probably the most famous element of Behavioral Economics. It's Prospect Theory and it was invented by two psychologists, Daniel Kahneman and Amos Tversky, in the late 20th century.",
+      "quote_source": "L11"
+    },
+    {
+      "term_en": "Regression Analysis",
+      "term_zh": "迴歸分析",
+      "category": "risk",
+      "def_zh": "以最小平方法擬合資料的統計工具；用於估計 beta、檢驗市場效率、分解系統性與特異風險。",
+      "def_en": "Least-squares fitting of data; used to estimate beta, test market efficiency, and decompose systematic vs. idiosyncratic risk.",
+      "sources": [
+        "L02",
+        "L07"
+      ],
+      "shiller_quote": "I'm going to talk today about probability, and variance, and covariance, and regression, and idiosyncratic risk, and systematic risk. Things like that which are core concepts in finance. But I'm also going to, in the context of the crisis, emphasize in this lecture, breakdowns of some of the most popular assumptions that underlie financial theory. And I'm thinking particularly of two breakdowns. And we'll emphasize these as other interpretations of the crisis. One is the failure of independence. I'll come back and redefine that.",
+      "quote_source": "L02"
+    },
+    {
+      "term_en": "Regret Theory",
+      "term_zh": "後悔理論",
+      "category": "behavior",
+      "def_zh": "人預期事後會後悔某些決策，因此事前傾向迴避——能解釋為何投資人遲遲不認賠賣出。",
+      "def_en": "People anticipate regret over decisions and avoid choices that might lead to it—helps explain reluctance to sell losers.",
+      "sources": [
+        "L11"
+      ],
+      "shiller_quote": "It's a huge field, Behavioral Finance. Let me mention a few other things. Regret Theory is a theory that--it's kind of related to Kahneman and Tversky. It says that people fear the pain of regret. There's an old expression: “I was kicking myself,” because I made some bad decision. Well, that's a painful experience when you did something wrong. This is represented somewhat in the kink in the Prospect Theory value function.",
+      "quote_source": "L11"
+    },
+    {
+      "term_en": "Anchoring",
+      "term_zh": "錨定",
+      "category": "behavior",
+      "def_zh": "任意給定的起始數字會不成比例地影響後續判斷；投資人常被買進價、整數價位、近期高低點錨定。",
+      "def_en": "An arbitrary starting value disproportionately influences subsequent judgments; investors anchor on entry prices, round numbers, recent highs/lows.",
+      "sources": [
+        "L11"
+      ],
+      "shiller_quote": "What else should I talk about? Anchoring. Anchoring refers to a tendency to anchor your opinions on something that captures your attention. The famous anchoring experiment by, it was again, Kahneman and Tversky--I could almost do this experiment here in class with you if I had a wheel of fortune. A wheel of fortune is like on a game show. You spin the wheel and it comes up with a number between zero and a hundred in this particular wheel of fortune.",
+      "quote_source": "L11"
+    },
+    {
+      "term_en": "Overconfidence",
+      "term_zh": "過度自信",
+      "category": "behavior",
+      "def_zh": "人會高估自己的知識、控制力與預測精度。Shiller 稱之為行為財務最穩健的實證發現。",
+      "def_en": "People overestimate their knowledge, control, and forecasting precision. Shiller calls it perhaps the most robust finding in behavioral finance.",
+      "sources": [
+        "L11"
+      ],
+      "shiller_quote": "But anyway, this thing affects peoples' thinking, too. I think that we tend to think that the head of state who’s running, the head of our central bank is a genius. And this really clouds our thinking. It's like our ego extends to the other people that we associate with ourselves. Now, the head of a central bank in another country we have no respect for. It's only in our own country, because it's part of our ego involvement that produces this overconfidence.",
+      "quote_source": "L11"
+    },
+    {
+      "term_en": "Cognitive Dissonance",
+      "term_zh": "認知失調",
+      "category": "behavior",
+      "def_zh": "持有相互矛盾的信念造成心理不適，人會藉由忽略不利資訊、扭曲記憶來消解——導致投資人在套牢時否認事實。",
+      "def_en": "The discomfort of holding contradictory beliefs leads people to ignore disconfirming information—why investors deny their thesis is broken.",
+      "sources": [
+        "L11"
+      ],
+      "shiller_quote": "Why did they do that? Well, Mullainathan thought, it's because the advisors know there's cognitive dissonance, and they're afraid to drive away a new client. Maybe they'll gradually do it over a while, but you just don't challenge their deep beliefs, whatever they say is true. And so, they're kind of yes-men. Not all of them, and maybe they'll come around.",
+      "quote_source": "L11"
+    },
+    {
+      "term_en": "Representativeness Heuristic",
+      "term_zh": "代表性捷思",
+      "category": "behavior",
+      "def_zh": "以「像不像典型案例」評估機率，忽略基率。Kahneman & Tversky 的關鍵發現；投資人以為「過去三年績效好的基金」未來也好。",
+      "def_en": "Judging probability by resemblance to a stereotype, ignoring base rates; investors mistake recent-winners for long-run winners.",
+      "sources": [
+        "L11"
+      ],
+      "shiller_quote": "There's a representativeness heuristic. This is also Kahneman and Tversky. And that is, that people overemphasize certain patterns that they think are representative of what they've seen before. So for example, certain patterns in the stock market that may be very rare and unusual. If they remember it, if it somehow attracted their attention, they begin to look for that pattern again and again. And they see it too often.",
+      "quote_source": "L11"
+    },
+    {
+      "term_en": "Social Contagion",
+      "term_zh": "社會傳染",
+      "category": "behavior",
+      "def_zh": "信念、情緒、行為像病毒一樣在社群中擴散；Shiller 認為這是泡沫形成的主要機制。",
+      "def_en": "Beliefs, emotions, and behaviors spread through populations like an epidemic; Shiller sees this as the core mechanism behind bubbles.",
+      "sources": [
+        "L11"
+      ],
+      "shiller_quote": "I want to then just conclude with social contagion, because it's so important. This is my last--and this is really social psychology. I'm running out of room here. That's social contagion.",
+      "quote_source": "L11"
+    },
+    {
+      "term_en": "Speculative Bubble",
+      "term_zh": "投機性泡沫",
+      "category": "behavior",
+      "def_zh": "Shiller 的工作定義：價格被群眾故事與情緒推升至基本面無法支撐的水準，最終崩跌；可用情緒指標前瞻識別，不只是事後標籤。",
+      "def_en": "Shiller's working definition: prices pushed by narratives and emotion to levels fundamentals can't sustain, ending in collapse—identifiable in real time via sentiment indicators.",
+      "sources": [
+        "L01",
+        "L02",
+        "L10"
+      ],
+      "shiller_quote": "And so, this is the thing I want to think about in this course. I don't think finance necessarily does this. It may be a bubble, that there is currently a bubble in financial careers and that you are going to be disappointed because 20 or 30 years from now if you go into a finance-related field, you'll find that it's not as lucrative as you hoped. That kind of happens, right? When a field becomes known for having a lot of successful people, then more young people go into it and they swamp the field.",
+      "quote_source": "L01"
+    },
+    {
+      "term_en": "Praise-Worthiness",
+      "term_zh": "值得被讚許",
+      "category": "behavior",
+      "def_zh": "Adam Smith 提出、Shiller 反覆援引：人深層渴望的不只是被讚許，而是「真的值得被讚許」。Shiller 用以解釋金融從業者的道德動機。",
+      "def_en": "From Adam Smith and a recurring Shiller theme: people want not just to be praised but to be worthy of praise—he uses this to explain moral motivation in finance.",
+      "sources": [
+        "L11"
+      ],
+      "shiller_quote": "You may think I'm being too idealistic, when I say this, but I think that the finance profession--this is what I was trying to say in that chapter--that the finance profession, like other mature professions, is really dominated although there's a lot of funny things that happen, it is really dominated by people who have reached this desire for praise-worthiness. And so you're not going to exploit people extravagantly. Just because, why would I do that? This is not a good thing. I wouldn't feel good about it. Well, some people will.",
+      "quote_source": "L11"
+    },
+    {
+      "term_en": "Moral Judgment in Finance",
+      "term_zh": "金融的道德判斷",
+      "category": "behavior",
+      "def_zh": "Shiller 反覆強調：人渴望「值得被讚許」（worthy of praise），不只是被讚許；金融的道德性是這份渴望的延伸。",
+      "def_en": "Shiller's recurring theme: people want to be worthy of praise, not just praised; financial ethics flows from that desire.",
+      "sources": [
+        "L11",
+        "L23"
+      ],
+      "shiller_quote": "But what do we conclude from this? I think that my conclusion is, that we are evolving toward better and better financial institutions. There is a lot of manipulation and exploitation, but we, as a society, have outlawed a lot of it. For example, I mentioned doing a stock market manipulation trick to create a Head and Shoulders pattern. That is an offense. It will get you in jail for doing that. And we prosecute that now. So, you can't do that. I'm going to talk more about this in the next lecture about regulation.",
+      "quote_source": "L11"
+    },
+    {
+      "term_en": "Manipulation & Deception",
+      "term_zh": "操縱與欺騙",
+      "category": "behavior",
+      "def_zh": "自由市場給予某些參與者操縱他人偏誤、誘人下單的機會；Shiller & Akerlof《Phishing for Phools》全書主題。",
+      "def_en": "Free markets create opportunities to exploit others' biases—the central theme of Shiller & Akerlof's Phishing for Phools.",
+      "sources": [
+        "L11",
+        "L12"
+      ],
+      "shiller_quote": "But is that bad? Well, it's bad in a way. It's manipulative, isn't it? I mean I'm annoyed by it. Maybe you are, too. But if you were in business, would you do that too? You might feel that you have to and it's a harmless sort of manipulation. It's not hurting anyone really. They're maybe buying a little bit more than they want. See, that's the kind of thing that comes in.",
+      "quote_source": "L11"
+    },
+    {
+      "term_en": "Bank Run",
+      "term_zh": "銀行擠兌",
+      "category": "markets",
+      "def_zh": "自我實現的存戶恐慌——若大家認為銀行付不出錢，搶先提領就是理性的，銀行因此倒閉。存款保險就是為了打斷這個循環。",
+      "def_en": "Self-fulfilling depositor panic: if everyone believes the bank can't pay, withdrawing first is rational—and the bank collapses.",
+      "sources": [
+        "L13"
+      ],
+      "shiller_quote": "Other countries handle it differently. I was going to mention, in Germany, IKB Deutsche Industriebank, OK, in 2007. This is a German bank that German depositors put their money in. And it had invested a lot in subprime securities. And it was in trouble, and there were starting to be worries of a run on them. The German government didn't even wait for a bank run. They just bailed them out, and it cost them EUR 1.5 billion. But again, the governments know that they want to maintain confidence, and so they do it.",
+      "quote_source": "L13"
+    },
+    {
+      "term_en": "Adverse Selection",
+      "term_zh": "逆選擇",
+      "category": "markets",
+      "def_zh": "資訊不對稱使「壞的標的」更可能成交——保險中體弱的人更想買壽險、銀行借款人裡風險高的更積極申貸。",
+      "def_en": "Information asymmetry that draws the worst types into a market—the sickest buy life insurance, the riskiest borrowers apply hardest.",
+      "sources": [
+        "L13",
+        "L05"
+      ],
+      "shiller_quote": "So, what banks do is, they help solve this problem by constant monitoring, and they make commercial loans that are at effectively long-term, but in practice, officially short-term. They keep renewing them, and they can cut you off, when they think you're doing something that reflects moral hazard. So, the constant monitoring that banks provide solves the moral hazard problem, just as their information collection solves the adverse selection problem.",
+      "quote_source": "L13"
+    },
+    {
+      "term_en": "Moral Hazard",
+      "term_zh": "道德風險",
+      "category": "markets",
+      "def_zh": "有保險／救援機制後，當事人會改變行為（變得不謹慎），因為損失由他人承擔。",
+      "def_en": "Once insured or bailout-protected, an actor takes more risk because someone else bears the downside.",
+      "sources": [
+        "L13",
+        "L05"
+      ],
+      "shiller_quote": "So, what banks do is, they help solve this problem by constant monitoring, and they make commercial loans that are at effectively long-term, but in practice, officially short-term. They keep renewing them, and they can cut you off, when they think you're doing something that reflects moral hazard. So, the constant monitoring that banks provide solves the moral hazard problem, just as their information collection solves the adverse selection problem.",
+      "quote_source": "L13"
+    },
+    {
+      "term_en": "Liquidity",
+      "term_zh": "流動性",
+      "category": "markets",
+      "def_zh": "資產轉換為現金的速度與成本；銀行的核心職能是「把長期不流動的貸款，變成短期可隨時提領的存款」。",
+      "def_en": "Speed and cost of converting an asset to cash; banks' core function is transforming illiquid loans into liquid deposits.",
+      "sources": [
+        "L13"
+      ],
+      "shiller_quote": "And shadow banking, which I'll come back to later, shadow banking is a consequence of—it's the kind of thing that happens. Regulators can't keep up with all these innovations. But I don't think the answer is to shut down innovation. We just have to allocate resources, and that's a trend that we are doing. And I think that we will benefit, if we have effective and sound regulation that takes into account the subtleties of moral hazard, adverse selection, the importance of liquidity.",
+      "quote_source": "L13"
+    },
+    {
+      "term_en": "Fractional Reserve Banking",
+      "term_zh": "部分準備金銀行制",
+      "category": "markets",
+      "def_zh": "銀行只保留存款的小部分作為準備金，其餘放貸——使貨幣供給能透過信貸創造放大。",
+      "def_en": "Banks hold only a fraction of deposits as reserves and lend out the rest, multiplying money supply through credit creation.",
+      "sources": [
+        "L13",
+        "L18"
+      ],
+      "shiller_quote": "But today we're talking about banks. And I wanted to—the outline my lecture: I'm going to start with the origins of banks, thousands of years ago. Then, I'll talk about the theory of banks, fractional reserves and deposit insurance. Then, bank regulation, particularly in light of the world financial crisis, which has changed the nature of regulation. Changes that will be with us for decades to come. I talk about shadow banking, which is the new banking sector that emerged and escaped regulation until the crisis.",
+      "quote_source": "L13"
+    },
+    {
+      "term_en": "Deposit Insurance",
+      "term_zh": "存款保險",
+      "category": "markets",
+      "def_zh": "政府保證存款本金（美國為 FDIC，台灣為中央存保），消除擠兌動機；1933 年 Glass-Steagall 一併創立。",
+      "def_en": "Government guarantee of bank deposits (FDIC in the U.S.) that removes the incentive to run; created alongside Glass-Steagall in 1933.",
+      "sources": [
+        "L13"
+      ],
+      "shiller_quote": "We also created later, another deposit insurance, called the Federal Savings and Loan Insurance Corporation, abbreviated FSLIC, that was doing the savings and loan associations, which were a type of savings bank. And that did fail. And so, we had a huge crisis in the United States, called the saving and loan crisis, in the 1980's.",
+      "quote_source": "L13"
+    },
+    {
+      "term_en": "Basel Accords",
+      "term_zh": "Basel 協定",
+      "category": "markets",
+      "def_zh": "國際銀行監管框架（I/II/III），以風險加權資產為基底訂定資本與流動性要求。",
+      "def_en": "International framework for bank regulation (I/II/III) setting capital and liquidity requirements based on risk-weighted assets.",
+      "sources": [
+        "L13",
+        "L18"
+      ],
+      "shiller_quote": "You say, hey, we're good. We've got an extra million dollars, OK? So then, you bring that up at the board meeting and say, we're satisfying Basel III, isn't that great? But someone at the board might say, but wait a minute, that means we have $1 million too much. It's just sitting there, we're not even using it. Let's lend it out. I'm sorry, let's use it up, not lend it out.",
+      "quote_source": "L13"
+    },
+    {
+      "term_en": "Capital Requirement",
+      "term_zh": "資本要求",
+      "category": "markets",
+      "def_zh": "銀行必須以股東權益持有的最低資本比率，作為承擔損失的緩衝；Basel III 上看 8-10%+。",
+      "def_en": "Minimum equity capital a bank must hold as a buffer against losses; Basel III pushes this to 8-10% plus buffers.",
+      "sources": [
+        "L13",
+        "L18"
+      ],
+      "shiller_quote": "So, capital requirements are different from reserve requirements. I just defined--reserve requirements were a fraction of the transaction accounts. They were defined by a liability of the bank. A transaction account is like a checking account. It's money that the bank owes to other people, and we have this requirement, that 10% of that is the reserve requirement.",
+      "quote_source": "L18"
+    },
+    {
+      "term_en": "Reserve Requirement",
+      "term_zh": "法定準備金",
+      "category": "markets",
+      "def_zh": "銀行必須在央行帳上保有的存款比率；過去是貨幣政策工具，2020 後美國已調為 0%。",
+      "def_en": "Fraction of deposits banks must hold at the central bank; once a monetary policy tool, set to 0% in the U.S. since 2020.",
+      "sources": [
+        "L18"
+      ],
+      "shiller_quote": "So, capital requirements are different from reserve requirements. I just defined--reserve requirements were a fraction of the transaction accounts. They were defined by a liability of the bank. A transaction account is like a checking account. It's money that the bank owes to other people, and we have this requirement, that 10% of that is the reserve requirement.",
+      "quote_source": "L18"
+    },
+    {
+      "term_en": "Federal Reserve System",
+      "term_zh": "美國聯準會體系",
+      "category": "markets",
+      "def_zh": "美國央行，1913 年成立。雙重使命：物價穩定與最大就業。由理事會、12 家地區聯儲銀行、FOMC 組成。",
+      "def_en": "The U.S. central bank, established 1913. Dual mandate: price stability and maximum employment. Comprises the Board, 12 regional banks, and the FOMC.",
+      "sources": [
+        "L18"
+      ],
+      "shiller_quote": "And so, people wanted to fix somehow the system, and so, that led to our current system, which has been around almost 100 years. And I call it a copy of the Bank of England, but it might not be described that way by everyone. It's called the Federal Reserve System, all right? And that was created by an act of Congress in 1913, and it opened its doors in 1914.",
+      "quote_source": "L18"
+    },
+    {
+      "term_en": "Federal Funds Rate",
+      "term_zh": "聯邦資金利率",
+      "category": "markets",
+      "def_zh": "美國銀行間互相借隔夜準備金的利率，由 FOMC 設定目標區間；最重要的政策利率。",
+      "def_en": "The overnight rate at which U.S. banks lend reserves to each other; the FOMC sets the target range. The key policy rate.",
+      "sources": [
+        "L18"
+      ],
+      "shiller_quote": "The way the Fed controls the federal funds rate, and has been doing for years, is by buying and selling Treasury bills on the open market, by affecting the supply and demand for short-term credit. And that indirectly--they don't actually deal in the federal funds market, they deal in the Treasury bill market, but since those markets are interlinked, they indirectly target the federal funds rate.",
+      "quote_source": "L18"
+    },
+    {
+      "term_en": "Discount Window",
+      "term_zh": "貼現窗口",
+      "category": "markets",
+      "def_zh": "銀行直接向央行借款的工具（利率為貼現率，通常高於聯邦資金利率），作為最後貸款人功能。",
+      "def_en": "Facility for banks to borrow directly from the Fed at the discount rate—central bank's lender-of-last-resort function.",
+      "sources": [
+        "L18"
+      ],
+      "shiller_quote": "And the system also operated something called the ''discount window.'' Why do they call it a window? You people never go into a bank anymore, right? Or do you go into banks? Remember, they used to have a teller, and the teller would be sitting at a table, and there was a little something. He's talking to you through a window. I guess, they wanted to keep you separate from the money. So, there was a window, where a teller would talk to you.",
+      "quote_source": "L18"
+    },
+    {
+      "term_en": "Lender of Last Resort",
+      "term_zh": "最後貸款人",
+      "category": "markets",
+      "def_zh": "Bagehot 原則：危機中央行應對流動性問題機構大量放款（但取良好抵押與懲罰性利率）以制止擠兌。",
+      "def_en": "Bagehot's principle: in a crisis the central bank should lend freely against good collateral at a penalty rate to stop panics.",
+      "sources": [
+        "L18",
+        "L13"
+      ],
+      "shiller_quote": "This story repeated a million times. Banks were trying to raise capital and they were trying to sell assets either by issuing--they were trying to raise capital either by issuing shares or by selling assets. And everyone doing it at the same time created a crunch, and the whole system would have collapsed, if it weren't for the central banks. The central banks of the world responded quickly by loans to companies, to banks and other companies. So, the lender of last resort saved the whole system from collapsing.",
+      "quote_source": "L18"
+    },
+    {
+      "term_en": "Bank of England",
+      "term_zh": "英格蘭銀行",
+      "category": "markets",
+      "def_zh": "1694 年成立的世界第一家現代中央銀行；Shiller 視之為中央銀行制度的起源。",
+      "def_en": "The world's first modern central bank (1694); Shiller treats it as the origin of central banking.",
+      "sources": [
+        "L18"
+      ],
+      "shiller_quote": "And so, people wanted to fix somehow the system, and so, that led to our current system, which has been around almost 100 years. And I call it a copy of the Bank of England, but it might not be described that way by everyone. It's called the Federal Reserve System, all right? And that was created by an act of Congress in 1913, and it opened its doors in 1914.",
+      "quote_source": "L18"
+    },
+    {
+      "term_en": "National Banking Era",
+      "term_zh": "國家銀行時代",
+      "category": "markets",
+      "def_zh": "美國 1863-1913 年的銀行體系：聯邦核可「國家銀行」發行國幣；終結於 Federal Reserve 創立。",
+      "def_en": "The U.S. banking regime from 1863-1913: federally chartered 'national banks' issued national currency—ended by the founding of the Federal Reserve.",
+      "sources": [
+        "L18"
+      ],
+      "shiller_quote": "There was a terrible banking crisis in 1893, for example, when everybody thought the banks were going to fail. Somehow they didn't worry about the currency. The National Bank Notes were thought to be perfectly safe, but they thought the banks weren't safe, and so there was a crisis, and it led to the depression of the 1890s. Then, there was another one in 1907 that was really bad.",
+      "quote_source": "L18"
+    },
+    {
+      "term_en": "Central Bank Independence",
+      "term_zh": "央行獨立性",
+      "category": "markets",
+      "def_zh": "央行貨幣決策不受短期政治壓力干預的制度設計；1970 年代後成為全球主流，降低通膨偏誤。",
+      "def_en": "Institutional insulation of monetary policy from short-term political pressure; became the global norm post-1970s, reducing inflation bias.",
+      "sources": [
+        "L18"
+      ],
+      "shiller_quote": "Some people think, that's why the U.S. has had such a stable price level, because of our independent central bank. So many countries have fallen into inflation that has undermined the currency, but the U.S. hasn't. I think, that's why there has been a move to copy the independent central bank.",
+      "quote_source": "L18"
+    },
+    {
+      "term_en": "Investment Banking",
+      "term_zh": "投資銀行業務",
+      "category": "markets",
+      "def_zh": "承銷新發行證券、提供併購顧問、自營與機構業務。歷史上與商業銀行分離（Glass-Steagall），1999 年廢除後合流。",
+      "def_en": "Underwriting new securities, advising on M&A, proprietary and institutional trading. Historically separated from commercial banking (Glass-Steagall), reunited after 1999.",
+      "sources": [
+        "L19"
+      ],
+      "shiller_quote": "Let me tell you something about shadow banking, which is relevant here. The term shadow banking, I think of that as coming from a term that I first heard from people at Pimco just within the last five years or so. Or maybe it goes back further than that. It refers to a new kind of semi-banking system. What are shadow banks? These are companies that are acting like commercial banks, but they're technically not. So, they're not regulated as commercial banks. And in many cases, the investment banks were shadow banks.",
+      "quote_source": "L19"
+    },
+    {
+      "term_en": "Shadow Banking",
+      "term_zh": "影子銀行",
+      "category": "markets",
+      "def_zh": "行使銀行職能（期限轉換、信用創造）但不受傳統銀行監管的機構與市場：貨幣市場基金、ABCP、回購、MBS 等。",
+      "def_en": "Institutions and markets performing bank-like functions (maturity transformation, credit creation) outside bank regulation: MMFs, ABCP, repo, MBS.",
+      "sources": [
+        "L19"
+      ],
+      "shiller_quote": "Let me tell you something about shadow banking, which is relevant here. The term shadow banking, I think of that as coming from a term that I first heard from people at Pimco just within the last five years or so. Or maybe it goes back further than that. It refers to a new kind of semi-banking system. What are shadow banks? These are companies that are acting like commercial banks, but they're technically not. So, they're not regulated as commercial banks. And in many cases, the investment banks were shadow banks.",
+      "quote_source": "L19"
+    },
+    {
+      "term_en": "Repurchase Agreement (Repo)",
+      "term_zh": "回購協議",
+      "category": "markets",
+      "def_zh": "以證券為抵押的短期借款（多半隔夜）；買回協議。Bear Stearns、Lehman 倒閉前都極度依賴 repo 融資。",
+      "def_en": "Short-term collateralized borrowing (often overnight)—seller agrees to repurchase. Bear Stearns and Lehman both leaned heavily on repo before collapse.",
+      "sources": [
+        "L19",
+        "L13"
+      ],
+      "shiller_quote": "So, here's what happened, according to Gorton and others who agree with him. Investment banks, like Lehman Brothers, were not regulated like commercial banks, and as long as they didn't accept deposits, they didn't have to be regulated as commercial banks. So, they could do what they want, and they were considered underwriters, so fine, do whatever you want. Well, not quite, but they weren't heavily regulated, the way commercial banks were.",
+      "quote_source": "L19"
+    },
+    {
+      "term_en": "Broker vs. Dealer",
+      "term_zh": "經紀商與自營商",
+      "category": "markets",
+      "def_zh": "Broker 為客戶代下單收佣金、不持部位；Dealer 以自己帳上部位買賣賺價差。同一公司常兼任兩者。",
+      "def_en": "Broker executes for clients on commission, no position; Dealer trades from its own inventory on the spread. Same firm often does both.",
+      "sources": [
+        "L21"
+      ],
+      "shiller_quote": "It's the same thing as an antique dealer, OK? An antique dealer has an idea—maybe it's not posted—of how much he or she will pay for a chest of drawers from a Yale student at the end of the semester, and how much he will charge to sell that. And the difference between the ask and the bid is called the spread or the bid-ask spread.",
+      "quote_source": "L21"
+    },
+    {
+      "term_en": "Market Order / Limit Order / Stop Order",
+      "term_zh": "市價單／限價單／停損單",
+      "category": "markets",
+      "def_zh": "市價單立即以最佳價成交；限價單只在達到指定價或更佳時成交；停損單在價格突破指定點時轉為市價單。",
+      "def_en": "Market = execute now at best price; Limit = execute only at a specified price or better; Stop = becomes a market order when price hits a trigger.",
+      "sources": [
+        "L21"
+      ],
+      "shiller_quote": "Now, I wanted to talk quickly about limit orders—that's the most important kind. A lot of advisors say never place a market order. Why should you ever do a market order? There's always some price that you'd be unhappy with. You might as well say that. And so some exchanges don't even allow market orders.",
+      "quote_source": "L21"
+    },
+    {
+      "term_en": "High-Frequency Trading",
+      "term_zh": "高頻交易",
+      "category": "markets",
+      "def_zh": "毫秒級演算法交易，獲利來自做市價差、套利與微結構。Shiller 對其穩定性貢獻持懷疑。",
+      "def_en": "Algorithmic trading on millisecond scales, profiting from market-making spreads, arbitrage, and microstructure. Shiller is skeptical of its stabilizing claims.",
+      "sources": [
+        "L21"
+      ],
+      "shiller_quote": "Now the interesting thing about millisecond trading is that it's favoring the electronic exchanges. As time goes on people are getting more and more sophisticated about high frequency trading, and so they want to trade on exchanges that are fully electronic so they can play all of these games. And that means that the floor exchanges are dying out over most of the world.",
+      "quote_source": "L21"
+    },
+    {
+      "term_en": "Clearinghouse",
+      "term_zh": "清算機構",
+      "category": "markets",
+      "def_zh": "作為買方對賣方、賣方對買方的中央對手方，每日 mark-to-market 與催繳保證金，消除雙邊對手風險。",
+      "def_en": "Central counterparty that interposes itself between buyer and seller, marks positions to market daily and calls margin—eliminating bilateral counterparty risk.",
+      "sources": [
+        "L21",
+        "L15"
+      ],
+      "shiller_quote": "Well, today I wanted to talk about exchanges and clearinghouses, primarily stock exchanges. So, these are places where shares in corporations are traded. And I think it's good to devote a whole session to them, because exchange is central to economics.",
+      "quote_source": "L21"
+    },
+    {
+      "term_en": "Stock Exchange",
+      "term_zh": "證券交易所",
+      "category": "markets",
+      "def_zh": "集中撮合證券買賣的場所，制定上市與交易規則。從 1602 年阿姆斯特丹開始；今多為公司化、電子化。",
+      "def_en": "Centralized venue for matching securities trades, setting listing and trading rules. From 1602 Amsterdam; now mostly corporatized and electronic.",
+      "sources": [
+        "L21"
+      ],
+      "shiller_quote": "Now the interesting thing about millisecond trading is that it's favoring the electronic exchanges. As time goes on people are getting more and more sophisticated about high frequency trading, and so they want to trade on exchanges that are fully electronic so they can play all of these games. And that means that the floor exchanges are dying out over most of the world.",
+      "quote_source": "L21"
+    },
+    {
+      "term_en": "Limited Liability Corporation",
+      "term_zh": "有限責任公司",
+      "category": "instruments",
+      "def_zh": "股東損失上限為其投資額；保護個人財產不被公司債權人追索。Shiller 強調這是現代金融體系的關鍵發明。",
+      "def_en": "Shareholders' losses are capped at their investment; personal assets are shielded from corporate creditors. Shiller calls it a foundational financial invention.",
+      "sources": [
+        "L03",
+        "L09"
+      ],
+      "shiller_quote": "But I wanted to really focus on a particular nuance that developed. It's limited liability. A limited liability corporation is a corporation that guarantees that you as a shareholder will not be liable for the debts of the company. In England, they sometimes will put limited. The name of the company, after it we'll say limited. But in the U.S., we just say incorporated, so that tells you that it's limited liability.",
+      "quote_source": "L03"
+    },
+    {
+      "term_en": "Common Stock",
+      "term_zh": "普通股",
+      "category": "instruments",
+      "def_zh": "代表公司剩餘求償權的權益證券：在所有債權人與優先股受償後，剩餘現金流／清算價值歸普通股股東。",
+      "def_en": "Residual-claim equity in a corporation: after all creditors and preferred stockholders, what's left belongs to common stockholders.",
+      "sources": [
+        "L09"
+      ],
+      "shiller_quote": "I wanted to mention, there's another kind of share called preferred. I've been talking here about common stock. Common stock is the real ownership in the company. In other words, you take all the profits. They're the ultimate owners of the company. Nobody is above them in the hierarchy. But there's something close that's considered close but different. It's called preferred stock. And preferred stock has a set dividend. The contract says that the dividend is so many dollars per year, and the board doesn't have to pay it.",
+      "quote_source": "L09"
+    },
+    {
+      "term_en": "Preferred Stock",
+      "term_zh": "特別股",
+      "category": "instruments",
+      "def_zh": "介於債券與普通股之間：固定股利、清算優先於普通股，但通常無投票權，且不能像債券到期。",
+      "def_en": "Between bonds and common stock: fixed dividend, priority over common in liquidation, but typically no voting and no maturity.",
+      "sources": [
+        "L09"
+      ],
+      "shiller_quote": "But now that's only half of the balance sheet. I have to go to the other half. And these are the liabilities. This is what the company owes. So, it has short-term debt. Let's talk about 2010. 1.6 billion. Long-term debt of 7.8 billion. Deferred taxes. That means taxes that they know they have to pay that they haven't paid. They didn't have any in 2010. And preferred stock. They did have a small amount of preferred stock outstanding, which counts as a liability. All right. And then, other liabilities. I put them all into one category.",
+      "quote_source": "L09"
+    },
+    {
+      "term_en": "Dividend",
+      "term_zh": "股利",
+      "category": "instruments",
+      "def_zh": "公司從稅後盈餘配發給股東的現金或股票；Shiller 在 L7 強調股價長期應由折現股利現值決定，但實證上波動遠超此值。",
+      "def_en": "Cash or stock paid out from after-tax profit to shareholders; Shiller showed in L7 that stock prices fluctuate far more than discounted future dividends justify.",
+      "sources": [
+        "L09"
+      ],
+      "shiller_quote": "It's called the ex-dividend price, and they show it in newspapers. They used to show it in newspapers. Now, it would be on the website. They put a little x by the stock price on the day after a dividend is paid to tell you that the price decline that you just saw is not anything to worry about. It doesn't mean there's bad news about the company. It just means they just paid a dividend. So, the price routinely goes down by the amount of the dividend. It doesn't mean anything.",
+      "quote_source": "L09"
+    },
+    {
+      "term_en": "Stock Buyback",
+      "term_zh": "股票回購",
+      "category": "instruments",
+      "def_zh": "公司在公開市場買回自家股票，等同於向股東配發稅務上更有利的現金，並推升 EPS。",
+      "def_en": "Company repurchases its own shares in the market—equivalent to a tax-efficient cash distribution that boosts EPS.",
+      "sources": [
+        "L09"
+      ],
+      "shiller_quote": "The opposite of dilution occurs when the company buys back its shares. That's repurchase of shares by a company. A company can always do that. They can decide to go either way. If they need more money, they can issue shares, and if they want to get money out, they can buy back shares. And these things are very common. There are statistics, like what Fama and French showed for equity issuance, which show that repurchases are very common. And it happens all the time in the market. That's what makes the stock market so active.",
+      "quote_source": "L09"
+    },
+    {
+      "term_en": "Subprime Mortgage",
+      "term_zh": "次級房貸",
+      "category": "instruments",
+      "def_zh": "放款給信用記錄不佳借款人的房貸，違約率高於主流市場。2003-07 過度發放是 2008 危機的核心。",
+      "def_en": "Mortgages to borrowers with weak credit histories; the over-extension of subprime in 2003-07 was at the heart of the 2008 crisis.",
+      "sources": [
+        "L10",
+        "L13"
+      ],
+      "shiller_quote": "So, we see what it's doing. It's pushing people—the Basel requirements, and these are Basel II, or Basel I requirements, we're pushing banks toward investing in subprime loans issued by Fannie Mae as against lending to businesses. And people are starting to wonder about that now. But you have to say, isn't the prosperity of the country determined by the businesses?",
+      "quote_source": "L13"
+    },
+    {
+      "term_en": "IPO (Initial Public Offering)",
+      "term_zh": "首次公開發行",
+      "category": "instruments",
+      "def_zh": "私人公司首次向公眾出售股票並上市；投資銀行承銷並設定發行價。",
+      "def_en": "A private company's first public sale of stock, underwritten by investment banks who set the offer price.",
+      "sources": [
+        "L09",
+        "L19"
+      ],
+      "shiller_quote": "If it's the first time you've issued shares, it's called an IPO, or initial public offering. So, you're a private company, it's just you and a few friends own the company, but now you want to go public, you would generally go to an investment bank, and talk to them about how to do it. And the investment bank would solve that problem for you by doing an underwriting. So, traditionally there's two kinds of underwriting.",
+      "quote_source": "L19"
+    },
+    {
+      "term_en": "Present Value",
+      "term_zh": "現值",
+      "category": "instruments",
+      "def_zh": "未來現金流按折現率折算到當下的價值：PV = Σ Cₜ/(1+r)^t。金融估值的最基本工具。",
+      "def_en": "Future cash flows discounted back to today at rate r: PV = Σ Cₜ/(1+r)^t. The most fundamental valuation tool.",
+      "sources": [
+        "L08"
+      ],
+      "shiller_quote": "So, that means that it's really an annuity and a discount bond together, right? And so, the present discounted value for the conventional bond would be the sum of the present discounted value using the annuity formula for x=c plus the present discounted value of the principal, which is given by the--well, it would be this one, where you have r/2, because it's every six months.",
+      "quote_source": "L08"
+    },
+    {
+      "term_en": "Bond",
+      "term_zh": "債券",
+      "category": "instruments",
+      "def_zh": "發行人承諾在期間內支付票息、到期還本的固定收益契約。價格與利率反向變動。",
+      "def_en": "Fixed-income contract: issuer pays periodic coupons and principal at maturity. Prices move inversely to yields.",
+      "sources": [
+        "L08"
+      ],
+      "shiller_quote": "So, that means that it's really an annuity and a discount bond together, right? And so, the present discounted value for the conventional bond would be the sum of the present discounted value using the annuity formula for x=c plus the present discounted value of the principal, which is given by the--well, it would be this one, where you have r/2, because it's every six months.",
+      "quote_source": "L08"
+    },
+    {
+      "term_en": "Coupon Rate",
+      "term_zh": "票面利率",
+      "category": "instruments",
+      "def_zh": "債券每年支付給持有人的利息佔面額的比率；發行時固定，與市場利率無關。",
+      "def_en": "Annual interest paid relative to face value; fixed at issuance, independent of subsequent market rates.",
+      "sources": [
+        "L08"
+      ],
+      "shiller_quote": "The final thing I want to talk about is a corporate bond, or a conventional bond, which is a combination of an annuity and a discount bond. And so, a conventional corporate bond, or a government bond, pays a coupon every six months. So, a conventional bond pays coupon c, an amount c, in dollars, pounds, or whatever currency, every six months. And principal plus c at the end.",
+      "quote_source": "L08"
+    },
+    {
+      "term_en": "Yield to Maturity (YTM)",
+      "term_zh": "到期殖利率",
+      "category": "instruments",
+      "def_zh": "持有至到期可獲得的內含報酬率，使所有未來現金流的現值等於目前價格的折現率。",
+      "def_en": "The internal rate of return on a bond held to maturity—the discount rate equating present value of future cash flows to current price.",
+      "sources": [
+        "L08"
+      ],
+      "shiller_quote": "So, $100/P is the ratio of my final value to my initial investment value if I invest in a discount bond. And I want to convert that to an annual interest rate. So, this is the formula that allows me to do that. So, r is also called yield to maturity. And the maturity is T, the time when the discount bond matures. So, it says if it's paying an interest rate, r, once per year for T years--we can infer an interest rate on it even though the bond itself has a price, not an interest rate.",
+      "quote_source": "L08"
+    },
+    {
+      "term_en": "Term Structure of Interest Rates",
+      "term_zh": "利率期限結構",
+      "category": "instruments",
+      "def_zh": "不同到期日債券殖利率的關係，繪成「殖利率曲線」；正斜率為常態，倒掛常被視為衰退預兆。",
+      "def_en": "The relationship between yields and maturities, drawn as the yield curve; an inverted curve has often preceded recessions.",
+      "sources": [
+        "L08"
+      ],
+      "shiller_quote": "We're talking about the theory of debt and interest rates. So, I want to talk about a number of technical topics first. We're going to start with a model, an Irving Fisher model of interest. And then I'm going to talk about present values, and discount bonds, compound interest, conventional bonds, the term structure of interest rates, and forward rates. These are all technical things. And then, I want to get back and think about what really goes on in debt markets.",
+      "quote_source": "L08"
+    },
+    {
+      "term_en": "Forward Rate",
+      "term_zh": "遠期利率",
+      "category": "instruments",
+      "def_zh": "從現有利率期限結構推算的未來一段期間之隱含利率：例如「兩年後的一年期利率」。",
+      "def_en": "Future-period interest rate implied by today's yield curve, e.g., the one-year rate two years from now.",
+      "sources": [
+        "L08"
+      ],
+      "shiller_quote": "So, you can compute forward rates. I'm just showing it for a one-year ahead forward rate for a one-year loan. But you can compute it for any periods further in the future over any maturity. And this is the formula given, it's on page 227 of Fabozzi. I'm not going to show you the general formula.",
+      "quote_source": "L08"
+    },
+    {
+      "term_en": "Usury",
+      "term_zh": "高利貸",
+      "category": "instruments",
+      "def_zh": "放款收取「過高」利息；古代多宗教均禁止有息借貸，現代多以法定上限取代全面禁止。",
+      "def_en": "Charging 'excessive' interest on loans; nearly all ancient religions banned interest outright—modern law uses caps instead of bans.",
+      "sources": [
+        "L08"
+      ],
+      "shiller_quote": "So, I did another search. I searched on honeymoon loans, OK? And I got 1.7 million hits. It beat vacation loans. So, there are many lenders ready to lend. And you should do it. If you're just getting married and you don't have any money, go to the usurious guy and ask for the honeymoon loan. So, I'm not sure whether it's bad. This is a question. I think that there are abusers.",
+      "quote_source": "L08"
+    },
+    {
+      "term_en": "Mortgage",
+      "term_zh": "不動產抵押貸款",
+      "category": "instruments",
+      "def_zh": "以不動產為抵押的長期貸款；現代美國標準是 30 年固定利率、分期攤還，但這在 1930 年代前並不存在。",
+      "def_en": "Long-term loan secured by real estate; the modern U.S. 30-year fixed amortizing mortgage didn't exist before the 1930s.",
+      "sources": [
+        "L10"
+      ],
+      "shiller_quote": "And so, I think there's a general process of development, improving the definition of property rights, and improving the ability of lenders to get the property if it fails, which accounts for the advance of mortgage lending in the 20th and 21st century. So, that's my long history of mortgage lending.",
+      "quote_source": "L10"
+    },
+    {
+      "term_en": "Adjustable-Rate Mortgage (ARM)",
+      "term_zh": "浮動利率房貸",
+      "category": "instruments",
+      "def_zh": "利率隨基準指數定期調整的房貸；多有初期低利率「誘餌期」，2007 危機前在美國被推銷給次級借款人。",
+      "def_en": "Mortgage whose rate resets periodically to an index; often with a low teaser period—heavily marketed to subprime borrowers pre-2007.",
+      "sources": [
+        "L10"
+      ],
+      "shiller_quote": "I think that's partly why you didn't see so many mortgages in those days. Because the law wasn't clear. The institutions were not clear about property. And so you couldn't really do a mortgage business, if you couldn't find out whether the guy mortgaging the farm really owned it or not.",
+      "quote_source": "L10"
+    },
+    {
+      "term_en": "Mortgage-Backed Securities (MBS)",
+      "term_zh": "不動產抵押證券",
+      "category": "instruments",
+      "def_zh": "把眾多房貸打包後分券賣給投資人；Fannie Mae、Freddie Mac、Ginnie Mae 主導的政府背景 MBS 為大宗，民間 MBS 在 2007 崩盤。",
+      "def_en": "Pools of mortgages sliced and sold as securities; agency MBS (Fannie/Freddie/Ginnie) dominate, while private-label MBS collapsed in 2007.",
+      "sources": [
+        "L10",
+        "L13"
+      ],
+      "shiller_quote": "So, what's happening all over the world is that we've learned from this experience, but we're retaining this basic system of mortgage securitization. Mortgage lenders that are professional. The basic industry has been retained. And we're hoping and thinking that maybe we have a better system.",
+      "quote_source": "L10"
+    },
+    {
+      "term_en": "Fannie Mae & Freddie Mac",
+      "term_zh": "房利美與房地美",
+      "category": "instruments",
+      "def_zh": "美國兩大政府支持企業（GSE），收購並擔保房貸後打包為 MBS 出售。2008 危機被聯邦接管至今。",
+      "def_en": "Two U.S. government-sponsored enterprises (GSEs) that purchase and guarantee mortgages, packaging them into MBS; placed under federal conservatorship in 2008.",
+      "sources": [
+        "L10"
+      ],
+      "shiller_quote": "In 1970, the government created another Fannie-Mae-like institution. Its official name was Federal Home Loan Mortgage Corporation. Wall Street had to invent a name for it. So, they called it Freddie Mac. They thought, well, we gave a girl's name to Fannie Mae, let's give a boy's name. I guess that's a boy's name.",
+      "quote_source": "L10"
+    },
+    {
+      "term_en": "Hartford Courant 1778 Mortgage Ad",
+      "term_zh": "1778 年《Hartford Courant》房貸廣告",
+      "category": "instruments",
+      "def_zh": "Shiller 在 L10 引用的歷史文物：1778 年康乃狄克報紙的房屋抵押貸款廣告，說明現代不動產金融的長遠根源。",
+      "def_en": "A historical artifact Shiller cites in L10: a 1778 Connecticut newspaper ad for a mortgage loan, illustrating real estate finance's long roots.",
+      "sources": [
+        "L10"
+      ],
+      "shiller_quote": "But this shows how undeveloped mortgage institutions were in 1778. Because he had to put an ad in the newspaper to explain that. The problem was that nobody had any systematic way of representing title. The farmer, who supposedly bought it from Mr. Cornwell, really didn't, and nobody would know that. You know, he could fool people.",
+      "quote_source": "L10"
+    },
+    {
+      "term_en": "Collateralized Debt Obligation (CDO)",
+      "term_zh": "擔保債權憑證",
+      "category": "instruments",
+      "def_zh": "把 MBS／公司債等再打包並切成不同信用層級（tranches）的證券；高層級信評極佳但 2008 大量違約。",
+      "def_en": "Re-pooling of MBS/corporate debt into tranches with different credit ratings; senior tranches were AAA-rated but defaulted en masse in 2008.",
+      "sources": [
+        "L10"
+      ],
+      "shiller_quote": "Another kind of security, which the textbook talks about, is a CDO, which is a Collateralized Debt Obligation. These are issued to investors, and they typically hold mortgage securities as their assets. Many of them held subprime mortgages in recent years, mortgages that were issued against subprime borrowers. A lot of these securities that were rated very highly by the rating agencies, rated AAA, ended up defaulting and losing money for their investors. And the investors were all over the world.",
+      "quote_source": "L10"
+    },
+    {
+      "term_en": "REITs (Real Estate Investment Trusts)",
+      "term_zh": "不動產投資信託",
+      "category": "instruments",
+      "def_zh": "1960 年美國立法創立的證券化不動產載體：必須將 90%+ 利潤分派為股利、即可免企業稅，讓散戶能買「房地產股票」。",
+      "def_en": "A securitized real estate vehicle created by 1960 U.S. law: distribute 90%+ of profits as dividends to avoid corporate tax, putting real estate within reach of retail investors.",
+      "sources": [
+        "L10"
+      ],
+      "shiller_quote": "The idea is that we will allow a trust to create investments for the general public, for small investors. And they won't be double-taxed, either, OK? So, a Real Estate Investment Trust has to follow the law, and then it can invest in buildings. So, maybe 360 State is owned by a REIT? I don't know. But they are not subject to the corporate profits tax.",
+      "quote_source": "L10"
+    },
+    {
+      "term_en": "Forward Contract",
+      "term_zh": "遠期契約",
+      "category": "instruments",
+      "def_zh": "雙方私下約定未來某日以今日商定價格買賣資產的客製化契約；無交易所、無保證金。",
+      "def_en": "A bilateral, customized agreement to buy/sell an asset at a future date at a price agreed today—no exchange, no margin.",
+      "sources": [
+        "L15"
+      ],
+      "shiller_quote": "And this is what was happening before the futures market. Forward contracts precede futures contracts. So, do you see what it is? You're a rice merchant. You make a deal. You sign a contract that I will pay you so much in currency at every month, and you'll give me so much rice. And you'll deliver it here, and I'll take it, and I'll sell it in my town. Problems developed in the forward market that led to the development of a futures market. And the problem is, one of the problems is that there's counterparty risk.",
+      "quote_source": "L15"
+    },
+    {
+      "term_en": "Futures Contract",
+      "term_zh": "期貨契約",
+      "category": "instruments",
+      "def_zh": "標準化、在交易所交易的遠期契約：每日 mark-to-market、保證金、清算機構介入。1848 年芝加哥期貨交易所為起點。",
+      "def_en": "An exchange-traded, standardized forward contract with daily mark-to-market, margin, and a clearinghouse—origin: 1848 Chicago Board of Trade.",
+      "sources": [
+        "L15"
+      ],
+      "shiller_quote": "Now, one thing I wanted to say about futures also, which I didn't really clear--in forward markets, which are markets between a pair of counterparties, there's always counterparty risk. I'll write that. That means you've got a contract. You had a lawyer. A lawyer wrote up the terms. You can take this guy to bankruptcy court or something, but that's all a nuisance and it costs money. You never know. Futures markets get rid of counterparty risk, or essentially get rid of it. And how do they do that?",
+      "quote_source": "L15"
+    },
+    {
+      "term_en": "Margin",
+      "term_zh": "保證金",
+      "category": "instruments",
+      "def_zh": "持有衍生品或槓桿部位時必須在帳戶中保留的擔保金額；初始保證金開倉、維持保證金維護倉位。",
+      "def_en": "Collateral that must be posted to hold a derivatives or leveraged position; initial margin to open, maintenance margin to sustain.",
+      "sources": [
+        "L15",
+        "L21"
+      ],
+      "shiller_quote": "And I can quickly deplete my $5,000, right? The post price keeps going up. Then I say, gee, I wish I hadn't signed that contract, because I could have waited a few days and gotten a better price. Meanwhile, the broker calls you on the phone and says, I'm sorry, your margin account is almost depleted. Do you want to put up more margin?",
+      "quote_source": "L15"
+    },
+    {
+      "term_en": "Contango & Backwardation",
+      "term_zh": "正價差與逆價差",
+      "category": "instruments",
+      "def_zh": "Contango：期貨價高於現貨（常因儲存成本）；Backwardation：期貨價低於現貨（常因稀缺或便利收益）。",
+      "def_en": "Contango: futures price above spot (often from storage cost). Backwardation: futures below spot (often from scarcity / convenience yield).",
+      "sources": [
+        "L15"
+      ],
+      "shiller_quote": "So, why does it peak in December 2011, and then collapse? I'm guessing that has something to do with the crisis in the Middle East, that the people who trade in these markets are thinking, that the crisis will be over by then and prices will start coming down. So, we're seeing contango here, and backwardation here. I'm using a simple definition of contango and backwardation. There's more subtle definitions, but we'll keep it simple. We're seeing an increase, expected in oil prices, and then it decreases.",
+      "quote_source": "L15"
+    },
+    {
+      "term_en": "Call Option",
+      "term_zh": "買權",
+      "category": "instruments",
+      "def_zh": "買方有權（但無義務）在到期前以履約價買入標的；買權多頭損失有限、獲利無限。",
+      "def_en": "The right (not obligation) to buy the underlying at the strike price before expiry; limited loss, unlimited upside.",
+      "sources": [
+        "L17"
+      ],
+      "shiller_quote": "So there's two kinds of options. There's a call and a put, OK? A call option is an option to buy something at a specified price, and the price is called the \"exercise price\" or \"strike price.\" Those are synonyms.",
+      "quote_source": "L17"
+    },
+    {
+      "term_en": "Put Option",
+      "term_zh": "賣權",
+      "category": "instruments",
+      "def_zh": "買方有權（但無義務）在到期前以履約價賣出標的；常被用作避險／保險。",
+      "def_en": "The right (not obligation) to sell the underlying at the strike price before expiry; commonly used as portfolio insurance.",
+      "sources": [
+        "L17"
+      ],
+      "shiller_quote": "Working with my colleagues and the Chicago Mercantile Exchange, we launched options, in 2006, on single-family homes in the United States. We were hoping that people would buy put options to protect themselves against home price declines, but the market never took off. We have, since, seen huge human suffering because of the failure of people to protect themselves against home price declines.",
+      "quote_source": "L17"
+    },
+    {
+      "term_en": "Put-Call Parity",
+      "term_zh": "買賣權平價",
+      "category": "instruments",
+      "def_zh": "C − P = S − PV(K)。無套利條件；以買權＋無風險債券可複製賣權＋標的的組合，反之亦然。",
+      "def_en": "C − P = S − PV(K). The no-arbitrage relation that ties the four instruments together.",
+      "sources": [
+        "L17"
+      ],
+      "shiller_quote": "So, because of the put-call parity relation, The Wall Street Journal didn't even need bother to put the put prices in, because you can get one from the other. But they do put them in, just because people like to see them, and some people might be trying to profit from the put-call parity arbitrage. But for our purposes, we only have to do call pricing. Once we've got call pricing, we've got put prices. So, I just use the put-call parity relation and I get put prices.",
+      "quote_source": "L17"
+    },
+    {
+      "term_en": "Black-Scholes Formula",
+      "term_zh": "Black-Scholes 公式",
+      "category": "instruments",
+      "def_zh": "假設標的價格服從對數常態、可連續避險時的選擇權封閉解定價公式（1973）。革命性，但其假設在危機時崩潰。",
+      "def_en": "Closed-form option pricing formula (1973) assuming lognormal prices and continuous hedging. Revolutionary, but assumptions break in crises.",
+      "sources": [
+        "L17"
+      ],
+      "shiller_quote": "But I can also turn it around. If I already know what the option is selling for in the market, I can infer what the implied sigma is, right? Because all the other numbers in the Black-Scholes formula are clear. They're in the newspaper, or they're in the option contract. There's this one hard to pin down variable, what is the variability of the stock price?",
+      "quote_source": "L17"
+    },
+    {
+      "term_en": "Binomial Asset Pricing Model",
+      "term_zh": "二項式資產定價模型",
+      "category": "instruments",
+      "def_zh": "把資產價格演化離散成「上漲／下跌」節點樹的選擇權定價方法；Cox-Ross-Rubinstein (1979)。直覺好、可處理早提權選擇權。",
+      "def_en": "Discrete-time tree of up/down moves for option pricing (Cox-Ross-Rubinstein 1979); intuitive and handles early-exercise options.",
+      "sources": [
+        "L17"
+      ],
+      "shiller_quote": "I'm going to tell you a simple story, just to give some intuitive feel about pricing of options. And to simplify the story, I'm going to tell a story about a world, in which there's only two possible prices for the underlying stock. That makes it binomial. There's only two things that can happen, and you can either be high or low, all right?",
+      "quote_source": "L17"
+    },
+    {
+      "term_en": "Implied Volatility",
+      "term_zh": "隱含波動率",
+      "category": "instruments",
+      "def_zh": "由現行選擇權市價反推 Black-Scholes 的波動率參數；反映市場對未來波動的「預期」。",
+      "def_en": "The volatility implied by current option prices via Black-Scholes—the market's forward-looking volatility estimate.",
+      "sources": [
+        "L17"
+      ],
+      "shiller_quote": "And this is in percent per year. So, that means that the implied volatility in 1986 was 20%. And then, it shot way up to 60%, unimaginably quick. That might be the record high, I can't quite tell from here. Remember, I told you the story of the 1987 stock market crash? The stock market fell over 22% in one day. Well, actually, on the S&P, it was only 20%, but a lot in one day.",
+      "quote_source": "L17"
+    },
+    {
+      "term_en": "VIX Index",
+      "term_zh": "VIX 指數",
+      "category": "instruments",
+      "def_zh": "CBOE 編製的 30 天 S&P 500 選擇權隱含波動率指數；俗稱「恐慌指數」。",
+      "def_en": "CBOE's 30-day implied volatility index on S&P 500 options—the 'fear gauge'.",
+      "sources": [
+        "L17"
+      ],
+      "shiller_quote": "Let's make it clear, what this is. What the VIX is, is essentially, not exactly, the sigma in the Black-Scholes equation. But it is, in effect, the market's expected standard deviation of stock prices. And to get it more precise, it's the standard deviation of the S&P 500 Stock Price Index for one month, multiplied by the square root of 12, because they want to annualize it. It's for the next month.",
+      "quote_source": "L17"
+    },
+    {
+      "term_en": "Swap Contract",
+      "term_zh": "交換契約",
+      "category": "instruments",
+      "def_zh": "雙方約定在未來一段時間互換現金流（如固定 vs. 浮動利率）；最常見為利率交換。Shiller 視之為 20 世紀重要金融發明之一。",
+      "def_en": "Two parties agree to exchange cash flows over time (e.g., fixed for floating interest); the interest rate swap is the most common. Shiller treats it as a major 20th-century financial invention.",
+      "sources": [
+        "L03"
+      ],
+      "shiller_quote": "OK, I want it to move on now to today's lecture, which is about invention, and particularly financial invention. How should I start here? Let me start by recalling how much finance has changed since 1970. OK, that's 40 years ago. In 1970, there were no options exchanges. Well, there were options, but they were not traded on any exchange. There were no financial futures. There were no swaps. I haven't defined what these things are for you. What else did they not have? They didn't have electronic trading.",
+      "quote_source": "L03"
+    },
+    {
+      "term_en": "Securitization",
+      "term_zh": "證券化",
+      "category": "instruments",
+      "def_zh": "把貸款（如房貸）打包後將現金流切成分券出售；分散風險也可能隱藏風險，2007-08 危機核心。",
+      "def_en": "Pooling loans and selling tranches of the cash flows as securities; can spread or hide risk—central to the 2007-08 crisis.",
+      "sources": [
+        "L10"
+      ],
+      "shiller_quote": "So, what's happening all over the world is that we've learned from this experience, but we're retaining this basic system of mortgage securitization. Mortgage lenders that are professional. The basic industry has been retained. And we're hoping and thinking that maybe we have a better system.",
+      "quote_source": "L10"
+    },
+    {
+      "term_en": "Inflation Indexation",
+      "term_zh": "通膨指數化",
+      "category": "instruments",
+      "def_zh": "契約金額隨物價指數調整以保持實質購買力；美國 TIPS、英國 ILG 為代表。Shiller 視之為金融的重要發明。",
+      "def_en": "Contractual amounts adjusted to a price index to preserve real value; U.S. TIPS and UK ILGs are flagship examples. Shiller cites this as a key financial invention.",
+      "sources": [
+        "L03"
+      ],
+      "shiller_quote": "I'm going to move to another example now of an innovation in finance. I want to talk about inflation indexation. And I can pick many. These are examples that I like personally. There's an infinite number of examples. It doesn't matter exactly which example we pick. But there's a fundamental financial problem, and that is that the value of money changes through time. We have inflation measured by a Consumer Price Index. And when inflation proceeds, the prices go up, and so the buying power of money goes down. And it's uncertain.",
+      "quote_source": "L03"
+    },
+    {
+      "term_en": "Hedge Fund",
+      "term_zh": "避險基金",
+      "category": "instruments",
+      "def_zh": "僅向合格投資人募集、受監管較鬆、可使用槓桿與賣空、收取績效費（如 2/20）的私募投資基金。",
+      "def_en": "Lightly regulated private funds open only to accredited investors, charging performance fees (e.g., 2/20), allowed to use leverage and short-sell.",
+      "sources": [
+        "L12",
+        "L20"
+      ],
+      "shiller_quote": "The SEC allows other companies to remain private, but it has rules about what you have to do to stay private. When you become a public company, you are involved in the public trust. And you have to, among other things, include all of your documents on sec.gov. But they do allow private companies. And a particularly important category of private company is the so-called hedge fund.",
+      "quote_source": "L12"
+    },
+    {
+      "term_en": "Mutual Fund",
+      "term_zh": "共同基金",
+      "category": "instruments",
+      "def_zh": "公開募集、每日報價、依規範分散持股的集合投資工具；按 Investment Company Act 1940 在美國設立。",
+      "def_en": "Publicly offered, daily-priced, regulated pooled investment vehicle—established under the 1940 Investment Company Act in the U.S.",
+      "sources": [
+        "L20"
+      ],
+      "shiller_quote": "In Europe, they have an analogous institution, UCITS. It refers to a European Union directive, called the Undertaking for Collective Investment and Transferable Securities, which is an EU directive, 1985 (In 1985, it was still the European Communities, and not yet the EU, which was not established until 1993.), and then they had revisions in 2001, that creates a standard investment fund like a mutual fund for Europe.",
+      "quote_source": "L20"
+    },
+    {
+      "term_en": "United East India Company",
+      "term_zh": "荷蘭東印度公司",
+      "category": "instruments",
+      "def_zh": "1602 年成立的荷蘭東印度公司是第一家發行可轉讓股票的公司，催生阿姆斯特丹證交所——現代股份制公司的起源。",
+      "def_en": "Founded 1602, the VOC was the first company to issue tradable shares, giving rise to the Amsterdam Stock Exchange—the origin of the modern joint-stock corporation.",
+      "sources": [
+        "L04"
+      ],
+      "shiller_quote": "And in the same year, and I can't write this in Dutch, but they created the Amsterdam Stock Exchange. And initially it had only one stock. And so this is called VOC. OK? And it was a trading company. They were going to set them up, and they were going to buy ships, and they're going to sail all over the world, and they were going to trade in various commodities. So, it sounds pretty basic. But no one had ever done this before. So, it's interesting how much got invented in this one year, 1602.",
+      "quote_source": "L04"
+    },
+    {
+      "term_en": "Pension Fund",
+      "term_zh": "退休金基金",
+      "category": "instruments",
+      "def_zh": "為退休給付而設立的長期投資基金，分為確定給付（DB）與確定提撥（DC）兩種制度。",
+      "def_en": "Long-horizon fund for retirement benefits, split into Defined Benefit (DB) and Defined Contribution (DC) plans.",
+      "sources": [
+        "L20"
+      ],
+      "shiller_quote": "But afterwards, in the 1980s, companies started offering a new kind of pension plan, called a defined contribution. The idea was, it's hard for us to hit that target, of say 50% of your average income for the last 10 years. How do you expect us to do that? We don't know how much these investments will pay out. We don't even know how much money you'll be paid in your last 10 years. So, it's asking us to do the impossible. Well, it's not impossible, but difficult.",
+      "quote_source": "L20"
+    },
+    {
+      "term_en": "Defined Benefit vs. Defined Contribution",
+      "term_zh": "DB 與 DC 退休制",
+      "category": "instruments",
+      "def_zh": "DB：雇主承諾固定退休金額、承擔投資風險；DC（如 401(k)）：雇主按薪資提撥、員工自擔投資結果。美國正大規模從 DB 轉 DC。",
+      "def_en": "DB: employer promises a fixed benefit and bears investment risk. DC (e.g., 401(k)): employer contributes a percentage of salary; employee bears outcomes. U.S. is shifting massively from DB to DC.",
+      "sources": [
+        "L20"
+      ],
+      "shiller_quote": "But afterwards, in the 1980s, companies started offering a new kind of pension plan, called a defined contribution. The idea was, it's hard for us to hit that target, of say 50% of your average income for the last 10 years. How do you expect us to do that? We don't know how much these investments will pay out. We don't even know how much money you'll be paid in your last 10 years. So, it's asking us to do the impossible. Well, it's not impossible, but difficult.",
+      "quote_source": "L20"
+    },
+    {
+      "term_en": "Trust",
+      "term_zh": "信託",
+      "category": "instruments",
+      "def_zh": "財產所有人（settlor）把財產交由受託人（trustee）為受益人（beneficiary）管理；常用於遺產規劃。",
+      "def_en": "A legal arrangement in which a settlor transfers assets to a trustee to manage for beneficiaries—core of estate planning.",
+      "sources": [
+        "L20"
+      ],
+      "shiller_quote": "Similarly, our health care, we used to depend on our families to provide health care, but it didn't work very well. People weren't getting very good health care. And now, we have it all institutionalized through trust funds for health plans, and benefits and the like. This means that it's more and more run by investment managers.",
+      "quote_source": "L20"
+    },
+    {
+      "term_en": "Family Office",
+      "term_zh": "家族辦公室",
+      "category": "instruments",
+      "def_zh": "服務單一或少數家族的私人投資與行政機構；資產配置、信託、稅務、慈善全包，門檻通常上億美元。",
+      "def_en": "Private investment and admin firm serving one or a few wealthy families—asset allocation, trusts, tax, philanthropy; usually $100M+ entry.",
+      "sources": [
+        "L20"
+      ],
+      "shiller_quote": "I recently spoke at a family office forum, down in Florida. They seemed to be very numerous. There's an awful lot of families. The families come to these conventions, and they hear people like me speak. Although I'm different than most of them, because most of the people speaking there wanted to sell products, and I wasn't there to sell anything.",
+      "quote_source": "L20"
+    },
+    {
+      "term_en": "Endowment",
+      "term_zh": "捐贈基金",
+      "category": "instruments",
+      "def_zh": "非營利機構（多為大學）的永久投資基金，提取年度支出但保留實質本金，使支持得以永續。",
+      "def_en": "A permanent investment fund (often for a university) from which only a portion is spent annually, preserving real principal in perpetuity.",
+      "sources": [
+        "L20",
+        "L06"
+      ],
+      "shiller_quote": "So, I'm going to give you another example. Boston University—this is much more recent—under John Silber, invested not the whole endowment of the university, but $90 million in one company called Seragen, which was a genetic engineering company. And just John Silber decided to do this, and he lost Boston University 90% of $90 million.",
+      "quote_source": "L20"
+    },
+    {
+      "term_en": "Yale Model",
+      "term_zh": "耶魯模式",
+      "category": "instruments",
+      "def_zh": "David Swensen 主持 Yale 捐贈基金期間發展的配置框架：大量配置另類資產（PE、避險基金、不動產），減少股債傳統部位。",
+      "def_en": "Allocation framework developed by David Swensen at Yale's endowment: heavy weighting toward alternatives (PE, hedge funds, real assets), lighter on traditional stocks/bonds.",
+      "sources": [
+        "L06"
+      ],
+      "shiller_quote": "Well, that's financial innovation. I think, swaps are a very important new technology. We've been talking about that. So anyway, just to remind you--David Swensen came to Yale in 1985, when the portfolio was worth less than $1 billion. And as of June, 2010, it's $16.7 billion.",
+      "quote_source": "L06"
+    },
+    {
+      "term_en": "Municipal Bond",
+      "term_zh": "市政債",
+      "category": "instruments",
+      "def_zh": "州、市、地方政府發行的債券；在美國其利息常為聯邦所得稅免稅，故殖利率較公司債低。",
+      "def_en": "Bonds issued by U.S. state, city, or local governments; interest is typically exempt from federal income tax, lowering effective yields.",
+      "sources": [
+        "L22"
+      ],
+      "shiller_quote": "Now one thing, in the United States, every state in the United States has a balanced budget rule. That is, they have to tax people for all of the expenditures they make. They are not allowed to go into debt. But we have to be careful about what the balanced budget rules in their constitution say, because obviously there is municipal debt. Governments do borrow money.",
+      "quote_source": "L22"
+    },
+    {
+      "term_en": "Social Security / OASDI",
+      "term_zh": "社會安全保險／OASDI",
+      "category": "instruments",
+      "def_zh": "美國 1935 年立法的聯邦社會保險：以薪資稅資助老年（OA）、遺屬（S）與失能（DI）給付。",
+      "def_en": "U.S. federal social insurance established in 1935: payroll-tax-funded benefits for Old Age (OA), Survivors (S), and Disability Insurance (DI).",
+      "sources": [
+        "L22"
+      ],
+      "shiller_quote": "So, we also have—I'll go up here—three, Social Security. And I'm using U.S. terms, but these are terms that—these things happen in virtually all advanced countries. In the U.S., we call it OASDI. That stands for Old Age, Survivors, and Disability Insurance. Old age insurance is pensions, and that's the biggest part of the social security system in the United States. It's insuring—well, it's really something you know is going to happen—you're going to get old someday, but we call it insurance.",
+      "quote_source": "L22"
+    },
+    {
+      "term_en": "Leverage Cycle (Geanakoplos)",
+      "term_zh": "槓桿循環（Geanakoplos）",
+      "category": "policy",
+      "def_zh": "John Geanakoplos 提出：抵押要求（槓桿上限）隨景氣同向升降，放大泡沫與崩盤。2007-08 危機核心機制之一。",
+      "def_en": "John Geanakoplos's theory: collateral requirements rise and fall procyclically, amplifying booms and busts—a core 2007-08 mechanism.",
+      "sources": [
+        "L01",
+        "L08"
+      ],
+      "shiller_quote": "Since I know that most of you or many of you will not take Economics 251, what we are doing is, I'll give a little indication of the mathematical principles, more intuitive, and we have review sessions with our teaching assistants. We plan to have six of those. And those will be on a Friday in this room. And they won't be on Open Yale. Those will cover the theory, and it will be like a short form of Geanakoplos' course. And then we'll have problem sets. And there will be six problems sets, one for each of those sessions.",
+      "quote_source": "L01"
+    },
+    {
+      "term_en": "John Geanakoplos",
+      "term_zh": "John Geanakoplos（金融學者）",
+      "category": "policy",
+      "def_zh": "Yale 數理金融學者、Ellington Capital 研究主管。在 Yale 同時教 ECON 251 Financial Theory，與 Shiller 課程互補（理論／實務）。",
+      "def_en": "Yale mathematical economist and Ellington Capital research director; teaches the companion ECON 251 Financial Theory at Yale, complementing Shiller's course.",
+      "sources": [
+        "L01",
+        "L19"
+      ],
+      "shiller_quote": "Since I know that most of you or many of you will not take Economics 251, what we are doing is, I'll give a little indication of the mathematical principles, more intuitive, and we have review sessions with our teaching assistants. We plan to have six of those. And those will be on a Friday in this room. And they won't be on Open Yale. Those will cover the theory, and it will be like a short form of Geanakoplos' course. And then we'll have problem sets. And there will be six problems sets, one for each of those sessions.",
+      "quote_source": "L01"
+    },
+    {
+      "term_en": "Democratization of Finance",
+      "term_zh": "金融的民主化",
+      "category": "policy",
+      "def_zh": "Shiller 標誌性主張：讓所有人（不只富人）都能享用先進金融工具的好處——保險、避險、分散投資。",
+      "def_en": "Shiller's signature thesis: extending sophisticated financial tools (insurance, hedging, diversification) to everyone, not just the wealthy.",
+      "sources": [
+        "L23",
+        "L01"
+      ],
+      "shiller_quote": "So that brings us to what I said was the democratization of finance. And this is a theme of my own that I've been emphasizing. So the democratization of finance is sort of trying to make it move beyond the cosmopolitan class, OK? So cosmopolitans know how to get things done, how to raise capital, and they know how to manage their risks, so they don't get into trouble. Inequality is substantially due to a failure to manage risks. Right?",
+      "quote_source": "L23"
+    },
+    {
+      "term_en": "Securities and Exchange Commission (SEC)",
+      "term_zh": "美國證券交易委員會",
+      "category": "policy",
+      "def_zh": "1934 年依《證券交易法》成立的美國聯邦證券監管機構；要求公開揭露、打擊內線交易與操縱。",
+      "def_en": "U.S. federal securities regulator created by the 1934 Securities Exchange Act—mandates disclosure, polices insider trading and manipulation.",
+      "sources": [
+        "L12"
+      ],
+      "shiller_quote": "The SEC allows other companies to remain private, but it has rules about what you have to do to stay private. When you become a public company, you are involved in the public trust. And you have to, among other things, include all of your documents on sec.gov. But they do allow private companies. And a particularly important category of private company is the so-called hedge fund.",
+      "quote_source": "L12"
+    },
+    {
+      "term_en": "Self-Regulatory Organization (SRO)",
+      "term_zh": "自律組織",
+      "category": "policy",
+      "def_zh": "非政府的同業自律機構，制定並執行行業規則；FINRA（前 NASD）為代表。",
+      "def_en": "Non-governmental industry body that writes and enforces rules for its members; FINRA (formerly NASD) is the canonical example.",
+      "sources": [
+        "L12"
+      ],
+      "shiller_quote": "So, market surveillance is something that the SEC does, and it does it in connection with the self-regulatory organizations like the stock exchanges. It's, again, trying to prevent manipulative behavior. See, the markets don't function that well by themselves without some kind of referee. The 1792 stock market crash was only one example, but market surveillance is now a well-established principle to prevent manipulators from taking over a market.",
+      "quote_source": "L12"
+    },
+    {
+      "term_en": "Insider Trading",
+      "term_zh": "內線交易",
+      "category": "policy",
+      "def_zh": "以非公開重大資訊買賣證券；在美國依 SEC 規則 10b-5 與後續法案違法。",
+      "def_en": "Trading on material non-public information; illegal in the U.S. under SEC Rule 10b-5 and subsequent statutes.",
+      "sources": [
+        "L12"
+      ],
+      "shiller_quote": "And of course, there's insider trading. That's when people in the company will buy or sell their own shares based on knowledge that they have, that they haven't told the public yet. So, if you know that the company's going to collapse, you sell your shares right away. If you know the company has some great news, you buy them before you announce it. That's tunneling again, because you're taking money out of the company because of the opportunities you have as part of the management of the company.",
+      "quote_source": "L12"
+    },
+    {
+      "term_en": "Market Manipulation",
+      "term_zh": "市場操縱",
+      "category": "policy",
+      "def_zh": "以人為手段（散布假消息、誇大成交、合謀拉抬等）扭曲證券價格牟利；SEC 與交易所監控的核心違規類型。",
+      "def_en": "Distorting securities prices by artificial means (false rumors, painted tape, collusive ramping) for gain; a core violation category policed by the SEC and exchanges.",
+      "sources": [
+        "L12"
+      ],
+      "shiller_quote": "All right, good morning. I wanted to talk today about regulation. Well, actually, regulation and human misbehavior. So, this is a continuation of my previous lecture, in a sense, which was about Behavioral Finance and about human foibles. But now, I want to go on to talk about what we do about some of these things, and that means talk about regulation.",
+      "quote_source": "L12"
+    },
+    {
+      "term_en": "Glass-Steagall Act",
+      "term_zh": "格拉斯—斯蒂格爾法案",
+      "category": "policy",
+      "def_zh": "1933 年美國法律，分離商業銀行與投資銀行，並建立 FDIC 存款保險；1999 年 Gramm-Leach-Bliley 廢除。",
+      "def_en": "1933 U.S. law separating commercial and investment banking and establishing FDIC deposit insurance; repealed by Gramm-Leach-Bliley in 1999.",
+      "sources": [
+        "L13",
+        "L19"
+      ],
+      "shiller_quote": "But then problems arose. And the problems were—Paul Volcker, who was chairman of the Federal Reserve Board in the late '70s, early '80s, proposed something called the Volcker Rule. And the Volcker Rule was not a full return to Glass-Steagall, but—and this is now in the Dodd-Frank Act. It's Section 619. It doesn't say Volcker Rule there, but that's what it is, and it prohibits proprietary trading at commercial banks. And it also says, that commercial banks can't own hedge funds or private equity funds.",
+      "quote_source": "L19"
+    },
+    {
+      "term_en": "Dodd-Frank Act",
+      "term_zh": "陶德—法蘭克法案",
+      "category": "policy",
+      "def_zh": "2010 年美國金融改革法案，回應 2008 危機：成立 CFPB、Volcker Rule、SIFIs、清算 OTC 衍生品等。",
+      "def_en": "2010 U.S. financial reform law responding to the 2008 crisis: created the CFPB, Volcker Rule, SIFI designation, OTC derivatives clearing.",
+      "sources": [
+        "L13",
+        "L19"
+      ],
+      "shiller_quote": "As a result of this, Goldman Sachs has got to shut down—or it appears that—the Volcker Rule says banks have until October 2011 to comply. So, it means that Goldman Sachs has to shut down—Goldman Sachs had to become a commercial bank, too, so it's no longer—it's an official commercial bank now. And because of the Volcker Rule, it appears that it has to shut down its proprietary trading, which was a huge part of its profits. And Goldman Sachs will never be the same again, apparently. But it's not clear what will happen.",
+      "quote_source": "L19"
+    },
+    {
+      "term_en": "Sarbanes-Oxley Act",
+      "term_zh": "沙賓法案",
+      "category": "policy",
+      "def_zh": "2002 年回應 Enron/WorldCom 醜聞的美國法案：強化公司治理、內控與審計獨立性。",
+      "def_en": "2002 U.S. law passed after Enron/WorldCom—stricter corporate governance, internal controls, and auditor independence.",
+      "sources": [
+        "L16",
+        "L12"
+      ],
+      "shiller_quote": "Sarbanes-Oxley, I think, is a good example. Sarbanes-Oxley came about, I don't need to tell you, as a result of the Enron crisis. And of course the last crisis, which was the subprime crisis, was nothing like Enron. When I was a regulator, we always said, we're always correcting yesterday's problems. When a scandal happens, when a crisis happens, we think of rules to address what had gone wrong, but the next time something happens it's not going to happen the same way.",
+      "quote_source": "L16"
+    },
+    {
+      "term_en": "Consumer Financial Protection Bureau (CFPB)",
+      "term_zh": "消費者金融保護局",
+      "category": "policy",
+      "def_zh": "Elizabeth Warren 倡議、Dodd-Frank 法案下成立的聯邦機構，專責保護消費者於金融商品中的權益。",
+      "def_en": "Federal agency created by Dodd-Frank (championed by Elizabeth Warren) to protect consumers in financial products.",
+      "sources": [
+        "L08",
+        "L13"
+      ],
+      "shiller_quote": "And we now have a regulator, a new regulator, that's supposed to stomp on these usurious practices. It's kind of an inspirational story, but the downside of it is, she got too carried away criticizing the lending industry in that nice article. And it makes them sound worse than they really are, and so Obama could not appoint her to head the Consumer Financial Protection Bureau, because it would be too politically controversial. So, she is now the person trying to find someone to head her bureau.",
+      "quote_source": "L08"
+    },
+    {
+      "term_en": "Volcker Rule",
+      "term_zh": "沃爾克法則",
+      "category": "policy",
+      "def_zh": "Dodd-Frank 條款，禁止受聯邦保險的銀行從事自營交易與持有避險基金 / PE 重大部位。",
+      "def_en": "Dodd-Frank provision barring federally insured banks from proprietary trading and significant hedge fund / PE positions.",
+      "sources": [
+        "L19"
+      ],
+      "shiller_quote": "As a result of this, Goldman Sachs has got to shut down—or it appears that—the Volcker Rule says banks have until October 2011 to comply. So, it means that Goldman Sachs has to shut down—Goldman Sachs had to become a commercial bank, too, so it's no longer—it's an official commercial bank now. And because of the Volcker Rule, it appears that it has to shut down its proprietary trading, which was a huge part of its profits. And Goldman Sachs will never be the same again, apparently. But it's not clear what will happen.",
+      "quote_source": "L19"
+    },
+    {
+      "term_en": "Risk-Weighted Assets",
+      "term_zh": "風險加權資產",
+      "category": "policy",
+      "def_zh": "Basel 框架中將不同資產按信用風險賦予權重（如政府公債 0%、抵押貸款 50%、企業 100%）後加總，作為資本要求的分母。",
+      "def_en": "Under Basel, assets are weighted by credit risk (e.g., sovereign 0%, mortgage 50%, corporate 100%) and summed—the denominator of capital ratios.",
+      "sources": [
+        "L13",
+        "L18"
+      ],
+      "shiller_quote": "So, those are my risk-weighted assets, and then, the amount of capital that I have to hold is a percentage of the risk-weighted assets. I could go through Basel I, Basel II, Basel III; they kept changing these percentages, as they went along. So, I'm just going to talk about Basel III, because that's going forward, all right? And Basel III is complicated, too.",
+      "quote_source": "L13"
+    },
+    {
+      "term_en": "Bismarck Social Insurance Origin",
+      "term_zh": "俾斯麥社會保險起源",
+      "category": "policy",
+      "def_zh": "德國 1881-1889 年在俾斯麥執政下立法的社會保險（健保、職災、養老）是世界首例，奠定現代福利國家基礎。",
+      "def_en": "Germany's 1881-1889 social insurance laws (health, accident, old-age) under Bismarck were the world's first, founding the modern welfare state.",
+      "sources": [
+        "L22"
+      ],
+      "shiller_quote": "So, why is it that Germany was able to do something like this in the 1880s when it was not doable anywhere else? It had never been done until that time. I think this has to do ultimately with technology. Technology, particularly information technology, was advancing rapidly in the 19th century. Not as rapidly as in the 20th, but rapidly advancing.",
+      "quote_source": "L22"
+    },
+    {
+      "term_en": "Social Insurance",
+      "term_zh": "社會保險",
+      "category": "policy",
+      "def_zh": "由政府強制執行、廣覆蓋的風險共擔安排；19 世紀末德國 Bismarck 首創，現代福利國家基礎。",
+      "def_en": "Government-mandated, broad-coverage risk pooling; pioneered by Bismarck's Germany in the late 19th century—the basis of the modern welfare state.",
+      "sources": [
+        "L22"
+      ],
+      "shiller_quote": "Social insurance refers to insurance that is not available by a private insurance company, but that is offered generally by governments, and let me just give some examples.",
+      "quote_source": "L22"
+    },
+    {
+      "term_en": "Suffolk System",
+      "term_zh": "Suffolk 體系",
+      "category": "policy",
+      "def_zh": "1820 年代波士頓 Suffolk Bank 為清算新英格蘭各家銀行紙幣而建的私營清算機制；Shiller 視之為早期央行體系雛形。",
+      "def_en": "A private clearing arrangement run by Boston's Suffolk Bank from the 1820s to clear notes of New England's banks; Shiller treats it as a proto-central-bank.",
+      "sources": [
+        "L18"
+      ],
+      "shiller_quote": "Notably, in the United States there was a bank called the Suffolk Bank. This is much later. It was founded in 1819 in Boston, and it was a private bank. And on its own, it just decided to do the same thing that the Bank of England did. It required that all of the New England banks kept a deposit with it. And it did the same thing, and it stabilized New England from bank runs. The Suffolk System lasted until 1860.",
+      "quote_source": "L18"
+    },
+    {
+      "term_en": "Too Big To Fail",
+      "term_zh": "大到不能倒",
+      "category": "policy",
+      "def_zh": "若某機構倒閉將威脅整個體系，政府傾向救援；製造道德風險。Dodd-Frank 要 SIFIs 制定「生前遺囑」清算方案來緩解。",
+      "def_en": "When an institution's failure would threaten the whole system, governments tend to bail it out—creating moral hazard. Dodd-Frank requires 'living wills' from SIFIs to mitigate this.",
+      "sources": [
+        "L12",
+        "L14"
+      ],
+      "shiller_quote": "So, dealing with this is another aspect of regulation. And it's central to regulation right now in the wake of the world financial crisis. Another term I wanted to emphasize, well, a pair of terms: There's two kinds of regulation, called microprudential—I think this is a relatively new word; at least it has become popular since the financial crisis of the 2000's—and macroprudential.",
+      "quote_source": "L12"
+    },
+    {
+      "term_en": "Finding Purpose in Finance",
+      "term_zh": "在金融中找尋使命",
+      "category": "policy",
+      "def_zh": "Shiller《Finance and the Good Society》核心：金融是把事情做成的技術，從業者該服務於更大的目的而非僅追求個人致富。",
+      "def_en": "Core of Shiller's Finance and the Good Society: finance is a technology for getting things done; practitioners should serve a larger purpose, not just personal enrichment.",
+      "sources": [
+        "L23",
+        "L01"
+      ],
+      "shiller_quote": "But I should say I don't think that most of you will go into finance, because I think that most of you have other purposes. What does it mean to go into finance? Well, it sounds like that means you would be listed as someone who is very focused on finance. But I think everyone should know finance. This should be a required course, actually, at Yale College, because finance is so fundamental to what we do and the structure of our lives that I don't see how you can avoid doing finance if you want to do something big and important.",
+      "quote_source": "L01"
+    }
+  ]
+}
