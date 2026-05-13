@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>drawer test</title><link rel="stylesheet" href="assets/css/styles.css"></head>
+<body class="drawer-open">
+<div class="layout"><main id="main" class="main"><div style="padding:40px">drawer preview</div></main></div>
+<script src="assets/js/common.js"></script>
+<script>
+(async () => {
+  document.body.prepend(buildTopbar("lecture"));
+  const data = await loadLectures();
+  document.querySelector(".layout").prepend(buildSidebar(data.lectures, "L05"));
+  document.body.classList.add("drawer-open");
+})();
+</script>
+</body></html>

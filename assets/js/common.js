@@ -2,6 +2,14 @@
 
 const DATA_URL = "data/lectures.json";
 let LECTURES_CACHE = null;
+let CURRENT_TAB = null;
+
+const TABS = [
+  { id: "home",    label: "首頁",   href: "index.html" },
+  { id: "lecture", label: "逐字稿", href: "lecture.html" },
+  { id: "wiki",    label: "Wiki",   href: "wiki.html" },
+  { id: "mindmap", label: "心智圖", href: "mindmap.html" },
+];
 
 async function loadLectures() {
   if (LECTURES_CACHE) return LECTURES_CACHE;
@@ -25,20 +33,27 @@ function el(tag, attrs = {}, ...children) {
   return e;
 }
 
+function toggleDrawer() {
+  document.body.classList.toggle("drawer-open");
+}
+function closeDrawer() {
+  document.body.classList.remove("drawer-open");
+}
+
 function buildTopbar(activeTab) {
-  const tabs = [
-    { id: "home", label: "首頁", href: "index.html" },
-    { id: "lecture", label: "逐字稿", href: "lecture.html" },
-    { id: "wiki", label: "Wiki", href: "wiki.html" },
-    { id: "mindmap", label: "心智圖", href: "mindmap.html" },
-  ];
+  CURRENT_TAB = activeTab;
   const bar = el("div", { class: "topbar" },
+    el("button", {
+      class: "hamburger", type: "button",
+      "aria-label": "開啟選單",
+      onclick: toggleDrawer,
+    }, "≡"),
     el("a", { class: "brand", href: "index.html" },
       "Shiller《金融市場》",
       el("span", { class: "small" }, "Yale ECON 252 · 2011")
     ),
     el("nav", { class: "navtabs" },
-      ...tabs.map(t => {
+      ...TABS.map(t => {
         const a = el("a", { href: t.href }, t.label);
         if (t.id === activeTab) a.classList.add("active");
         return a;
@@ -48,10 +63,32 @@ function buildTopbar(activeTab) {
       el("input", { type: "search", placeholder: "搜尋名詞 / 內容 / 課次…", id: "topSearchInput" })
     ),
   );
+
+  // Drawer overlay (single instance)
+  if (!document.querySelector(".drawer-overlay")) {
+    document.body.appendChild(el("div", {
+      class: "drawer-overlay",
+      onclick: closeDrawer,
+    }));
+  }
+  // ESC closes
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeDrawer();
+  });
+
   return bar;
 }
 
 function buildSidebar(lectures, activeId) {
+  // Mobile nav (4 tabs) shown only when drawer is open on mobile
+  const mobileNav = el("nav", { class: "mobile-nav" },
+    ...TABS.map(t => {
+      const a = el("a", { href: t.href }, t.label);
+      if (t.id === CURRENT_TAB) a.classList.add("active");
+      return a;
+    })
+  );
+
   const ul = el("ul");
   for (const lec of lectures) {
     const a = el("a", { href: `lecture.html?id=${lec.id}` },
@@ -63,7 +100,14 @@ function buildSidebar(lectures, activeId) {
     if (lec.id === activeId) a.classList.add("active");
     ul.appendChild(li);
   }
-  return el("aside", { class: "sidebar" },
+
+  const aside = el("aside", { class: "sidebar" },
+    el("button", {
+      class: "drawer-close", type: "button",
+      "aria-label": "關閉選單",
+      onclick: closeDrawer,
+    }, "×"),
+    mobileNav,
     el("h3", {}, "23 講清單"),
     ul,
     el("h3", { style: "margin-top:20px" }, "圖例"),
@@ -73,6 +117,13 @@ function buildSidebar(lectures, activeId) {
       el("div", {}, "● 制度線（市場機構）"),
     ),
   );
+
+  // Close drawer on any link click inside the sidebar (mobile UX)
+  aside.addEventListener("click", (e) => {
+    if (e.target.closest("a")) closeDrawer();
+  });
+
+  return aside;
 }
 
 function buildFooter() {
