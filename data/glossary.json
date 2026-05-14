@@ -1,5 +1,5 @@
 {
-  "_note": "Shiller《金融市場》(ECON 252, 2011) 100 個核心名詞；每條附定義與從原始逐字稿擷取的真實引用段落。",
+  "_note": "Robert Shiller《金融市場》(ECON 252, 2011) 100 個核心名詞；每條附定義與從原始逐字稿擷取的真實引用段落。",
   "_total": 121,
   "categories": {
     "risk": "風險與機率",
@@ -88,8 +88,8 @@
       "term_en": "Independence (statistical)",
       "term_zh": "統計獨立性",
       "category": "risk",
-      "def_zh": "兩事件機率相乘不變——彼此不影響。Shiller 強調：金融危機的本質就是「以為獨立、結果不獨立」。",
-      "def_en": "Two events are independent when one gives no information about the other. Shiller stresses: financial crises happen because supposedly independent risks turn out correlated.",
+      "def_zh": "兩事件機率相乘不變——彼此不影響。Robert Shiller 強調：金融危機的本質就是「以為獨立、結果不獨立」。",
+      "def_en": "Two events are independent when one gives no information about the other. Robert Shiller stresses: financial crises happen because supposedly independent risks turn out correlated.",
       "sources": [
         "L02"
       ],
@@ -112,8 +112,8 @@
       "term_en": "Excess Volatility",
       "term_zh": "超額波動",
       "category": "risk",
-      "def_zh": "Shiller 1981 年標誌性發現：股價波動遠大於其後續股利現值所能解釋；對有效市場假說的最強反駁之一。",
-      "def_en": "Shiller's signature 1981 finding: stock prices fluctuate far more than the present value of subsequent dividends can justify—a key challenge to the efficient markets hypothesis.",
+      "def_zh": "Robert Shiller 1981 年標誌性發現：股價波動遠大於其後續股利現值所能解釋；對有效市場假說的最強反駁之一。",
+      "def_en": "Robert Shiller's signature 1981 finding: stock prices fluctuate far more than the present value of subsequent dividends can justify—a key challenge to the efficient markets hypothesis.",
       "sources": [
         "L06",
         "L07"
@@ -125,8 +125,8 @@
       "term_en": "Random Walk",
       "term_zh": "隨機漫步",
       "category": "risk",
-      "def_zh": "每期價格變動皆獨立隨機，過去不含未來資訊。被當成「市場有效」的推論，但 Shiller 認為實證上並不成立。",
-      "def_en": "Model in which each price change is an independent random draw—often treated as a consequence of market efficiency, though Shiller disputes its empirical basis.",
+      "def_zh": "每期價格變動皆獨立隨機，過去不含未來資訊。被當成「市場有效」的推論，但 Robert Shiller 認為實證上並不成立。",
+      "def_en": "Model in which each price change is an independent random draw—often treated as a consequence of market efficiency, though Robert Shiller disputes its empirical basis.",
       "sources": [
         "L07"
       ],
@@ -137,8 +137,8 @@
       "term_en": "Mean Reversion",
       "term_zh": "均值回歸",
       "category": "risk",
-      "def_zh": "價格／報酬長期會回到歷史平均的傾向，與隨機漫步矛盾。CAPE 比率高時長期報酬偏低，是 Shiller 的典型案例。",
-      "def_en": "Tendency of prices/returns to revert toward long-run averages—contradicting random walk. High CAPE predicting low long-run returns is Shiller's textbook case.",
+      "def_zh": "價格／報酬長期會回到歷史平均的傾向，與隨機漫步矛盾。CAPE 比率高時長期報酬偏低，是 Robert Shiller 的典型案例。",
+      "def_en": "Tendency of prices/returns to revert toward long-run averages—contradicting random walk. High CAPE predicting low long-run returns is Robert Shiller's textbook case.",
       "sources": [
         "L07"
       ],
@@ -187,8 +187,8 @@
       "term_en": "Efficient Markets Hypothesis (EMH)",
       "term_zh": "有效市場假說",
       "category": "risk",
-      "def_zh": "資產價格已反映所有可得資訊，主動分析無法持續超越市場。Shiller 認為這是「半真理」——適合當基準，當教條會誤事。",
-      "def_en": "The idea that prices fully reflect available information. Shiller treats it as a 'half-truth'—useful benchmark, dangerous dogma.",
+      "def_zh": "資產價格已反映所有可得資訊，主動分析無法持續超越市場。Robert Shiller 認為這是「半真理」——適合當基準，當教條會誤事。",
+      "def_en": "The idea that prices fully reflect available information. Robert Shiller treats it as a 'half-truth'—useful benchmark, dangerous dogma.",
       "sources": [
         "L07",
         "L11"
@@ -260,8 +260,8 @@
       "term_en": "Head and Shoulders Pattern",
       "term_zh": "頭肩頂型態",
       "category": "risk",
-      "def_zh": "技術分析中三峰反轉型態。Shiller 用它示範技術分析的薄弱——人眼會在隨機漫步中看出根本不存在的型態。",
-      "def_en": "Three-peak reversal pattern in technical analysis. Shiller uses it to illustrate how the eye 'sees' patterns in random walks that aren't there.",
+      "def_zh": "技術分析中三峰反轉型態。Robert Shiller 用它示範技術分析的薄弱——人眼會在隨機漫步中看出根本不存在的型態。",
+      "def_en": "Three-peak reversal pattern in technical analysis. Robert Shiller uses it to illustrate how the eye 'sees' patterns in random walks that aren't there.",
       "sources": [
         "L07"
       ],
@@ -321,8 +321,8 @@
       "term_en": "Overconfidence",
       "term_zh": "過度自信",
       "category": "behavior",
-      "def_zh": "人會高估自己的知識、控制力與預測精度。Shiller 稱之為行為財務最穩健的實證發現。",
-      "def_en": "People overestimate their knowledge, control, and forecasting precision. Shiller calls it perhaps the most robust finding in behavioral finance.",
+      "def_zh": "人會高估自己的知識、控制力與預測精度。Robert Shiller 稱之為行為財務最穩健的實證發現。",
+      "def_en": "People overestimate their knowledge, control, and forecasting precision. Robert Shiller calls it perhaps the most robust finding in behavioral finance.",
       "sources": [
         "L11"
       ],
@@ -357,8 +357,8 @@
       "term_en": "Social Contagion",
       "term_zh": "社會傳染",
       "category": "behavior",
-      "def_zh": "信念、情緒、行為像病毒一樣在社群中擴散；Shiller 認為這是泡沫形成的主要機制。",
-      "def_en": "Beliefs, emotions, and behaviors spread through populations like an epidemic; Shiller sees this as the core mechanism behind bubbles.",
+      "def_zh": "信念、情緒、行為像病毒一樣在社群中擴散；Robert Shiller 認為這是泡沫形成的主要機制。",
+      "def_en": "Beliefs, emotions, and behaviors spread through populations like an epidemic; Robert Shiller sees this as the core mechanism behind bubbles.",
       "sources": [
         "L11"
       ],
@@ -369,8 +369,8 @@
       "term_en": "Speculative Bubble",
       "term_zh": "投機性泡沫",
       "category": "behavior",
-      "def_zh": "Shiller 的工作定義：價格被群眾故事與情緒推升至基本面無法支撐的水準，最終崩跌；可用情緒指標前瞻識別，不只是事後標籤。",
-      "def_en": "Shiller's working definition: prices pushed by narratives and emotion to levels fundamentals can't sustain, ending in collapse—identifiable in real time via sentiment indicators.",
+      "def_zh": "Robert Shiller 的工作定義：價格被群眾故事與情緒推升至基本面無法支撐的水準，最終崩跌；可用情緒指標前瞻識別，不只是事後標籤。",
+      "def_en": "Robert Shiller's working definition: prices pushed by narratives and emotion to levels fundamentals can't sustain, ending in collapse—identifiable in real time via sentiment indicators.",
       "sources": [
         "L01",
         "L02",
@@ -383,8 +383,8 @@
       "term_en": "Praise-Worthiness",
       "term_zh": "值得被讚許",
       "category": "behavior",
-      "def_zh": "Adam Smith 提出、Shiller 反覆援引：人深層渴望的不只是被讚許，而是「真的值得被讚許」。Shiller 用以解釋金融從業者的道德動機。",
-      "def_en": "From Adam Smith and a recurring Shiller theme: people want not just to be praised but to be worthy of praise—he uses this to explain moral motivation in finance.",
+      "def_zh": "Adam Smith 提出、Robert Shiller 反覆援引：人深層渴望的不只是被讚許，而是「真的值得被讚許」。Robert Shiller 用以解釋金融從業者的道德動機。",
+      "def_en": "From Adam Smith and a recurring Robert Shiller theme: people want not just to be praised but to be worthy of praise—he uses this to explain moral motivation in finance.",
       "sources": [
         "L11"
       ],
@@ -395,8 +395,8 @@
       "term_en": "Moral Judgment in Finance",
       "term_zh": "金融的道德判斷",
       "category": "behavior",
-      "def_zh": "Shiller 反覆強調：人渴望「值得被讚許」（worthy of praise），不只是被讚許；金融的道德性是這份渴望的延伸。",
-      "def_en": "Shiller's recurring theme: people want to be worthy of praise, not just praised; financial ethics flows from that desire.",
+      "def_zh": "Robert Shiller 反覆強調：人渴望「值得被讚許」（worthy of praise），不只是被讚許；金融的道德性是這份渴望的延伸。",
+      "def_en": "Robert Shiller's recurring theme: people want to be worthy of praise, not just praised; financial ethics flows from that desire.",
       "sources": [
         "L11",
         "L23"
@@ -408,8 +408,8 @@
       "term_en": "Manipulation & Deception",
       "term_zh": "操縱與欺騙",
       "category": "behavior",
-      "def_zh": "自由市場給予某些參與者操縱他人偏誤、誘人下單的機會；Shiller & Akerlof《Phishing for Phools》全書主題。",
-      "def_en": "Free markets create opportunities to exploit others' biases—the central theme of Shiller & Akerlof's Phishing for Phools.",
+      "def_zh": "自由市場給予某些參與者操縱他人偏誤、誘人下單的機會；Robert Shiller & Akerlof《Phishing for Phools》全書主題。",
+      "def_en": "Free markets create opportunities to exploit others' biases—the central theme of Robert Shiller & Akerlof's Phishing for Phools.",
       "sources": [
         "L11",
         "L12"
@@ -583,8 +583,8 @@
       "term_en": "Bank of England",
       "term_zh": "英格蘭銀行",
       "category": "markets",
-      "def_zh": "1694 年成立的世界第一家現代中央銀行；Shiller 視之為中央銀行制度的起源。",
-      "def_en": "The world's first modern central bank (1694); Shiller treats it as the origin of central banking.",
+      "def_zh": "1694 年成立的世界第一家現代中央銀行；Robert Shiller 視之為中央銀行制度的起源。",
+      "def_en": "The world's first modern central bank (1694); Robert Shiller treats it as the origin of central banking.",
       "sources": [
         "L18"
       ],
@@ -680,8 +680,8 @@
       "term_en": "High-Frequency Trading",
       "term_zh": "高頻交易",
       "category": "markets",
-      "def_zh": "毫秒級演算法交易，獲利來自做市價差、套利與微結構。Shiller 對其穩定性貢獻持懷疑。",
-      "def_en": "Algorithmic trading on millisecond scales, profiting from market-making spreads, arbitrage, and microstructure. Shiller is skeptical of its stabilizing claims.",
+      "def_zh": "毫秒級演算法交易，獲利來自做市價差、套利與微結構。Robert Shiller 對其穩定性貢獻持懷疑。",
+      "def_en": "Algorithmic trading on millisecond scales, profiting from market-making spreads, arbitrage, and microstructure. Robert Shiller is skeptical of its stabilizing claims.",
       "sources": [
         "L21"
       ],
@@ -717,8 +717,8 @@
       "term_en": "Limited Liability Corporation",
       "term_zh": "有限責任公司",
       "category": "instruments",
-      "def_zh": "股東損失上限為其投資額；保護個人財產不被公司債權人追索。Shiller 強調這是現代金融體系的關鍵發明。",
-      "def_en": "Shareholders' losses are capped at their investment; personal assets are shielded from corporate creditors. Shiller calls it a foundational financial invention.",
+      "def_zh": "股東損失上限為其投資額；保護個人財產不被公司債權人追索。Robert Shiller 強調這是現代金融體系的關鍵發明。",
+      "def_en": "Shareholders' losses are capped at their investment; personal assets are shielded from corporate creditors. Robert Shiller calls it a foundational financial invention.",
       "sources": [
         "L03",
         "L09"
@@ -754,8 +754,8 @@
       "term_en": "Dividend",
       "term_zh": "股利",
       "category": "instruments",
-      "def_zh": "公司從稅後盈餘配發給股東的現金或股票；Shiller 在 L7 強調股價長期應由折現股利現值決定，但實證上波動遠超此值。",
-      "def_en": "Cash or stock paid out from after-tax profit to shareholders; Shiller showed in L7 that stock prices fluctuate far more than discounted future dividends justify.",
+      "def_zh": "公司從稅後盈餘配發給股東的現金或股票；Robert Shiller 在 L7 強調股價長期應由折現股利現值決定，但實證上波動遠超此值。",
+      "def_en": "Cash or stock paid out from after-tax profit to shareholders; Robert Shiller showed in L7 that stock prices fluctuate far more than discounted future dividends justify.",
       "sources": [
         "L09"
       ],
@@ -937,8 +937,8 @@
       "term_en": "Hartford Courant 1778 Mortgage Ad",
       "term_zh": "1778 年《Hartford Courant》房貸廣告",
       "category": "instruments",
-      "def_zh": "Shiller 在 L10 引用的歷史文物：1778 年康乃狄克報紙的房屋抵押貸款廣告，說明現代不動產金融的長遠根源。",
-      "def_en": "A historical artifact Shiller cites in L10: a 1778 Connecticut newspaper ad for a mortgage loan, illustrating real estate finance's long roots.",
+      "def_zh": "Robert Shiller 在 L10 引用的歷史文物：1778 年康乃狄克報紙的房屋抵押貸款廣告，說明現代不動產金融的長遠根源。",
+      "def_en": "A historical artifact Robert Shiller cites in L10: a 1778 Connecticut newspaper ad for a mortgage loan, illustrating real estate finance's long roots.",
       "sources": [
         "L10"
       ],
@@ -1106,8 +1106,8 @@
       "term_en": "Swap Contract",
       "term_zh": "交換契約",
       "category": "instruments",
-      "def_zh": "雙方約定在未來一段時間互換現金流（如固定 vs. 浮動利率）；最常見為利率交換。Shiller 視之為 20 世紀重要金融發明之一。",
-      "def_en": "Two parties agree to exchange cash flows over time (e.g., fixed for floating interest); the interest rate swap is the most common. Shiller treats it as a major 20th-century financial invention.",
+      "def_zh": "雙方約定在未來一段時間互換現金流（如固定 vs. 浮動利率）；最常見為利率交換。Robert Shiller 視之為 20 世紀重要金融發明之一。",
+      "def_en": "Two parties agree to exchange cash flows over time (e.g., fixed for floating interest); the interest rate swap is the most common. Robert Shiller treats it as a major 20th-century financial invention.",
       "sources": [
         "L03"
       ],
@@ -1130,8 +1130,8 @@
       "term_en": "Inflation Indexation",
       "term_zh": "通膨指數化",
       "category": "instruments",
-      "def_zh": "契約金額隨物價指數調整以保持實質購買力；美國 TIPS、英國 ILG 為代表。Shiller 視之為金融的重要發明。",
-      "def_en": "Contractual amounts adjusted to a price index to preserve real value; U.S. TIPS and UK ILGs are flagship examples. Shiller cites this as a key financial invention.",
+      "def_zh": "契約金額隨物價指數調整以保持實質購買力；美國 TIPS、英國 ILG 為代表。Robert Shiller 視之為金融的重要發明。",
+      "def_en": "Contractual amounts adjusted to a price index to preserve real value; U.S. TIPS and UK ILGs are flagship examples. Robert Shiller cites this as a key financial invention.",
       "sources": [
         "L03"
       ],
@@ -1289,8 +1289,8 @@
       "term_en": "John Geanakoplos",
       "term_zh": "John Geanakoplos（金融學者）",
       "category": "policy",
-      "def_zh": "Yale 數理金融學者、Ellington Capital 研究主管。在 Yale 同時教 ECON 251 Financial Theory，與 Shiller 課程互補（理論／實務）。",
-      "def_en": "Yale mathematical economist and Ellington Capital research director; teaches the companion ECON 251 Financial Theory at Yale, complementing Shiller's course.",
+      "def_zh": "Yale 數理金融學者、Ellington Capital 研究主管。在 Yale 同時教 ECON 251 Financial Theory，與 Robert Shiller 課程互補（理論／實務）。",
+      "def_en": "Yale mathematical economist and Ellington Capital research director; teaches the companion ECON 251 Financial Theory at Yale, complementing Robert Shiller's course.",
       "sources": [
         "L01",
         "L19"
@@ -1302,8 +1302,8 @@
       "term_en": "Democratization of Finance",
       "term_zh": "金融的民主化",
       "category": "policy",
-      "def_zh": "Shiller 標誌性主張：讓所有人（不只富人）都能享用先進金融工具的好處——保險、避險、分散投資。",
-      "def_en": "Shiller's signature thesis: extending sophisticated financial tools (insurance, hedging, diversification) to everyone, not just the wealthy.",
+      "def_zh": "Robert Shiller 標誌性主張：讓所有人（不只富人）都能享用先進金融工具的好處——保險、避險、分散投資。",
+      "def_en": "Robert Shiller's signature thesis: extending sophisticated financial tools (insurance, hedging, diversification) to everyone, not just the wealthy.",
       "sources": [
         "L23",
         "L01"
@@ -1464,8 +1464,8 @@
       "term_en": "Suffolk System",
       "term_zh": "Suffolk 體系",
       "category": "policy",
-      "def_zh": "1820 年代波士頓 Suffolk Bank 為清算新英格蘭各家銀行紙幣而建的私營清算機制；Shiller 視之為早期央行體系雛形。",
-      "def_en": "A private clearing arrangement run by Boston's Suffolk Bank from the 1820s to clear notes of New England's banks; Shiller treats it as a proto-central-bank.",
+      "def_zh": "1820 年代波士頓 Suffolk Bank 為清算新英格蘭各家銀行紙幣而建的私營清算機制；Robert Shiller 視之為早期央行體系雛形。",
+      "def_en": "A private clearing arrangement run by Boston's Suffolk Bank from the 1820s to clear notes of New England's banks; Robert Shiller treats it as a proto-central-bank.",
       "sources": [
         "L18"
       ],
@@ -1489,8 +1489,8 @@
       "term_en": "Finding Purpose in Finance",
       "term_zh": "在金融中找尋使命",
       "category": "policy",
-      "def_zh": "Shiller《Finance and the Good Society》核心：金融是把事情做成的技術，從業者該服務於更大的目的而非僅追求個人致富。",
-      "def_en": "Core of Shiller's Finance and the Good Society: finance is a technology for getting things done; practitioners should serve a larger purpose, not just personal enrichment.",
+      "def_zh": "Robert Shiller《Finance and the Good Society》核心：金融是把事情做成的技術，從業者該服務於更大的目的而非僅追求個人致富。",
+      "def_en": "Core of Robert Shiller's Finance and the Good Society: finance is a technology for getting things done; practitioners should serve a larger purpose, not just personal enrichment.",
       "sources": [
         "L23",
         "L01"

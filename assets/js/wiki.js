@@ -53,7 +53,7 @@ async function initWikiPage() {
   layout.prepend(buildSidebar(data.lectures, null));
 
   const gloss = await loadGlossary();
-  document.title = "金融名詞 Wiki — Shiller《金融市場》";
+  document.title = "金融名詞 Wiki — Robert Shiller《金融市場》";
 
   // filters
   const filterBar = document.getElementById("wikiFilters");

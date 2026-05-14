@@ -116,7 +116,7 @@ function showToast(msg, timeout = 2400) {
 }
 
 function lectureFileBase(lec) {
-  return safeFileName(`Shiller_ECON252_${lec.id}_${lec.title_zh}`);
+  return safeFileName(`Robert Shiller_ECON252_${lec.id}_${lec.title_zh}`);
 }
 
 function exportMd() {
@@ -182,7 +182,7 @@ function buildPrintableHtml(lec, chapters) {
   return `<!DOCTYPE html>
 <html lang="zh-Hant"><head>
 <meta charset="UTF-8">
-<title>${escapeHtml(lec.title_zh)} — Shiller ECON 252 L${lec.num}</title>
+<title>${escapeHtml(lec.title_zh)} — Robert Shiller ECON 252 L${lec.num}</title>
 <style>
   body { font-family: "Noto Serif TC","Source Han Serif TC","PingFang TC","Songti TC", Georgia, serif;
          max-width: 760px; margin: 24px auto; padding: 0 28px; line-height: 1.75; color: #1f1d1a; }
@@ -369,7 +369,7 @@ async function initLecturePage() {
   document.body.prepend(buildTopbar("lecture"));
   const layout = document.querySelector(".layout");
   layout.prepend(buildSidebar(data.lectures, lec.id));
-  document.title = `L${lec.num}｜${lec.title_zh} — Shiller《金融市場》`;
+  document.title = `L${lec.num}｜${lec.title_zh} — Robert Shiller《金融市場》`;
 
   try {
     const resp = await fetch(lec.file);

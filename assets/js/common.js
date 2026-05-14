@@ -49,7 +49,7 @@ function buildTopbar(activeTab) {
       onclick: toggleDrawer,
     }, "≡"),
     el("a", { class: "brand", href: "index.html" },
-      "Shiller《金融市場》",
+      "Robert Shiller《金融市場》",
       el("span", { class: "small" }, "Yale ECON 252 · 2011")
     ),
     el("nav", { class: "navtabs" },
