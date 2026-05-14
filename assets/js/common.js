@@ -8,7 +8,6 @@ const TABS = [
   { id: "home",    label: "首頁",   href: "index.html" },
   { id: "lecture", label: "逐字稿", href: "lecture.html" },
   { id: "wiki",    label: "Wiki",   href: "wiki.html" },
-  { id: "mindmap", label: "心智圖", href: "mindmap.html" },
 ];
 
 async function loadLectures() {

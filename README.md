@@ -5,7 +5,7 @@
 - **首頁**：使用指南 + 三條學習路徑（入門／工具／制度）+ 四個應用場景
 - **逐字稿頁**：YouTube 嵌入 + 中英對照逐字稿（中英並排／上下交錯／僅中／僅英 四模式）
 - **Wiki**：121 個 Robert Shiller 核心名詞，**每條附從原始逐字稿擷取的真實 Robert Shiller 段落引用**（不編造、可點連結驗證）
-- **心智圖**：markmap 互動式知識點地圖
+- **匯出**：每講可一鍵下載為 Markdown / TXT / PDF，或複製到剪貼簿，方便餵給 Claude / ChatGPT 等 AI 學習
 
 純靜態 HTML/CSS/JS、無 build step、可離線使用、可 zip 分享、可上 GitHub Pages。
 
@@ -57,19 +57,16 @@ shiller-financial-markets/
 ├── index.html              # 首頁（使用說明 + 學習路徑）
 ├── lecture.html            # 逐字稿頁
 ├── wiki.html               # 名詞 Wiki
-├── mindmap.html            # 心智圖
 ├── assets/
 │   ├── css/styles.css
 │   └── js/
 │       ├── common.js       # 共用頂欄、側邊欄、資料載入
 │       ├── home.js
-│       ├── lecture.js      # 逐字稿解析 + 渲染
-│       ├── wiki.js
-│       └── mindmap.js
+│       ├── lecture.js      # 逐字稿解析 + 渲染 + 匯出
+│       └── wiki.js
 ├── data/
-│   ├── lectures.json       # 23 講 metadata + 章節索引 + YT id（v0.1 已完整）
-│   ├── glossary.json       # 18 個核心詞條（v0.1 留薄）
-│   └── mindmap.md          # markmap 大綱（v0.1 全課程骨架）
+│   ├── lectures.json       # 23 講 metadata + 章節索引 + YT id
+│   └── glossary.json       # 121 個核心詞條
 └── transcripts/            # L01.md ~ L23.md（從 1. Information/Interview/Robert Shiller 複製）
 ```
 
@@ -83,12 +80,11 @@ shiller-financial-markets/
 - ✅ 4 種顯示模式（並排 / 交錯 / 僅中 / 僅英）切換並記憶選擇
 - ✅ 首頁三條學習路徑、四個應用場景、五步使用指南
 - ✅ Wiki：121 個核心名詞、5 分類過濾、即時搜尋、每條附真實 Robert Shiller 段落引用與可點出處
-- ✅ 心智圖：全課程骨架（六大主題、約 80 個節點）
+- ✅ 一鍵匯出：複製 / MD / TXT / PDF，方便餵 AI 學習
 
 ## v1.0+ 後續可擴充
 
 - Wiki 詞條擴充到 150+（再深入專業細項）
-- 心智圖加入「每節要點」層
 - 全文搜尋（已預留 UI，下一輪接 MiniSearch）
 - 影片時間戳 ↔ 逐字稿段落雙向跳轉
 - 個人筆記／重點標記（localStorage）
