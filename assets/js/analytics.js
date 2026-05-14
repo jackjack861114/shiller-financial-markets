@@ -12,7 +12,7 @@
  * 預設不會在 localhost / 127.0.0.1 觸發，所以本機開發不會污染統計。
  */
 
-const CF_BEACON_TOKEN = "PASTE_YOUR_TOKEN_HERE";
+const CF_BEACON_TOKEN = "732f4bd9bdfa465986d3d57fafdab9d0";
 
 (function () {
   if (
