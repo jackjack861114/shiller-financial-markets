@@ -154,7 +154,7 @@ function renderLecture(lec, chapters) {
     if (c.n <= 2) det.setAttribute("open", "");
     det.appendChild(el("summary", {},
       el("span", { class: "chnum" }, `Ch ${c.n}`),
-      el("span", {}, c.title_zh || c.title_en),
+      el("span", { class: "ch-title" }, c.title_zh || c.title_en),
       el("span", { class: "ch-en" }, c.title_en),
     ));
     const body = el("div", { class: "ch-body" });
