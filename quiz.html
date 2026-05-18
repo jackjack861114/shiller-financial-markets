@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>知識測驗｜Robert Shiller《金融市場》</title>
+<meta name="description" content="Robert Shiller 金融市場知識測驗——選擇你的金融角色，透過 Shiller 原文問答挑戰同事，登上排行榜。">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<div class="layout">
+  <!-- sidebar injected by JS -->
+  <main class="main" id="quizMain">
+
+    <!-- ── Screen 1: Role Selection ── -->
+    <div id="screenRole" class="quiz-screen active">
+      <div class="quiz-hero">
+        <div class="quiz-badge">🎓 知識測驗</div>
+        <h1>你是誰？</h1>
+        <p class="quiz-sub">根據 Robert Shiller 定義的金融市場角色，選擇你最接近的身份。<br>你將接受針對這個角色設計的 8 題 Shiller 原文問答。</p>
+      </div>
+      <div id="roleGrid" class="role-grid"></div>
+    </div>
+
+    <!-- ── Screen 2: Username Input ── -->
+    <div id="screenName" class="quiz-screen">
+      <div class="quiz-hero">
+        <div id="selectedRoleDisplay" class="role-badge-large"></div>
+        <h1>你叫什麼名字？</h1>
+        <p class="quiz-sub">你的名字會出現在排行榜上。</p>
+      </div>
+      <div class="name-form-wrap">
+        <form id="nameForm" class="name-form">
+          <input type="text" id="nameInput" placeholder="輸入你的名字（如：Jack）" maxlength="20" autocomplete="off" />
+          <button type="submit" class="btn-primary" id="startBtn">開始測驗 →</button>
+        </form>
+        <button class="btn-ghost" id="backToRoles">← 重新選擇角色</button>
+      </div>
+    </div>
+
+    <!-- ── Screen 3: Quiz In Progress ── -->
+    <div id="screenQuiz" class="quiz-screen">
+      <div class="quiz-topbar">
+        <div class="quiz-identity">
+          <span id="qRoleBadge" class="role-badge-sm"></span>
+          <span id="qPlayerName" class="player-name-sm"></span>
+        </div>
+        <div class="quiz-progress-wrap">
+          <span id="qProgress" class="quiz-progress-label">第 1 題 / 共 8 題</span>
+          <div class="quiz-progress-bar"><div id="qProgressFill" class="quiz-progress-fill" style="width:0%"></div></div>
+        </div>
+        <div id="qScore" class="quiz-score-badge">0 分</div>
+      </div>
+
+      <div class="question-card" id="questionCard">
+        <div class="q-meta" id="qMeta"></div>
+        <div class="q-text" id="qText"></div>
+        <div class="q-choices" id="qChoices"></div>
+      </div>
+
+      <!-- Feedback panel (hidden until answer) -->
+      <div class="feedback-panel" id="feedbackPanel" style="display:none">
+        <div class="feedback-verdict" id="feedbackVerdict"></div>
+        <div class="feedback-explanation" id="feedbackExplanation"></div>
+        <div class="feedback-quote-wrap">
+          <div class="feedback-quote-label">Robert Shiller 原文</div>
+          <blockquote class="feedback-quote" id="feedbackQuote"></blockquote>
+        </div>
+        <div class="feedback-links" id="feedbackLinks"></div>
+        <button class="btn-primary" id="nextBtn">下一題 →</button>
+      </div>
+    </div>
+
+    <!-- ── Screen 4: Results + Leaderboard ── -->
+    <div id="screenResults" class="quiz-screen">
+      <div class="results-hero">
+        <div id="resultRoleBadge" class="role-badge-large"></div>
+        <div id="resultScore" class="result-score"></div>
+        <div id="resultMsg" class="result-msg"></div>
+        <div id="resultPlayerName" class="result-player-name"></div>
+      </div>
+
+      <div class="results-actions">
+        <button class="btn-primary" id="retryBtn">再挑戰一次</button>
+        <button class="btn-secondary" id="changeRoleBtn">換個角色</button>
+        <button class="btn-ghost" id="exportBtn">📤 匯出分數碼（分享給同事）</button>
+      </div>
+
+      <div class="import-wrap">
+        <details class="import-details">
+          <summary>📥 匯入同事分數碼</summary>
+          <div class="import-form">
+            <textarea id="importInput" placeholder="貼上同事的分數碼…" rows="3"></textarea>
+            <button class="btn-secondary" id="importBtn">匯入</button>
+            <div id="importMsg" class="import-msg"></div>
+          </div>
+        </details>
+      </div>
+
+      <div class="leaderboard-section">
+        <h2>🏆 排行榜</h2>
+        <p class="leaderboard-note">排行榜儲存於本機瀏覽器。匯出分數碼，讓同事匯入到他們的排行榜來競賽。</p>
+        <div id="leaderboard" class="leaderboard-table"></div>
+        <button class="btn-ghost btn-sm" id="clearLBBtn" style="margin-top:12px">清空排行榜</button>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<script src="assets/js/common.js"></script>
+<script src="assets/js/quiz.js"></script>
+</body>
+</html>

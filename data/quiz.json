@@ -1,0 +1,1992 @@
+{
+  "roles": [
+    {
+      "id": "portfolio_manager",
+      "name_zh": "投資組合經理人",
+      "name_en": "Portfolio Manager",
+      "icon": "📊",
+      "desc_zh": "管理基金與投資組合，運用 CAPM 與有效市場理論，為委託人追求風險調整後的最佳報酬",
+      "lectures": ["L04", "L07", "L11", "L20"],
+      "color": "#2a6f97"
+    },
+    {
+      "id": "banker",
+      "name_zh": "銀行家",
+      "name_en": "Banker",
+      "icon": "🏦",
+      "desc_zh": "管理信貸、流動性與資本，理解槓桿循環、擠兌機制與 Basel 資本規範",
+      "lectures": ["L08", "L13", "L18"],
+      "color": "#386641"
+    },
+    {
+      "id": "insurance_pro",
+      "name_zh": "保險精算師",
+      "name_en": "Insurance Professional",
+      "icon": "🛡️",
+      "desc_zh": "設計保險商品、管理風險匯集與道德風險，理解保險業的失敗案例與監管機制",
+      "lectures": ["L02", "L05"],
+      "color": "#8b3a2b"
+    },
+    {
+      "id": "derivatives_trader",
+      "name_zh": "衍生品交易員",
+      "name_en": "Derivatives Trader",
+      "icon": "📈",
+      "desc_zh": "交易期貨、選擇權等衍生性商品，運用 Black-Scholes 定價、避險策略與波動率分析",
+      "lectures": ["L15", "L17"],
+      "color": "#5c4033"
+    },
+    {
+      "id": "investment_banker",
+      "name_zh": "投資銀行家",
+      "name_en": "Investment Banker",
+      "icon": "💼",
+      "desc_zh": "承銷股票、主導 IPO 與 M&A，理解企業融資、影子銀行體系與金融監理架構",
+      "lectures": ["L09", "L19"],
+      "color": "#4a235a"
+    },
+    {
+      "id": "wealth_manager",
+      "name_zh": "財富管理顧問",
+      "name_en": "Wealth Manager",
+      "icon": "🏛️",
+      "desc_zh": "服務高淨值客戶與機構投資人，運用 Yale Model、信託結構與另類投資策略",
+      "lectures": ["L06", "L20", "L22"],
+      "color": "#7d6608"
+    }
+  ],
+  "questions": {
+    "portfolio_manager": [
+      {
+        "id": "pm_01",
+        "lecture_id": "L04",
+        "youtube_id": "_B_24GUWdSM",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-4",
+        "text": "根據 CAPM，只有哪種風險應該獲得風險溢酬（額外報酬）？",
+        "choices": [
+          "特異風險（Idiosyncratic risk），因為它是個股獨有的風險",
+          "系統性風險（Beta），因為它無法透過分散投資消除",
+          "流動性風險，因為難賣出的資產應獲得更高報酬",
+          "波動性風險，標準差越高報酬越高"
+        ],
+        "correct": 1,
+        "explanation": "CAPM 核心主張：特異風險（如個別公司風險）可透過分散投資消除，因此市場不給補償。只有與市場連動的系統性風險（Beta）無法分散，投資人才應因此獲得風險溢酬。",
+        "shiller_quote": "So, that's measured by β. The β is the regression—the slope coefficient, when you regress the return on the i-th asset on the return of the market. So, high β stocks are stocks that go with the market. When the market goes up, they go up a lot. When the market goes down, they go down a lot."
+      },
+      {
+        "id": "pm_02",
+        "lecture_id": "L07",
+        "youtube_id": "3EzdvkRgToY",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-7",
+        "text": "Robert Shiller 對有效市場假說（EMH）提出的最核心批評是什麼？",
+        "choices": [
+          "技術分析確實有效，可以穩定打敗市場",
+          "市場完全無效，股價完全由情緒決定",
+          "股市的實際波動性遠超基本面所能解釋，顯示市場並非完全理性",
+          "EMH 只適用於美國市場，不適用於其他國家"
+        ],
+        "correct": 2,
+        "explanation": "Shiller 的「超額波動」研究（2013 年諾貝爾獎核心貢獻）發現，股市的實際波動幅度遠遠超出股利折現模型所能預測的範圍。這說明市場價格包含非理性成分，不完全反映基本面。",
+        "shiller_quote": "The problem is that the real world seems, maybe, to be more like the drunk with the loose elastic. And so, it's kind of unsatisfying. You can beat the market, but simple trading rules like Edwards and Magee's head and shoulders don't seem to work. The market is kind of efficient, but it's not completely efficient."
+      },
+      {
+        "id": "pm_03",
+        "lecture_id": "L11",
+        "youtube_id": "chSHqogx2CI",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-11",
+        "text": "根據 Kahneman 與 Tversky 的展望理論（Prospect Theory），人們對損失與等量利得的心理感受如何？",
+        "choices": [
+          "兩者感受完全相同，理性人不偏好",
+          "利得帶來的愉悅感遠強於等量損失的痛苦",
+          "損失帶來的痛苦約為等量利得帶來愉悅感的兩倍",
+          "感受隨投資金額大小線性變化，沒有不對稱"
+        ],
+        "correct": 2,
+        "explanation": "展望理論是行為財務學的基石。Kahneman 與 Tversky 發現人們對損失的痛苦約是等量利得愉悅的兩倍，即「損失厭惡」（Loss Aversion）。這解釋了為何投資人過早停利、過晚停損。",
+        "shiller_quote": "Now I wanted to move—that was my introduction. I wanted to move now to discussing some particular aspects of Behavioral Finance, or more broadly Behavioral Economics. And about human failings that affect investment performance. Prospect Theory is a theory of Kahneman and Tversky, which says that utility is not only a function of wealth level, but of changes in wealth level. And moreover, the function is an S-shaped curve, where losses are felt more sharply than gains."
+      },
+      {
+        "id": "pm_04",
+        "lecture_id": "L04",
+        "youtube_id": "_B_24GUWdSM",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-4",
+        "text": "你的高淨值客戶堅持要把 80% 資金集中買入 3 支他看好的科技股，理由是「我研究很深，這三支一定會漲」。身為投組經理人，你最應該怎麼做？",
+        "choices": [
+          "尊重客戶自主判斷，全部執行他的指示",
+          "解釋集中持股的特異風險無法獲得市場補償，建議以廣泛分散的核心組合為主，再以小比例衛星部位滿足其個股偏好",
+          "拒絕執行，因為集中持股違反受託人義務",
+          "買入這 3 支股票，同時做空相關 ETF 對沖"
+        ],
+        "correct": 1,
+        "explanation": "CAPM 的核心實務意涵：個股特異風險不會獲得市場補償，因為它可以分散掉。受託人義務要求你以客戶長期最佳利益為重，而非盲目服從。正確做法是教育客戶、提出合理替代方案，並保留溝通記錄——這才是負責任的投組管理。",
+        "shiller_quote": "The Mutual Fund Theorem says that every investor, regardless of their risk preferences, should hold the same risky portfolio—the Tangency Portfolio. The only decision is how much to put in the risk-free asset versus this portfolio. This has a powerful implication: you don't need to pick individual stocks. Diversification is free, and concentration in specific stocks is a risk you don't get paid for taking."
+      },
+      {
+        "id": "pm_05",
+        "lecture_id": "L07",
+        "youtube_id": "3EzdvkRgToY",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-7",
+        "text": "Sharpe 比率（Sharpe Ratio）衡量什麼，為何它是評估投資組合的重要指標？",
+        "choices": [
+          "投組的絕對報酬率，越高越好",
+          "投組超過無風險利率的報酬除以標準差，衡量每單位風險創造的超額報酬",
+          "投組相對於市場基準的 Beta 係數",
+          "投組所有資產的平均股利殖利率"
+        ],
+        "correct": 1,
+        "explanation": "Sharpe 比率讓你能跨越不同風險水準比較投組表現。高 Sharpe 比率代表承擔同樣風險卻獲得更高報酬。它是評估基金經理人「alpha 能力」而非單純追求高報酬的核心指標。",
+        "shiller_quote": "It's named after William Sharpe, who is the inventor, with Lintner, of the Capital Asset Pricing Model. The Sharpe ratio is, for any portfolio, the average return on the portfolio minus the risk-free rate, divided by the standard deviation of the portfolio. And you want it to be high, right? You want to maximize the Sharpe ratio."
+      },
+      {
+        "id": "pm_06",
+        "lecture_id": "L11",
+        "youtube_id": "chSHqogx2CI",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-11",
+        "text": "2020 年 3 月 COVID-19 爆發，市場 4 週內暴跌 34%，你的客戶慌張打電話要求「全部清倉，現在馬上」。根據行為財務學，你最有智慧的應對方式是什麼？",
+        "choices": [
+          "立刻執行，客戶的指示永遠優先，你的職責是服從",
+          "提醒客戶恐慌性出場等於把帳面損失轉為實現損失，且歷史顯示恐慌後的反彈最劇烈，建議先一起檢視財務目標與時間軸，再做決定",
+          "建議先減倉一半，保留另一半觀望",
+          "不接電話，等市場穩定後再回覆"
+        ],
+        "correct": 1,
+        "explanation": "行為財務最重要的實務應用：市場最悲觀的時刻往往是最不應該出場的時刻。投資顧問的核心價值不是選股，而是在恐慌時防止客戶做出由「損失厭惡」驅動的短視決策。這是 Shiller 在行為財務研究中反覆強調的主題。",
+        "shiller_quote": "Regret Theory says that people fear the pain of regret. They compare what they did with what they could have done. The fear of regret causes people to hold on to losers too long—they don't want to regret having sold. Or it causes them to sell winners too soon—locking in a gain to avoid regretting it later. These behavioral biases are exactly what a good financial advisor should help clients overcome, not enable."
+      },
+      {
+        "id": "pm_07",
+        "lecture_id": "L11",
+        "youtube_id": "chSHqogx2CI",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-11",
+        "text": "錨定效應（Anchoring）在金融決策中如何表現？",
+        "choices": [
+          "投資人完全忽視市場報價，只看內在價值",
+          "投資人依賴均線等技術指標作為唯一買賣信號",
+          "投資人的估值判斷會被任意的初始數字不理性地拉向那個數字",
+          "基金經理人過度跟隨市場共識，避免與眾不同"
+        ],
+        "correct": 2,
+        "explanation": "Kahneman 與 Tversky 的著名實驗：即使是隨機轉動轉盤得到的數字，也會影響受試者對完全不相關問題的估算。在金融中，投資人往往錨定在買入成本價、52週高低點等數字，即使這些數字對未來毫無意義。",
+        "shiller_quote": "Anchoring refers to a tendency to anchor your opinions on something that captures your attention. The famous anchoring experiment by, it was again, Kahneman and Tversky. They had people spin a wheel of fortune, which was rigged to either land on 10 or 65. Then, they asked the question: what fraction of United Nations member states are from Africa? And the people who got 10 on the wheel of fortune gave a lower answer than those who got 65. There's no connection."
+      },
+      {
+        "id": "pm_08",
+        "lecture_id": "L20",
+        "youtube_id": "txTaBKZ8qrs",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-20",
+        "text": "確定給付制（DB）與確定提撥制（DC）退休金的核心差別是什麼？",
+        "choices": [
+          "DB 由員工自己投資管理，DC 由雇主統一管理",
+          "DB 由雇主保證退休金金額，DC 的退休金取決於投資績效，風險由員工承擔",
+          "DC 的費用通常高於 DB，因此報酬率較低",
+          "DB 只適用於政府機構，DC 只適用於私人企業"
+        ],
+        "correct": 1,
+        "explanation": "DB 制度下，雇主承諾給予員工固定的退休金。DC 制度下，雇主只保證提撥金額，最終退休金取決於投資績效。1980 年代起全球趨勢從 DB 轉向 DC，投資風險大幅轉移至個人。",
+        "shiller_quote": "But afterwards, in the 1980s, companies started offering a new kind of pension plan, called a defined contribution. The idea was, it's hard for us to hit that target, of say 50% of your average income. So instead of guaranteeing a defined benefit, we're going to define how much we put in every year and whatever you get is what you get."
+      },
+      {
+        "id": "pm_09",
+        "lecture_id": "L04",
+        "youtube_id": "_B_24GUWdSM",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-4",
+        "text": "投資組合理論中，當兩資產相關係數（Correlation）趨近 -1 時，有什麼效果？",
+        "choices": [
+          "兩資產報酬完全同步，分散效果為零",
+          "組合的風險可以趨近於零，是最理想的多元化情境",
+          "負相關代表兩者都是高風險資產，不宜同時配置",
+          "相關係數與分散效果無關，重要的是個別資產的波動率"
+        ],
+        "correct": 1,
+        "explanation": "馬可維茲理論核心：分散投資的關鍵不是「加入更多資產」，而是「加入相關性低的資產」。當兩資產完全負相關，一個跌時另一個漲，組合波動可趨近零。這解釋了股票與債券的組合何以在不犧牲太多報酬的情況下大幅降低風險。",
+        "shiller_quote": "If the correlation between two stocks is minus one—perfectly negatively correlated—you can combine them to get zero risk. That's the holy grail of diversification. In practice, correlations are never perfectly minus one, but even imperfect negative correlation can dramatically reduce portfolio risk. That's the fundamental insight of portfolio theory."
+      },
+      {
+        "id": "pm_10",
+        "lecture_id": "L07",
+        "youtube_id": "3EzdvkRgToY",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-7",
+        "text": "「價值溢酬」（Value Premium）指的是什麼？其成因最可能是？",
+        "choices": [
+          "成長股長期表現優於價值股，因為高品質公司值得溢價",
+          "低本益比／低股淨比股票長期報酬優於高倍數股票，可能反映系統性行為偏誤或真實風險補償",
+          "美國科技股長期優於傳統產業，因為技術創新創造更高價值",
+          "高股利殖利率股票長期報酬優於不配息股"
+        ],
+        "correct": 1,
+        "explanation": "Fama-French 三因子模型記錄「價值溢酬」：低倍數股長期優於高倍數股。行為解釋：投資人對近期表現外推，過度懲罰陷入困境的公司；理性解釋：低倍數股承擔更高的財務風險。理解這個現象是因子投資策略的基礎。",
+        "shiller_quote": "There's a long history suggesting that value stocks—stocks with low price-earnings or price-book ratios—tend to outperform growth stocks over long horizons. Fama and French called this the value premium. It may reflect systematic error—investors overreact to bad news and underprice recovery. Or it may be compensation for bearing distress risk. The jury is still out."
+      },
+      {
+        "id": "pm_11",
+        "lecture_id": "L11",
+        "youtube_id": "chSHqogx2CI",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-11",
+        "text": "研究發現「過度自信偏誤」（Overconfidence Bias）在基金管理中如何損害報酬？",
+        "choices": [
+          "過度自信的經理人比謙遜的經理人賺到更高超額報酬",
+          "過度自信導致過度交易，交易成本侵蝕報酬，長期績效往往落後低換手率同業",
+          "過度自信使經理人完全忽視風險管理，持有過多衍生品部位",
+          "過度自信只在散戶投資人身上觀察到，專業機構不受影響"
+        ],
+        "correct": 1,
+        "explanation": "Barber 和 Odean 的研究顯示，換手率最高的投資人長期報酬最差。每次交易都有買賣價差和佣金。過度交易的主要原因是「認為自己有信息優勢」。即使是專業基金經理人，研究顯示平均換手率超過合理水準，是過度自信的直接表現。",
+        "shiller_quote": "There's a study by Odean and Barber—people who trade more earn less. They seem to be overconfident in their ability to pick stocks. They're buying stocks and selling stocks, but they're not making money on these transactions. They're just paying brokerage costs and bid-ask spreads. Overconfidence is one of the most pervasive biases in investing."
+      },
+      {
+        "id": "pm_12",
+        "lecture_id": "L07",
+        "youtube_id": "3EzdvkRgToY",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-7",
+        "text": "Shiller 的 CAPE 比率（週期調整本益比）與單年 P/E 相比有什麼獨特洞察力？",
+        "choices": [
+          "CAPE 預測單季股市漲跌，是短線擇時的最佳工具",
+          "用 10 年平均實質盈餘平滑景氣週期影響，提供更穩定的長期估值基準；CAPE 極高時，未來十年的預期報酬往往偏低",
+          "CAPE 越高代表公司越優質，因此 CAPE 高的市場更值得投資",
+          "CAPE 只適用評估科技股，傳統產業不適用"
+        ],
+        "correct": 1,
+        "explanation": "Shiller 研究發現 CAPE 與 10 年後股市報酬有負相關——CAPE 在 2000 年高達 44 倍時，未來十年報酬為負；CAPE 在低點時，未來回報豐厚。它不是短期擇時工具，而是長期「市場溫度計」。",
+        "shiller_quote": "I invented the cyclically adjusted price-earnings ratio, or CAPE. The idea is to take the price divided by a ten-year average of real earnings. That seems to have some—not a lot, but some—forecast power for the long-run return on the stock market. When the CAPE is very high, returns over the next ten years tend to be below average."
+      },
+      {
+        "id": "pm_13",
+        "lecture_id": "L04",
+        "youtube_id": "_B_24GUWdSM",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-4",
+        "text": "馬可維茲「效率前緣」（Efficient Frontier）代表什麼？",
+        "choices": [
+          "報酬最高的前 10% 股票在某特定期間的表現",
+          "在每一個風險水準下報酬最大化的投資組合集合——位於其下方的投組就是沒有效率的",
+          "所有上市股票的平均本益比與波動率的對應關係",
+          "基金經理人歷史績效的標準差分布曲線"
+        ],
+        "correct": 1,
+        "explanation": "效率前緣是投組優化的核心概念。對任何一個投組，如果有另一個投組「同樣風險但報酬更高」或「同樣報酬但風險更低」，前者就是「無效率的」。CAPM 延伸指出所有理性投資人都應持有切點投組（市場投組）。",
+        "shiller_quote": "When you optimize portfolios, you get the efficient frontier. Any portfolio on the efficient frontier maximizes expected return for a given level of risk. Below the frontier are inefficient portfolios—you could do better by moving to the frontier. Diversification lets you shift up to the frontier without necessarily taking more risk."
+      },
+      {
+        "id": "pm_14",
+        "lecture_id": "L11",
+        "youtube_id": "chSHqogx2CI",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-11",
+        "text": "「心理帳戶」（Mental Accounting）偏誤如何損害整體投組報酬？",
+        "choices": [
+          "將不同帳戶資金分開管理，有助精確控制風險暴露",
+          "投資人把「贏來的錢」與「辛苦賺的錢」分開看待，對前者風險容忍度異常高，導致整體投組承擔了不理性的集中風險",
+          "把月薪固定比例自動投入指數基金，忽視市場估值",
+          "避免計算整體投組報酬，只看個股盈虧，防止情緒干擾"
+        ],
+        "correct": 1,
+        "explanation": "心理帳戶是 Thaler 提出的概念：人們把同樣的錢放在「不同的心理口袋」，用不同標準對待。最常見的例子：用賭場贏的錢豪賭（「反正是賺來的」），卻對辛苦積蓄極度保守。正確的財務決策應把所有資產當成「同一個池子」統一管理。",
+        "shiller_quote": "Thaler introduced mental accounting. People treat money differently depending on where it comes from or what account it's in. They'll treat money won at the casino differently from money earned from work—even though a dollar is a dollar. This leads to bizarre investment decisions. They take excessive risks with 'found money' and are overly conservative with 'earned money.'"
+      },
+      {
+        "id": "pm_15",
+        "lecture_id": "L07",
+        "youtube_id": "3EzdvkRgToY",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-7",
+        "text": "隨機漫步假說（Random Walk Hypothesis）對主動型基金投資者最直接的挑戰是什麼？",
+        "choices": [
+          "基金費率過高，使主動型基金回報必然低於指數型基金",
+          "若股價已充分反映所有公開資訊，歷史股價無法預測未來走勢，技術分析和大多數主動選股無法持續獲得超額報酬",
+          "隨機漫步說明市場完全有效，所有股票風險調整後報酬完全相同",
+          "隨機漫步只在美國成立，新興市場主動型管理仍有明顯優勢"
+        ],
+        "correct": 1,
+        "explanation": "隨機漫步的邏輯：市場已知資訊都反映在今日股價，未來變動只取決於「新信息」，而新信息本質上不可預測。大量研究顯示長期超過 80% 的主動型基金無法持續跑贏指數，費用是主要拖累。",
+        "shiller_quote": "Malkiel's book is called A Random Walk Down Wall Street. If the market is efficient, changes in stock prices should be unpredictable—a random walk. If they were predictable, those predictions would already be incorporated into current prices. The challenge for active managers: if the random walk hypothesis is even approximately true, it's very hard to beat the market consistently."
+      },
+      {
+        "id": "pm_16",
+        "lecture_id": "L20",
+        "youtube_id": "txTaBKZ8qrs",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-20",
+        "text": "「目標日期基金」（Target Date Fund）採用的「生命週期投資」邏輯是什麼？",
+        "choices": [
+          "年輕投資人應保守持有大量債券，等退休後改持股票以獲取資本利得",
+          "年輕時持有較高股票比例，隨著接近退休日期逐漸降低股票比例，因為剩餘人力資本減少，需要降低財務資本的波動性",
+          "投資比例與年齡無關，重要的是每年根據市場估值動態調整",
+          "所有年齡層都應持有固定的 60% 股票 / 40% 債券組合"
+        ],
+        "correct": 1,
+        "explanation": "生命週期投資的邏輯來自「全財富」框架：年輕時最大的資產是未來 40 年的工資收入（人力資本），它像一張長期債券，因此可以承擔更高的金融資本風險。接近退休，人力資本耗盡，金融資本就是全部，需要降低波動。",
+        "shiller_quote": "A young person has a lot of human capital—that's the present value of future earnings. Human capital for most people is like a bond—relatively stable. So if you have a lot of bond-like human capital, you can tilt your financial portfolio toward stocks. As you approach retirement and your human capital diminishes, you should shift to be more conservative."
+      },
+      {
+        "id": "pm_17",
+        "lecture_id": "L11",
+        "youtube_id": "chSHqogx2CI",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-11",
+        "text": "「羊群效應」（Herd Behavior）如何導致資產泡沫？",
+        "choices": [
+          "機構投資人統一使用相同的量化模型，行為自然趨同",
+          "投資人理性地根據他人行為推斷信息（資訊瀑布），或非理性地模仿以避免被說錯，使資產價格偏離基本面並形成自我強化的泡沫",
+          "媒體報導引導市場走向，只要媒體轉負面，泡沫立刻破裂",
+          "機構投資人有考核壓力被迫跟隨大盤，這是合理行為而非偏誤"
+        ],
+        "correct": 1,
+        "explanation": "Shiller 研究泡沫的核心論點：羊群效應透過「資訊瀑布」（人們從他人行為推斷信息）和社會壓力兩個機制運作。1990 年代科技泡沫、2000 年代房市泡沫都有典型羊群特徵——晚進場的人因「看大家都在買」繼續推高價格，直到信心驟然崩潰。",
+        "shiller_quote": "I think that bubbles are related to herd behavior. People see others making money and feel infected by the enthusiasm. They don't want to be left out. There's a social pressure. And that's really what Keynes was saying with his beauty contest metaphor—you don't look for the best-looking person, you look for who other people will think is best-looking."
+      },
+      {
+        "id": "pm_18",
+        "lecture_id": "L04",
+        "youtube_id": "_B_24GUWdSM",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-4",
+        "text": "「定期再平衡」（Rebalancing）投資組合有什麼實務好處？",
+        "choices": [
+          "再平衡讓你能追蹤市場最強的資產類別，提高報酬",
+          "定期將超過目標比例的資產賣出、補足低於目標比例的資產，自然實現「賣高買低」的紀律，同時維持風險水準不偏離目標",
+          "再平衡讓你省去選股麻煩，是完全被動的投資策略",
+          "再平衡對稅率高的投資人反而有害，因為頻繁實現損益會增加稅負"
+        ],
+        "correct": 1,
+        "explanation": "再平衡的邏輯：強迫你在漲多的資產部分獲利了結（賣高），補入跌多的資產（買低）。這是對抗「追漲殺跌」本能的紀律性做法。研究顯示定期再平衡雖不保證增加報酬，但確實能維持目標風險水準，並在資產均值回歸時改善風險調整後報酬。",
+        "shiller_quote": "Rebalancing is a discipline that forces you to sell what has gone up and buy what has gone down. It sounds counterintuitive—selling your winners and buying your losers. But it's a systematic way to maintain your target risk profile. And it can have a return benefit if asset classes mean-revert, because you're automatically buying low and selling high."
+      },
+      {
+        "id": "pm_19",
+        "lecture_id": "L07",
+        "youtube_id": "3EzdvkRgToY",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-7",
+        "text": "根據 Shiller 對市場效率的研究，以下哪項對主動型基金的認識最接近學術共識？",
+        "choices": [
+          "主動型基金持續且系統地創造超額報酬，證明市場有大量效率缺口",
+          "少數基金在特定時期可跑贏大盤，但長期來看大多數主動型基金在費用後落後指數，持續的超額報酬極難複製",
+          "只有量化對沖基金（如文藝復興科技）說明市場有效，其他主動型管理完全無效",
+          "市場完全有效，因此任何形式的主動管理都是在浪費資金"
+        ],
+        "correct": 1,
+        "explanation": "學術共識是「半強式效率」：短期部分主動型基金可以跑贏，但長期費用後落後是規律。Shiller 的立場更細緻——市場不完全有效（他有超額波動的證據），但個人投資者難以穩定獲利於這種無效率，低費用指數投資對大多數人仍是最佳策略。",
+        "shiller_quote": "The market is kind of efficient. Not perfectly efficient. I myself have found evidence of inefficiency—the excess volatility, the predictability of long-run returns using CAPE. But you can find these inefficiencies and still not exploit them easily. The market is efficient enough that most people are best off in a low-cost index fund rather than trying to beat it."
+      },
+      {
+        "id": "pm_20",
+        "lecture_id": "L04",
+        "youtube_id": "_B_24GUWdSM",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-4",
+        "text": "客戶要把 80% 資金投入他工作的公司股票（員工認股計畫）。你身為投組顧問最應該怎麼回應？",
+        "choices": [
+          "同意，深度了解公司是最好的選股優勢",
+          "解釋人力資本與財務資本雙重集中在同一公司是危險的——公司若出問題，你同時失去工作和儲蓄；安隆員工的前車之鑑不可不察",
+          "建議他只投入 40% 而非 80%，稍微減少集中度就夠了",
+          "這屬於員工自身的投資決策，顧問不應置喙"
+        ],
+        "correct": 1,
+        "explanation": "安隆員工把 401(k) 大量持有公司股票，公司破產時不僅失業，連退休積蓄也一起消失。這是「雙重集中」的最壞情況：收入來源（人力資本）和財務資本同時綁在一家公司。受託人義務要求顧問解釋這個風險，而不是因客戶「看好自己公司」就放任。",
+        "shiller_quote": "The Enron employees had their pension fund invested in Enron stock. When Enron collapsed, they lost not only their job but their pension. They were over-concentrated in a single company—and it was the company they worked for, so their human capital was also invested there. That's one of the most tragic examples of failure of financial advice and corporate pension governance."
+      }
+    ],
+    "banker": [
+      {
+        "id": "bk_01",
+        "lecture_id": "L13",
+        "youtube_id": "1mDL1fKEVZM",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-13",
+        "text": "銀行擠兌（Bank Run）的根本原因是什麼？",
+        "choices": [
+          "銀行放款利率設定過高，借款人無法還款",
+          "銀行投資股市造成大規模虧損",
+          "銀行以短期存款支撐長期貸款，流動性錯配使信心崩潰時引發自我實現的危機",
+          "存款人對通膨的恐懼驅使他們提領現金"
+        ],
+        "correct": 2,
+        "explanation": "銀行的本質是「流動性轉換」——將短期存款（隨時可提）轉化為長期貸款（無法立即收回）。一旦存款人失去信心開始擠兌，銀行無法立即變現資產，即使本質健全的銀行也可能倒閉。這是銀行業的根本脆弱性。",
+        "shiller_quote": "Other countries handle it differently. In Germany, IKB Deutsche Industriebank had invested its deposits in US subprime mortgages. And when people started worrying, there was a run—well, sort of a run. Actually, it was a run in a slightly different sense. IKB was getting its funds from other banks, short-term, rolling them over. And when other banks got scared, they stopped rolling over the loans, and then IKB failed."
+      },
+      {
+        "id": "bk_02",
+        "lecture_id": "L18",
+        "youtube_id": "_SpIaGTq0u8",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-18",
+        "text": "法定準備金（Reserve Requirement）與資本要求（Capital Requirement）最主要的差別是什麼？",
+        "choices": [
+          "兩者本質相同，只是不同監管機構使用不同名稱",
+          "準備金針對存款負債比率設定，資本要求針對風險加權資產設定股權緩衝",
+          "資本要求只適用於投資銀行，準備金只適用於商業銀行",
+          "準備金要求只在金融危機期間緊急生效"
+        ],
+        "correct": 1,
+        "explanation": "準備金（Reserve Requirement）是針對銀行「存款負債」設定的流動性比率，確保有足夠現金應付提款。資本要求（Capital Requirement）是針對「風險加權資產」設定的股東權益比率，確保銀行在虧損時有緩衝。前者是流動性管理，後者是償付能力管理。",
+        "shiller_quote": "So, capital requirements are different from reserve requirements. Reserve requirements were a fraction of the transaction accounts—they were defined by a liability of the bank. A transaction account is a demand deposit. Capital requirements are defined on the asset side—it's a fraction of the risk-weighted assets."
+      },
+      {
+        "id": "bk_03",
+        "lecture_id": "L13",
+        "youtube_id": "1mDL1fKEVZM",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-13",
+        "text": "Basel III 要求銀行增加資本緩衝的主要邏輯是什麼？",
+        "choices": [
+          "讓銀行有更多資金支付股利，吸引長期股東",
+          "使銀行在發生虧損時仍有足夠的股東權益繼續運作，避免損失轉嫁納稅人",
+          "吸引更多存款，降低銀行的資金成本",
+          "讓銀行可以降低放款利率刺激實體經濟"
+        ],
+        "correct": 1,
+        "explanation": "Basel III 的核心邏輯：銀行的股東應該是「第一損失」承擔者。當資本充足時，即使遭受重大損失，銀行仍可繼續運作而不需要政府紓困。這防止了「大到不能倒」問題下道德風險的累積。",
+        "shiller_quote": "You say, hey, we're good. We've got an extra million dollars, OK? So then, you bring that up at the board meeting and say, we're satisfying Basel III, isn't that great? But someone at the board might say, well, why don't we use that money? We could pay out a dividend or we could buy back stock. It would be better for our investors. That's the tension with capital requirements."
+      },
+      {
+        "id": "bk_04",
+        "lecture_id": "L13",
+        "youtube_id": "1mDL1fKEVZM",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-13",
+        "text": "你是商業銀行信貸主管，某科技新創申請 5,000 萬元融資。財報三年持續虧損，但月活用戶年增 200%，並附上「三年後轉盈」的財務預測。你最需要聚焦評估什麼？",
+        "choices": [
+          "創辦人的名校學歷背景與知名創投背書",
+          "現金燃燒速率（burn rate）、在最壞情境下的資金可撐多久，以及萬一預測落空時的擔保品覆蓋率",
+          "競爭對手的最新估值倍數與近期融資輪估值",
+          "公司是否已取得大型投行的 IPO 輔導合約"
+        ],
+        "correct": 1,
+        "explanation": "銀行信貸的核心職能是「監控與保護」。三年虧損的新創最大風險是資金耗盡——即使成長數據亮眼，如果現金在預測實現前先燒完，銀行就成了損失的承擔者。好的信貸判斷永遠先評估下行情境，而非只看樂觀預測。",
+        "shiller_quote": "So, what banks do is, they help solve this problem by constant monitoring, and they make commercial loans that are at effectively long-term, but in practice, officially short-term. They keep renewing them. And so, the bank becomes the monitor for other people—the bank has expertise and incentive to keep watching the borrower's condition."
+      },
+      {
+        "id": "bk_05",
+        "lecture_id": "L13",
+        "youtube_id": "1mDL1fKEVZM",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-13",
+        "text": "某重要企業客戶突然要求將授信額度提高 40%，理由是「季末短暫資金需求」。但你發現這與他過去的資金模式明顯不符，且最近他有兩家主要供應商陸續倒閉。你應該怎麼做？",
+        "choices": [
+          "立即批准，維護重要客戶關係，不應讓對方感到被質疑",
+          "要求提供詳細的資金用途說明及最新財報，交叉比對供應商倒閉的關連性，再做決定",
+          "直接拒絕，任何偏離歷史模式的申請一律不批",
+          "先批准一半額度，兩邊都不得罪"
+        ],
+        "correct": 1,
+        "explanation": "資訊不對稱（逆選擇）是銀行信貸最大的日常風險。供應商連環倒閉是供應鏈壓力的明顯警示信號。好的銀行家必須在「客戶關係」與「信貸紀律」之間維持平衡——提問是專業責任，不是冒犯。",
+        "shiller_quote": "Adverse selection is a problem in banking too—borrowers know more about their own financial health than banks do. That's why banks require financial statements, collateral, and covenants. Constant monitoring is not a bureaucratic burden—it's the core function that justifies the bank's existence in the financial system."
+      },
+      {
+        "id": "bk_06",
+        "lecture_id": "L18",
+        "youtube_id": "_SpIaGTq0u8",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-18",
+        "text": "最後貸款人（Lender of Last Resort）的核心職能是什麼？",
+        "choices": [
+          "為無法從市場融資的個人消費者提供緊急貸款",
+          "在金融恐慌時，向「流動性不足但償付能力健全」的銀行提供緊急融資，防止信心崩潰引發系統性危機",
+          "為面臨破產的企業提供重整資金",
+          "管理政府的外匯債務與主權信評"
+        ],
+        "correct": 1,
+        "explanation": "這個概念由 Walter Bagehot（1873）確立：央行應在恐慌時「以懲罰性利率、對良好擔保品、自由放貸」。關鍵在於區分「流動性問題」（暫時現金不足）與「償付能力問題」（真的資不抵債）——前者應救助，後者不應。",
+        "shiller_quote": "This story repeated a million times. Banks were trying to raise capital and they were trying to sell assets either by issuing—they were trying to raise capital either by issuing shares or by selling assets. And that was creating these distress sales, and distress sales were driving down asset prices, and that was lowering the capital of other banks. And we needed a lender of last resort to break that cycle."
+      },
+      {
+        "id": "bk_07",
+        "lecture_id": "L08",
+        "youtube_id": "3Ir6sbDAx4c",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-8",
+        "text": "Geanakoplos 的槓桿循環（Leverage Cycle）如何描述金融危機的放大機制？",
+        "choices": [
+          "央行升息 → 企業借款成本上升 → 投資減少 → 景氣衰退",
+          "資產價格下跌 → 擔保品價值縮水 → 被迫去槓桿 → 拋售壓低資產價格 → 惡性循環",
+          "銀行提高手續費 → 借款人轉向影子銀行 → 監管漏洞累積",
+          "通膨上升 → 實質利率下降 → 過度借貸 → 泡沫破裂"
+        ],
+        "correct": 1,
+        "explanation": "槓桿循環的核心是「擔保品價值」與「可借款額度」之間的正回饋迴圈。繁榮時，資產升值→擔保品增加→可借更多→推高資產價格。危機時，方向逆轉，形成螺旋式去槓桿。這也是為何金融危機的跌幅常遠超正常估值範圍。",
+        "shiller_quote": "So, the basic idea of the leverage cycle is that the amount of leverage in the economy varies over time. And it's more than what the interest rate alone captures. When the economy is booming and people are optimistic, lenders allow borrowers to leverage up more. But when there's a crisis and pessimism sets in, they force borrowers to de-lever, to pay back loans, which forces asset sales, which drives down prices."
+      },
+      {
+        "id": "bk_08",
+        "lecture_id": "L13",
+        "youtube_id": "1mDL1fKEVZM",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-13",
+        "text": "在銀行業，道德風險（Moral Hazard）最主要指的是什麼問題？",
+        "choices": [
+          "銀行客戶提供虛假的財務資訊給銀行",
+          "存款保險使銀行有誘因承擔過度風險，因為下行損失可能由政府（納稅人）承擔",
+          "銀行員工的職業道德水準逐年下降",
+          "投資銀行與商業銀行業務合併後產生的利益衝突"
+        ],
+        "correct": 1,
+        "explanation": "這是「保險制度的悖論」。存款保險保護了存款人，但同時讓銀行覺得：就算冒大險失敗，反正有政府兜底，存款人不會提款懲罰我。這種扭曲誘因導致銀行傾向過度承擔風險，是金融監管的核心挑戰。",
+        "shiller_quote": "So, what banks do is, they help solve this problem by constant monitoring, and they make commercial loans that are at effectively long-term, but in practice, officially short-term. They keep renewing them. And so, the bank becomes the monitor for other people. But deposit insurance creates moral hazard—the bank knows it won't face a run, so it takes more risks."
+      },
+      {
+        "id": "bk_09",
+        "lecture_id": "L13",
+        "youtube_id": "1mDL1fKEVZM",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-13",
+        "text": "銀行評估企業貸款的「5C 信用原則」中，「還款能力」（Capacity）最主要評估什麼？",
+        "choices": [
+          "企業主個人的學歷背景與過去創業紀錄",
+          "借款人產生足夠現金流（如 EBITDA 對比年化利息的利息保障倍數）以按時還款的能力",
+          "企業的市值與同業相比是否偏低，代表是否被低估",
+          "擔保品的市場流動性，變現是否快速"
+        ],
+        "correct": 1,
+        "explanation": "5C 是 Capacity（還款能力）、Capital（資本）、Character（信用品格）、Collateral（擔保品）、Conditions（市場環境）。其中 Capacity 是第一優先：借款人的現金流能否覆蓋還款？利息保障倍數低於 2x 是危險信號。好的信貸依靠借款人本身有能力還款，擔保品只是最後防線。",
+        "shiller_quote": "Banks are really lending to cash flows. When you make a commercial loan, you want to make sure the business can generate enough cash to repay the loan. The collateral is the backstop—but you don't want to be in the business of selling collateral. You want the borrower to pay you back from operations. That's what capacity means—can the cash flows service the debt?"
+      },
+      {
+        "id": "bk_10",
+        "lecture_id": "L13",
+        "youtube_id": "1mDL1fKEVZM",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-13",
+        "text": "大型企業申請 50 億元聯合貸款（Syndicated Loan），牽頭行為何要邀其他銀行共同參貸而非獨自包下？",
+        "choices": [
+          "法規強制規定超過一定金額必須聯貸",
+          "分散集中授信風險，同時能服務超過單一銀行資金能力的大客戶，符合審慎監理對大額授信的限制",
+          "聯貸可以讓牽頭行賺取更高承銷費，是純粹獲利考量",
+          "聯貸是為了讓借款企業獲得更多銀行背書，提升市場信心"
+        ],
+        "correct": 1,
+        "explanation": "聯合貸款解決兩個問題：(1) 大型借款超過單一銀行的法定大額授信限制（通常為資本的 15-25%）；(2) 單一大型曝險風險過高。牽頭行的核心能力是「組建銀行團」——找到願意參貸的機構，設計條款，並持續在銀行團間協調。",
+        "shiller_quote": "Banks face concentration limits—regulatory and prudential. You can't lend too much to any single borrower. That's why you have loan syndications—where one bank originates the deal and then sells participations to other banks. The lead bank keeps a share for relationship purposes but distributes the risk. This is how banks manage concentration without losing big client relationships."
+      },
+      {
+        "id": "bk_11",
+        "lecture_id": "L18",
+        "youtube_id": "_SpIaGTq0u8",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-18",
+        "text": "Basel III 要求銀行定期進行壓力測試（Stress Test）的主要目的是什麼？",
+        "choices": [
+          "每季評估銀行員工操作風險，確保前台交易員遵守限額",
+          "模擬嚴峻的宏觀情境（如嚴重衰退、房價暴跌）下，銀行資本是否足以承受損失，提前揭露潛在脆弱性",
+          "評估銀行的 IT 系統是否能應對網路攻擊的衝擊",
+          "測試銀行能否在 24 小時內清算所有衍生品部位"
+        ],
+        "correct": 1,
+        "explanation": "壓力測試讓監管機構看到：如果 GDP 下滑 4%、失業率升至 12%、房價下跌 20%，銀行的核心資本比率（CET1）是否仍高於法定下限？這是前瞻性的監管工具，而非只看歷史數字。2009 年後的壓力測試大幅增強了市場對銀行體系的信心。",
+        "shiller_quote": "The stress tests conducted by the Federal Reserve involve hypothetical scenarios. If GDP falls by 4%, unemployment rises to 10%, house prices fall 20%—what happens to the banks? This is a more forward-looking approach to banking supervision. It's designed to find vulnerabilities before they become crises, not after."
+      },
+      {
+        "id": "bk_12",
+        "lecture_id": "L13",
+        "youtube_id": "1mDL1fKEVZM",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-13",
+        "text": "你負責管理企業貸款組合。以下哪個信號最應觸發對貸款客戶的「早期預警」審查？",
+        "choices": [
+          "借款企業換了一位新的財務長",
+          "業績增長放緩、應收帳款天數持續拉長、供應商要求縮短付款期，三個信號同時出現",
+          "借款企業的股價在過去三個月下跌了 15%",
+          "借款企業的行業龍頭宣布季度獲利低於市場預期"
+        ],
+        "correct": 1,
+        "explanation": "「三角信號」是流動性壓力最典型的早期指標：業績放緩（收入端惡化）、應收帳款拉長（客戶在拖款，現金流比帳面差）、付款周期縮短（供應商失去信心）。三個同時出現幾乎可以確定企業正面臨嚴重現金流壓力。股價下跌是市場信號，而非企業本身的財務警示。",
+        "shiller_quote": "Banks that do commercial lending have to be very good at early warning systems. You want to find out if a borrower is in trouble before they default—not after. The classic signs are: receivables growing faster than sales, payables being stretched, inventory piling up. Good loan officers watch these metrics monthly, not just at annual review."
+      },
+      {
+        "id": "bk_13",
+        "lecture_id": "L08",
+        "youtube_id": "3Ir6sbDAx4c",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-8",
+        "text": "槓桿循環中，為什麼銀行在景氣繁榮期增加放貸、在衰退時反而減少放貸，形成「順景氣循環性」？",
+        "choices": [
+          "銀行在景氣好時人手充足，有能力處理更多貸款申請",
+          "資產價格上漲提高擔保品價值，銀行願意放更多貸款；資產下跌讓擔保品縮水，銀行被迫收縮信貸，這個機制放大了景氣循環",
+          "監管機構在景氣好時放鬆資本要求，在衰退時緊縮，迫使銀行跟隨景氣調整",
+          "景氣好時借款需求增加，壞時需求減少，銀行只是被動回應市場需求"
+        ],
+        "correct": 1,
+        "explanation": "這是槓桿循環的核心正回饋。資產升值→擔保品增加→可借更多→推高資產價格（正回饋）。反向時：資產下跌→擔保品縮水→銀行要求補充擔保或還款→被迫拋售→資產繼續下跌。Basel III 的逆景氣循環資本緩衝正是為了打破這個循環。",
+        "shiller_quote": "Here's the pro-cyclicality problem. In good times, asset prices are high, collateral values are high, and banks are willing to lend more. This feeds the boom. But then when the economy turns, asset prices fall, collateral values fall, and banks pull back lending. This makes the recession worse. This is called the credit cycle, and it's one of the most dangerous amplifying mechanisms in the financial system."
+      },
+      {
+        "id": "bk_14",
+        "lecture_id": "L18",
+        "youtube_id": "_SpIaGTq0u8",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-18",
+        "text": "總體審慎監管（Macroprudential Regulation）和傳統個體審慎監管（Microprudential）最核心的差異是什麼？",
+        "choices": [
+          "總體審慎針對整個金融系統的系統性風險，而非只確保個別機構安全",
+          "總體審慎只關注外資進入國內市場的風險管理",
+          "總體審慎是指對銀行總資產規模的全面監控",
+          "兩者沒有本質差異，只是不同監管機構使用不同名稱"
+        ],
+        "correct": 0,
+        "explanation": "2008 年危機揭示：即使每家銀行個別合規，整體系統仍可能崩潰——因為大家的資產組合高度相關，同時拋售放大危機。總體審慎監管關注「系統整體的脆弱性」，包括資產相關性、順景氣性、系統重要性金融機構（SIFI）的額外資本要求。",
+        "shiller_quote": "There was a fundamental flaw in regulation before 2008. Regulators were looking at each bank individually—is this bank safe? But they weren't looking at the system as a whole. Individually safe institutions can collectively create a dangerous system. When everyone has correlated risks and all deleverage at the same time, you get a catastrophe. That insight gave birth to macroprudential regulation."
+      },
+      {
+        "id": "bk_15",
+        "lecture_id": "L13",
+        "youtube_id": "1mDL1fKEVZM",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-13",
+        "text": "企業貸款違約後，銀行面臨「貸款重組（Workout）」vs.「立即拍賣擔保品（Foreclosure）」兩個選擇。什麼情況下 Workout 更優？",
+        "choices": [
+          "當擔保品價值高於貸款金額，立即變現更有利",
+          "當企業核心業務仍有存活能力，只是暫時流動性困難，重組後企業復活比立即拍賣能回收更多",
+          "監管機構要求銀行優先進行 Workout，不允許立即拍賣",
+          "Workout 永遠優於拍賣，因為拍賣過程費時耗力"
+        ],
+        "correct": 1,
+        "explanation": "「流動性問題 vs. 償付能力問題」的判斷是銀行處理問題貸款的核心。如果企業只是短期現金不足但業務基本面健全（流動性問題），Workout 讓企業存活，銀行可能全額回收。如果企業根本無力回本（償付能力問題），拖延 Workout 只會損失更多。",
+        "shiller_quote": "When a loan goes bad, the bank has to decide: do we foreclose immediately, or do we work with the borrower? The answer depends on whether the problem is liquidity or solvency. If the borrower has a fundamentally sound business but temporary cash flow problems, it often makes sense to restructure the loan. You recover more in a workout than in a fire sale of assets."
+      },
+      {
+        "id": "bk_16",
+        "lecture_id": "L18",
+        "youtube_id": "_SpIaGTq0u8",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-18",
+        "text": "美國多德-弗蘭克法案中「沃克爾規則」（Volcker Rule）禁止的核心行為是什麼？",
+        "choices": [
+          "銀行向非上市公司提供任何形式的融資",
+          "商業銀行用自有資金進行自營交易（Proprietary Trading），防止銀行用受存款保險保護的存款去投機",
+          "銀行向競爭對手提供任何短期融資",
+          "銀行購買外國主權債券的行為"
+        ],
+        "correct": 1,
+        "explanation": "沃克爾規則的邏輯：如果銀行的存款由政府（存款保險）背書，銀行就不應該用這個「補貼」去做高風險自營交易。自營交易是格拉斯-斯蒂格爾廢除後商業銀行大量從事的業務，2008 年危機後被視為重大風險來源。",
+        "shiller_quote": "The Volcker Rule says that banks cannot engage in proprietary trading—they cannot use depositor money to speculate. The idea is: if you're backed by deposit insurance, taxpayers are on the hook if you fail. So you shouldn't be gambling with that backstop. Banks should take deposits and make loans—not run hedge funds on the side."
+      },
+      {
+        "id": "bk_17",
+        "lecture_id": "L13",
+        "youtube_id": "1mDL1fKEVZM",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-13",
+        "text": "商業不動產貸款（CRE Lending）相較於住宅貸款，在信貸風險評估上最獨特的挑戰是什麼？",
+        "choices": [
+          "商業不動產貸款需要更多文件，行政成本較高",
+          "商業不動產的還款主要來自物業的租金收入，因此空置率、租客品質、租約到期結構的分析遠比住宅重要，市場流動性也遠低",
+          "商業不動產價格只有向上趨勢，因此長期貸款安全性高",
+          "商業不動產只能作為第二順位抵押，法律地位不如住宅"
+        ],
+        "correct": 1,
+        "explanation": "住宅貸款的還款來自借款人工資，評估相對標準化。商業不動產的核心是「物業現金流」——租金能否持續覆蓋本息？這取決於租約長度、租客信評、市場空置率等高度專業的分析。一個大型租客到期不續租，可能讓整棟商辦的現金流驟降，抵押品價值大幅縮水。",
+        "shiller_quote": "Commercial real estate lending is fundamentally different from residential mortgage lending. You're not just lending against a property—you're lending against a cash flow. The property's income from leases is what services the debt. You have to analyze the lease terms, the quality of the tenants, the market vacancy rates, and the probability that leases will be renewed."
+      },
+      {
+        "id": "bk_18",
+        "lecture_id": "L08",
+        "youtube_id": "3Ir6sbDAx4c",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-8",
+        "text": "附買回協議（Repo）在金融機構日常資金管理中扮演什麼角色？",
+        "choices": [
+          "Repo 是只在危機期間使用的緊急融資工具",
+          "Repo 是金融機構最重要的短期融資工具——賣出證券並承諾次日買回，本質上是以債券為擔保品的隔夜借款",
+          "Repo 是央行印鈔的主要機制，與商業銀行日常業務無關",
+          "Repo 只允許政府公債作為擔保品，不接受私人部門證券"
+        ],
+        "correct": 1,
+        "explanation": "Repo 市場每天的交易量高達數兆美元，是金融體系最重要的「血液」。雷曼的倒閉很大程度上是 Repo 市場凍結——其他機構拒絕對雷曼的擔保品展期，24 小時內流動性枯竭。理解 Repo 是理解現代銀行體系運作的必要基礎。",
+        "shiller_quote": "In a repo transaction, one party sells securities to another party with an agreement to buy them back the next day at a higher price. The difference is the interest. It's like a secured overnight loan. The repo market is enormous—probably trillions of dollars a day. When the repo market froze up in 2008, it was devastating for the financial system."
+      },
+      {
+        "id": "bk_19",
+        "lecture_id": "L18",
+        "youtube_id": "_SpIaGTq0u8",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-18",
+        "text": "美國聯邦存款保險（FDIC）對存款提供保險的主要副作用是什麼，監管機構如何緩解？",
+        "choices": [
+          "存款保險讓存款人有更少的動機自行評估銀行健康狀況，必須靠加強對銀行的監管與資本要求來補充市場紀律",
+          "存款保險讓銀行必須支付很高保費，壓縮了放貸利潤",
+          "存款保險使外資銀行進入困難，形成競爭障礙",
+          "存款保險增加了小額存款人的行政負擔"
+        ],
+        "correct": 0,
+        "explanation": "存款保險解決了銀行擠兌問題，但製造了道德風險：銀行知道存款人不會跑，可以承擔更多風險而不被市場懲罰。解決方案是加強監管補缺：更嚴格的資本要求、定期檢查、壓力測試。這是「政府市場干預→副作用→更多干預補救」的典型循環。",
+        "shiller_quote": "Deposit insurance solves the bank run problem—but it creates moral hazard. If depositors know they're insured, they have no incentive to monitor the bank's risk-taking. So the government is letting banks take risks with insured deposits. That's why we also need capital requirements and bank examination—regulation has to fill the monitoring role that depositors are no longer playing."
+      },
+      {
+        "id": "bk_20",
+        "lecture_id": "L13",
+        "youtube_id": "1mDL1fKEVZM",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-13",
+        "text": "在中小企業（SME）貸款中，「關係型銀行」（Relationship Banking）相對於「交易型銀行」的核心優勢是什麼？",
+        "choices": [
+          "關係型銀行的放貸利率通常比交易型低，對借款人更划算",
+          "長期銀行關係積累的「軟信息」（管理層性格、行業判斷、過去承諾履行紀錄），彌補了財務報表無法反映的信用品質",
+          "關係型銀行可以完全取代正式的信用評分模型",
+          "關係型銀行只適合農業與零售業，不適合科技型中小企業"
+        ],
+        "correct": 1,
+        "explanation": "SME 的財報往往不透明，很多關鍵信息（老闆的誠信、業務真實狀況）難以從文件中看出。長期的銀行關係讓信貸員積累了「軟信息」——無法量化但對違約預測極有價值。這也是大型互聯網平台信貸模型無法完全取代傳統關係型銀行的原因。",
+        "shiller_quote": "In relationship banking, the bank accumulates information about the borrower over time. This soft information—about management quality, business prospects, reliability—is not available from a balance sheet. It's one of the key advantages small community banks have over large impersonal banks, especially for small business lending where hard data is scarce."
+      }
+    ],
+    "insurance_pro": [
+      {
+        "id": "ins_01",
+        "lecture_id": "L05",
+        "youtube_id": "qfK9rCDCicE",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-5",
+        "text": "保險的根本原理——風險匯集（Risk Pooling）——依賴什麼核心前提？",
+        "choices": [
+          "所有被保險人必須面臨完全相同的風險",
+          "政府必須強制所有人購買保險",
+          "被保險人的風險彼此「獨立」，大數法則才能使整體損失率可預測",
+          "保險公司必須擁有充足的政府擔保"
+        ],
+        "correct": 2,
+        "explanation": "當大量風險「彼此獨立」時，大數法則確保個人損失的不可預測性可以在群體層次被平滑掉。但如果風險有高度相關性（如颶風同時摧毀整個地區），風險匯集就失效了——這也是再保險、巨災債券存在的原因。",
+        "shiller_quote": "The fundamental concept, again, is risk pooling. The idea of insurance goes back to ancient Rome, but only in very limited forms. But the idea of risk pooling is kind of an obvious one. People form organizations partly to risk-pool. The fundamental concept of insurance relies on the idea of independence: when many people face independent risks, the law of large numbers makes the aggregate outcome predictable."
+      },
+      {
+        "id": "ins_02",
+        "lecture_id": "L05",
+        "youtube_id": "qfK9rCDCicE",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-5",
+        "text": "你的保險公司在台灣北部已承保大量住宅地震險。同事提議積極拓展南部業務，理由是「地理分散可以降低公司的整體地震風險」。這個策略最根本的問題是什麼？",
+        "choices": [
+          "南部展業成本更高，獲利率會下降",
+          "台灣全島位於相同地震帶，大地震發生時全台損失高度相關，在同一地震風險區域「分散」只是承保更多相關風險，必須透過再保險向全球分散才能解決",
+          "南部市場已被競爭對手佔據，進入障礙過高",
+          "南部房屋品質較差，核保難度更高"
+        ],
+        "correct": 1,
+        "explanation": "風險匯集的前提是「風險獨立」。台灣地震是系統性巨災風險——南北同時發生。在同一巨災風險區域內分散，只是讓你承保更多相關風險。解法是再保險：把台灣集中的地震風險賣給全球再保險商，達成真正的獨立性。",
+        "shiller_quote": "The fundamental concept of insurance relies on this intuitive idea—independence. When risks are independent, the law of large numbers works. But when risks are correlated—as in a natural disaster that hits an entire region—the pooling doesn't help. You need reinsurance, which spreads the risk globally to achieve true independence across uncorrelated risks."
+      },
+      {
+        "id": "ins_03",
+        "lecture_id": "L05",
+        "youtube_id": "qfK9rCDCicE",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-5",
+        "text": "在保險業，道德風險（Moral Hazard）是如何損害保險效率的？",
+        "choices": [
+          "保險公司對高風險客戶收費不足，導致虧損",
+          "理賠過程過於繁瑣導致客戶放棄申請",
+          "投保後，被保險人可能降低預防損失的努力，因為損失後果已由保險公司承擔",
+          "再保險公司過度集中市場，抬高整體保費"
+        ],
+        "correct": 2,
+        "explanation": "道德風險是信息不對稱問題的典型例子。投保健康保險後，你可能更不在乎健康飲食；投保車險後，開車可能更不謹慎。這種行為改變使實際損失高於精算假設，保險公司需要透過「自負額」、「共保比例」等設計來緩解。",
+        "shiller_quote": "Moral hazard refers to the tendency of people who are insured against a risk to take more risks or less precaution against that risk. So, if your car is fully insured, you might be less careful about parking it in safe places, or less careful about locking it. The very existence of insurance changes behavior."
+      },
+      {
+        "id": "ins_04",
+        "lecture_id": "L05",
+        "youtube_id": "qfK9rCDCicE",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-5",
+        "text": "AIG 在 2008 年金融危機中面臨崩潰的核心問題是什麼？",
+        "choices": [
+          "AIG 的傳統車險與房屋險業務因颶風遭受巨額理賠",
+          "AIG 的金融產品部門大量出售信用違約交換（CDS），卻未備妥足夠準備金應付可能的龐大損失",
+          "AIG 的投資組合過度集中於美國國債，利率上升造成鉅額虧損",
+          "AIG 被競爭對手惡意收購，內部控制崩潰"
+        ],
+        "correct": 1,
+        "explanation": "AIG 的金融產品部門（AIGFP）就像一個沒有充足準備金的保險人——它賣出了大量 CDS（本質上是對抵押貸款債券的信用保障），卻從未認真評估房市崩盤時需要履約的規模。美國政府最終以 1,850 億美元紓困 AIG，防止系統性崩潰。",
+        "shiller_quote": "AIG is a classic example of a systemic risk. AIG Financial Products had sold credit default swaps. And what's a credit default swap? It's like insurance. You buy protection against default of some bond. AIG collected the premiums, but they didn't have the reserves. So when the housing market collapsed and their contracts were called in, they couldn't pay."
+      },
+      {
+        "id": "ins_05",
+        "lecture_id": "L05",
+        "youtube_id": "qfK9rCDCicE",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-5",
+        "text": "你的公司準備推出「企業網路安全保險」，承保駭客攻擊造成的損失。精算部門提出警告：這個險種與傳統車險根本不同。最關鍵的差異在哪裡？",
+        "choices": [
+          "網路安全事件的法律責任認定更困難",
+          "大規模駭客攻擊可能同時癱瘓數千家企業，損失高度相關而非獨立，傳統大數法則無法分散這個系統性風險",
+          "IT 損失的定損流程比車損更費時",
+          "網路安全保費的收取與管理成本更高"
+        ],
+        "correct": 1,
+        "explanation": "2017 年 WannaCry 與 2021 年 Colonial Pipeline 勒索事件都說明了這個問題：一次攻擊可以同時影響全球數千家企業。當損失不是獨立發生而是系統性爆發，保險公司可能面臨遠超承受能力的集中理賠——這也是為何網路安全保險定價至今仍是行業難題。",
+        "shiller_quote": "Insurance works beautifully when risks are independent. The problem is that many of the biggest risks we face are correlated. Financial crises, pandemics, major cyberattacks—these are systemic risks where everyone suffers at the same time. That's when insurance struggles, and why we need governments, reinsurers, and international risk-sharing mechanisms."
+      },
+      {
+        "id": "ins_06",
+        "lecture_id": "L05",
+        "youtube_id": "qfK9rCDCicE",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-5",
+        "text": "逆選擇（Adverse Selection）在保險市場中如何產生，最終造成什麼問題？",
+        "choices": [
+          "保險公司主動選擇只承保高風險客戶以收取更高保費",
+          "高風險個人更積極投保，低風險個人則認為不划算而退出，導致整體定價被迫上調，形成惡性循環",
+          "監管機構強制保險公司接受所有申請，引發財務危機",
+          "健康的人購買過多保險，拉高了整體保費"
+        ],
+        "correct": 1,
+        "explanation": "逆選擇是信息不對稱的另一面——投保人比保險公司更了解自己的風險水準。高風險者有強烈動機投保，低風險者可能覺得不值得。這使保費不斷上漲，最終可能導致市場崩潰。強制保險（如全民健保）正是解決逆選擇的政策工具。",
+        "shiller_quote": "Adverse selection is another problem for insurance—it's distinct from moral hazard. Adverse selection refers to the tendency of people who are most likely to make claims to be the ones who buy insurance. So if you have a genetic disease, you're going to rush out and buy life insurance. But if you're very healthy, you might decide not to bother. This creates a pool of insured people that is riskier than the general population."
+      },
+      {
+        "id": "ins_07",
+        "lecture_id": "L05",
+        "youtube_id": "qfK9rCDCicE",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-5",
+        "text": "你負責核保一張 5,000 萬壽險，申請人為 45 歲企業主。在核保過程中，你發現他填寫的「無重大病史」與取得的醫療查詢記錄不符——3 年前有過心臟手術記錄。你最應該怎麼處理？",
+        "choices": [
+          "這是大保單，以標準費率核過，之後理賠時再說",
+          "立即要求補件說明差異，進行完整醫療核保——資訊不符等同潛在詐欺，未確認前不應核保",
+          "把保額降為 2,500 萬以覆蓋不確定性",
+          "直接拒保，資訊不一致代表客戶不可信賴"
+        ],
+        "correct": 1,
+        "explanation": "這是逆選擇的核心防線。有心臟病的高風險者更有動機隱瞞病史取得保險。如果核保不嚴格，保險公司將承保大量高風險但按低風險定價的客戶，最終導致賠付遠超假設。核保的嚴謹性是維持整個保險池財務健康的基石。",
+        "shiller_quote": "Adverse selection refers to the tendency of people who are most likely to make claims to be the ones who buy insurance. The solution is underwriting—careful screening of applicants. But underwriting is costly, and it's never perfect. That's why medical exams, waiting periods, and full disclosure requirements exist—they're the insurance industry's defense against adverse selection."
+      },
+      {
+        "id": "ins_08",
+        "lecture_id": "L05",
+        "youtube_id": "qfK9rCDCicE",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-5",
+        "text": "Shiller 引用俾斯麥在 1880 年代德國創立社會保險的案例，主要說明了什麼核心論點？",
+        "choices": [
+          "德國財政紀律優於其他國家，因此能負擔社會保險",
+          "強制社會保險可以解決逆選擇問題，讓高風險族群（老年、疾病）獲得市場無法提供的保障",
+          "保險業應由政府壟斷，避免私人保險公司濫用定價權",
+          "俾斯麥是近代最重要的金融制度設計師"
+        ],
+        "correct": 1,
+        "explanation": "俾斯麥的做法具有革命性：強制所有人加入解決了逆選擇問題。而且他的動機是政治的——擔心社會主義運動，所以用福利國家來穩定社會。這說明金融制度設計常常混雜著深層的社會與政治動機。",
+        "shiller_quote": "Bismarck created what some people consider the first welfare state. He was trying to prevent socialism. He thought, if I give people old-age insurance, health insurance, they won't need to have a revolution. He created a social insurance system in Germany in the 1880s. And the key innovation was making it mandatory—which solves the adverse selection problem."
+      },
+      {
+        "id": "ins_09",
+        "lecture_id": "L05",
+        "youtube_id": "qfK9rCDCicE",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-5",
+        "text": "保險公司設定保費的精算原理中，「純保費」（Pure Premium）是如何計算的？",
+        "choices": [
+          "競爭對手的市場報價減去預期費用後得出",
+          "以歷史損失頻率（發生機率）乘以平均損失嚴重度（平均賠付金額），代表純粹覆蓋損失所需的保費",
+          "在無風險利率上加上風險溢酬，類似於債券定價",
+          "由監管機構統一制定，各保險公司不得自行計算"
+        ],
+        "correct": 1,
+        "explanation": "精算定價核心公式：純保費 = 損失頻率（每年發生次數）× 損失嚴重度（每次損失平均金額）。在純保費之上，再加上費用率（銷售成本、管理費用）和預期利潤，得到毛保費。了解這個邏輯是所有保險產品定價的基礎。",
+        "shiller_quote": "Insurance pricing is fundamentally actuarial. The pure premium is the expected loss—it's the probability of loss multiplied by the severity of loss if it occurs. On top of that, you add the expense loading and profit margin. The actuaries' job is to estimate probability and severity as accurately as possible, given historical data and statistical analysis."
+      },
+      {
+        "id": "ins_10",
+        "lecture_id": "L05",
+        "youtube_id": "qfK9rCDCicE",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-5",
+        "text": "再保險（Reinsurance）的核心功能是什麼？為什麼財務健全的保險公司也需要它？",
+        "choices": [
+          "再保險讓保險公司可以合法逃避大型理賠義務",
+          "將巨額損失風險轉移給全球再保險商，使原始保險公司可以承接超過自身資本承受能力的風險，同時維持財務穩定性",
+          "再保險是小型保險公司為了獲得大公司技術支援的合作協議",
+          "再保險只在自然災害後才被觸發，平時沒有實際成本"
+        ],
+        "correct": 1,
+        "explanation": "再保險讓「風險在全球多個保險商之間分散」。例如台灣地震再保險，本地的保險公司可以把超額損失轉移給設在全球各地的再保商（Munich Re、Swiss Re 等），確保即使發生大地震也不會因鉅額賠付而倒閉。這讓保險公司可以承保原本無力承擔的巨型風險。",
+        "shiller_quote": "Reinsurance is insurance for insurance companies. The direct insurer can lay off part of the risk to a reinsurer. The reinsurer takes on part of the risk in exchange for part of the premium. This allows the direct insurer to write policies that are larger than it could handle alone. And it allows risks to be spread globally, which is the ultimate form of diversification."
+      },
+      {
+        "id": "ins_11",
+        "lecture_id": "L05",
+        "youtube_id": "qfK9rCDCicE",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-5",
+        "text": "巨災債券（Catastrophe Bond, Cat Bond）如何讓保險業把極端風險轉移至資本市場？",
+        "choices": [
+          "保險公司向央行發行特殊債券，由政府擔保",
+          "保險公司向投資人發行高殖利率債券，若特定巨災觸發（如地震超過某烈度），本金自動撥付理賠，投資人承擔本金損失換取高利息",
+          "保險公司將保費收入打包成 ABS 在市場上流通",
+          "保險公司向其他保險公司發行可轉換債券，互相持有形成風險共擔網絡"
+        ],
+        "correct": 1,
+        "explanation": "Cat Bond 把再保險需求「證券化」。投資人（對沖基金、養老金）買入高殖利率債券，但如果事先設定的巨災觸發條件成立（例如中台灣 7.5 級以上地震），本金自動撥付給保險公司賠付。Cat Bond 的報酬與股市相關性極低，是分散化投組的好工具。",
+        "shiller_quote": "We came up with the idea of catastrophe bonds. These are bonds that pay normal interest rates plus a risk premium. But if a catastrophe—say a hurricane or earthquake—hits, you lose part or all of your principal. The principal gets transferred to the insurance company to pay claims. It's a way of tapping the capital markets—which are much larger than the insurance industry—for catastrophe risk."
+      },
+      {
+        "id": "ins_12",
+        "lecture_id": "L05",
+        "youtube_id": "qfK9rCDCicE",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-5",
+        "text": "為什麼長期照護保險（Long-Term Care Insurance）在私人保險市場長期無法規模化？",
+        "choices": [
+          "政府補貼壓制了需求，讓私人市場無利可圖",
+          "高度不確定的壽命與照護需求（兼具長壽風險和道德風險），使定價精算模型失效，保險公司難以提供穩定且負擔得起的保費",
+          "消費者對此類保險認識不足，導致銷售量無法達到規模效益",
+          "再保險市場拒絕承接長期照護風險，讓原保公司無法分散"
+        ],
+        "correct": 1,
+        "explanation": "長期照護面臨雙重精算難題：(1) 壽命越來越長，但誰會需要長期照護、多久，難以預測；(2) 道德風險：有保險後，家人可能更早放棄自行照護。多家保險公司因長壽風險大幅偏離假設而鉅額虧損，紛紛退出市場，是保險市場失靈的典型案例。",
+        "shiller_quote": "Long-term care insurance—why don't we have a better market for it? It's a real risk—most people will need some form of long-term care. The problem is the uncertainty. You don't know when you'll need it, how long it will last, how expensive it will be. The insurance companies that tried to offer it found that their actuarial assumptions were way off, and many have left the market."
+      },
+      {
+        "id": "ins_13",
+        "lecture_id": "L02",
+        "youtube_id": "QbosMr2JVrc",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-2",
+        "text": "美國社會安全（Social Security）制度本質上是什麼形式的保險？為什麼強制性是其存在的關鍵？",
+        "choices": [
+          "它是政府管理的儲蓄計畫，每個人按貢獻多少領回相應金額",
+          "它是針對「老年貧困風險」的強制性社會保險——強制性解決了逆選擇問題，讓年輕健康者也必須參與，維持財務可行性",
+          "它是政府對低收入者的直接補貼，與保險無關",
+          "它本質上是債券型投資工具，政府向工作者借款，退休後還本付息"
+        ],
+        "correct": 1,
+        "explanation": "強制性是解決逆選擇的辦法。自願性老年保險只吸引「認為自己會活很久」的人投保，其他人不參與導致費率飆高。強制所有工作者參與，讓整個社會的人均攤長壽風險。俾斯麥的創舉正在於此——強制讓所有人進入同一個風險池。",
+        "shiller_quote": "Social Security is essentially a public insurance program—it insures against the risks of old age—running out of money in retirement. But Bismarck understood that you have to make it mandatory—otherwise only people who think they'll live long would participate, and it wouldn't be financially viable. Mandatory participation is what makes social insurance work."
+      },
+      {
+        "id": "ins_14",
+        "lecture_id": "L05",
+        "youtube_id": "qfK9rCDCicE",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-5",
+        "text": "精算上的「未決賠款準備金」（IBNR，Incurred But Not Reported）是什麼？",
+        "choices": [
+          "已發生意外但保戶尚未通知保險公司的損失估計，必須依統計模型預先提列，以免日後大量理賠突然衝擊財務",
+          "保險公司預留的市場競爭損失準備金",
+          "投資組合中未實現損益的會計準備金",
+          "員工年終獎金和福利的預算準備"
+        ],
+        "correct": 0,
+        "explanation": "許多損失在發生後很長時間才被通報——職業傷害的後遺症、污染造成的健康損害可能多年後才浮現。IBNR 準備金是精算師根據統計模型，估計「已發生但尚未收到理賠通知」的損失總額。提列不足的 IBNR 是保險公司財報虛報的最常見手段之一。",
+        "shiller_quote": "There's a concept in insurance called IBNR—Incurred But Not Reported. Some accidents have already happened, but the claimant hasn't filed yet. Maybe it's a long-tail liability like asbestos—the disease takes decades to develop. Insurance companies have to estimate and reserve for IBNR losses. Getting this wrong can be catastrophic to a company's finances."
+      },
+      {
+        "id": "ins_15",
+        "lecture_id": "L05",
+        "youtube_id": "qfK9rCDCicE",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-5",
+        "text": "工作意外險（Workers' Compensation）中的「經驗費率制」（Experience Rating）如何設計誘因以降低工傷事故？",
+        "choices": [
+          "讓所有企業支付相同的統一費率，消除行業差異",
+          "根據企業過去幾年的實際理賠紀錄調整保費，理賠越多費率越高——讓企業有財務誘因投資安全措施",
+          "由政府決定費率，與企業的安全紀錄無關",
+          "只對發生過重大傷亡事故的企業加費，輕微事故不影響費率"
+        ],
+        "correct": 1,
+        "explanation": "這是用保險制度設計解決道德風險的經典案例。如果保費固定不變，企業就沒有動機改善安全條件。但如果「事故越多、保費越高」，企業就有強烈的財務誘因投資安全培訓和設備。這個機制在某些國家被證明確實能降低工傷率。",
+        "shiller_quote": "Experience rating is a way to give companies incentives to prevent losses. If your premiums depend on your claims history, you have an incentive to prevent accidents. Companies with good safety records pay lower premiums. Companies with poor records pay higher premiums. It's a clever way to use insurance pricing to align incentives with safety."
+      },
+      {
+        "id": "ins_16",
+        "lecture_id": "L05",
+        "youtube_id": "qfK9rCDCicE",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-5",
+        "text": "保險業的「核保循環」（Underwriting Cycle）是指什麼現象？",
+        "choices": [
+          "保費每年按通膨調整，維持實質購買力",
+          "保險市場在「軟市場」（競爭激烈、保費低、承保標準寬鬆）和「硬市場」（大災後保費急漲、承保標準嚴格）之間週期性擺盪",
+          "保險公司每 5 年必須重新評估所有保單的核保標準",
+          "監管機構每隔固定周期審查保險公司的準備金是否充足"
+        ],
+        "correct": 1,
+        "explanation": "保險市場的週期性是業界公認的現象。在軟市場，競爭激烈，保費被壓低，承保標準寬鬆（接受高風險客戶）。大型天災或意外事故（如 911、卡特里娜颶風）發生後，保費急漲進入硬市場。多年後盈利恢復，又進入軟市場。這個循環對保險公司的資本規劃至關重要。",
+        "shiller_quote": "Insurance markets go through cycles. When underwriting profits are good, companies compete aggressively, driving down premiums and loosening underwriting standards. Then a major loss event happens—a catastrophe, a pandemic, a financial crisis—and suddenly losses are huge. Companies pull back, raise premiums, tighten underwriting. This is the insurance cycle, and it's been a feature of the industry for centuries."
+      },
+      {
+        "id": "ins_17",
+        "lecture_id": "L05",
+        "youtube_id": "qfK9rCDCicE",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-5",
+        "text": "「綜合比率」（Combined Ratio）是保險公司最常用的盈利指標。100% 的綜合比率代表什麼？",
+        "choices": [
+          "保險公司的投資報酬率剛好覆蓋所有運營成本，達到損益平衡",
+          "賠付損失加上費用恰好等於保費收入，意味著核保業務損益兩平，公司的利潤依賴投資收益",
+          "保費定價達到市場最優水準，競爭力和獲利性均衡",
+          "保險公司的理賠準備金充足率達到 100%，財務狀況健全"
+        ],
+        "correct": 1,
+        "explanation": "綜合比率 = 損失比率（賠付/保費）+ 費用比率（管理成本/保費）。低於 100% 代表核保盈利；高於 100% 代表核保虧損，必須靠投資收益彌補。傳統上保險公司可以接受核保小幅虧損，因為持有大量準備金的投資收益可以補足。但長期低利率環境讓這個邏輯承壓。",
+        "shiller_quote": "The combined ratio is a key measure of underwriting profitability—it's the loss ratio plus the expense ratio. If it's below 100%, the underwriting is profitable. Above 100%, you're losing money on underwriting and depending on investment income to make a profit. In a low-interest environment, that becomes increasingly challenging for the industry."
+      },
+      {
+        "id": "ins_18",
+        "lecture_id": "L02",
+        "youtube_id": "QbosMr2JVrc",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-2",
+        "text": "即期年金（Immediate Annuity）主要解決退休人員的哪個核心財務風險？",
+        "choices": [
+          "通膨風險——確保退休收入維持實質購買力",
+          "長壽風險（Longevity Risk）——確保無論活多久都有穩定的收入流，不必擔心「活太久、錢不夠用」",
+          "市場風險——保護退休資產不受股市波動影響",
+          "遺產傳承風險——確保資產在離世後順利轉移給繼承人"
+        ],
+        "correct": 1,
+        "explanation": "長壽風險是現代退休規劃最大的挑戰——你不知道自己會活多久。傳統的「提領計畫」面臨過度消費風險；年金把這個風險轉移給保險公司，由保險公司「賭」你的壽命。對健康的退休者而言，即期年金是純粹的長壽保險——越長壽，越值得買。",
+        "shiller_quote": "Annuities are insurance against outliving your money. You give the insurance company a lump sum, and they promise to pay you a fixed income for life—no matter how long you live. This is addressing longevity risk. With people living longer and longer, longevity risk is becoming one of the most important financial risks that individuals face."
+      },
+      {
+        "id": "ins_19",
+        "lecture_id": "L05",
+        "youtube_id": "qfK9rCDCicE",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-5",
+        "text": "你是殘疾收入保險精算師，發現理賠申請中有 15% 的「精神疾病」和「背痛」案件，賠付期間明顯偏長。這最可能反映了哪個保險問題，你應採取什麼措施？",
+        "choices": [
+          "這是正常分布，精算假設本來就涵蓋這個比例，無需特別處理",
+          "這可能是道德風險——難以客觀定義的主觀病症給了被保人延長領取期間的誘因，應考慮加強回診要求、設立復職誘因方案，並重新評估這類病症的賠付上限",
+          "應立即拒絕所有精神疾病和背痛理賠，因為這類病症無法核實",
+          "降低整體保費以增加投保吸引力，擴大風險池以分散這類案件"
+        ],
+        "correct": 1,
+        "explanation": "殘疾保險的道德風險在主觀性病症（如背痛、焦慮症）中最明顯——這類狀況很難客觀判定「是否完全康復」，給了部分被保人繼續領取的誘因。解決方法包括：定期獨立醫療評估、分段式復工誘因（部分復工仍保留部分給付）、對特定病症設定最長賠付期間。",
+        "shiller_quote": "The moral hazard in disability insurance is particularly acute for conditions that are hard to objectively verify—mental illness, back pain, stress-related conditions. These are real conditions, but they're also easier to feign or exaggerate. Insurance companies use independent medical examinations and return-to-work programs to manage moral hazard without denying legitimate claims."
+      },
+      {
+        "id": "ins_20",
+        "lecture_id": "L05",
+        "youtube_id": "qfK9rCDCicE",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-5",
+        "text": "美國「平價醫療法案」（ACA）要求所有人購買健康保險或繳納罰款，這個「個人強制令」的保險學邏輯是什麼？",
+        "choices": [
+          "增加保費收入，讓政府有更多資金補貼公立醫院",
+          "解決健康保險市場的逆選擇問題——強制所有人投保（包括健康年輕人）使風險池多元，防止只有病人投保導致費率螺旋上升的「死亡螺旋」",
+          "讓醫療保險公司獲得壟斷地位，提高投保率",
+          "強制保險是法律義務，與精算邏輯無關"
+        ],
+        "correct": 1,
+        "explanation": "ACA 設計師深知健康保險的核心挑戰：如果保險公司不能拒絕投保前疾病（ACA 規定），所有生病的人都會投保，健康的人可能不投保。這導致費率暴漲，最終只有最高風險者留在市場（「死亡螺旋」）。個人強制令把健康的年輕人也強制帶入，維持風險池的多樣性。",
+        "shiller_quote": "The individual mandate was an attempt to solve the adverse selection problem in health insurance. If you require insurance companies to cover pre-existing conditions but don't require everyone to buy insurance, only sick people will buy it, and premiums will spiral up. The mandate forces healthy people into the pool to keep premiums affordable. It's a classic insurance economics solution to the adverse selection death spiral."
+      }
+    ],
+    "derivatives_trader": [
+      {
+        "id": "dt_01",
+        "lecture_id": "L17",
+        "youtube_id": "VkUEWUxI6u0",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-17",
+        "text": "Black-Scholes 公式中的「隱含波動率」（Implied Volatility）是如何得出的？",
+        "choices": [
+          "直接從過去一年的歷史股價資料計算標準差",
+          "由分析師根據公司財報中的盈餘波動性估算",
+          "將市場上的期權實際成交價代入 Black-Scholes 公式反推出來的波動率",
+          "由央行每季公告的市場波動基準利率"
+        ],
+        "correct": 2,
+        "explanation": "這是一個反向工程。Black-Scholes 公式中除了波動率 σ，其他變數都是可觀測的。把市場實際成交的期權價格代入，反解出對應的 σ，就是「市場共識」對未來波動的定價。當 IV 遠高於歷史波動率，代表市場對不確定性高度緊張。",
+        "shiller_quote": "But I can also turn it around. If I already know what the option is selling for in the market, I can infer what the implied sigma is, right? Because all the other numbers in the Black-Scholes formula are observable. So I can back out what sigma the market is implying. And that's the implied volatility."
+      },
+      {
+        "id": "dt_02",
+        "lecture_id": "L15",
+        "youtube_id": "rxHu93YzHpc",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-15",
+        "text": "期貨契約（Futures Contract）與遠期契約（Forward Contract）最核心的差異是什麼？",
+        "choices": [
+          "遠期契約只能用於外匯，期貨可用於所有資產類別",
+          "期貨在交易所標準化並每日結算（Mark-to-Market），大幅降低交易對手風險；遠期為場外雙邊協議",
+          "期貨只允許機構法人購買，不開放散戶",
+          "遠期契約受更嚴格的監管，因此風險較低"
+        ],
+        "correct": 1,
+        "explanation": "遠期契約最大的風險是「交易對手風險」——到期日前，對方可能違約。期貨市場透過兩大機制解決：（1）交易所清算機構作為中央對手方；（2）每日結算強制即時實現損益，不讓損失累積到無法支付。",
+        "shiller_quote": "Now, one thing I wanted to say about futures also—in forward markets, which are markets between a pair of counterparties, there's always counterparty risk. I'll write that down. Counterparty risk is the risk that the other party in the transaction will fail to fulfill their obligation. Futures markets solve this with the clearinghouse acting as the counterparty to all trades, and daily marking to market."
+      },
+      {
+        "id": "dt_03",
+        "lecture_id": "L17",
+        "youtube_id": "VkUEWUxI6u0",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-17",
+        "text": "VIX 指數被稱為「恐慌指數」，其真正衡量的是什麼？",
+        "choices": [
+          "美國股市過去 30 天的實際已實現波動率",
+          "標準普爾 500 指數的本益比與歷史均值的偏離程度",
+          "期權市場對未來 30 天 S&P 500 波動率的共識預期，高 VIX 代表市場對不確定性極度擔憂",
+          "衍生性商品市場每日總交易量的加權平均"
+        ],
+        "correct": 2,
+        "explanation": "VIX 是從 S&P 500 期權的隱含波動率加總計算出來的，代表市場對未來一個月波動性的「定價」。VIX 在 2008 年 10 月一度飆至 80%，遠超一般水準的 15-20%。它不預測市場方向，只反映不確定性程度。",
+        "shiller_quote": "Let's make it clear, what this is. What the VIX is, is essentially—not exactly—the sigma in the Black-Scholes equation. But it is, in effect, the market's expected standard deviation of stock prices over the next year—but computed from 30-day options and then annualized. When the VIX is high, it means options are expensive, which means people are buying a lot of insurance."
+      },
+      {
+        "id": "dt_04",
+        "lecture_id": "L15",
+        "youtube_id": "rxHu93YzHpc",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-15",
+        "text": "你的公司是台灣出口商，未來 6 個月有 100 萬美元應收帳款，擔心新台幣升值會壓縮利潤。以下哪個避險策略最直接有效？",
+        "choices": [
+          "把美元應收款存入高利率美元定存，等升值後再換匯",
+          "與銀行簽訂 6 個月美元遠期賣出合約，今天鎖定換匯匯率，完全消除匯率不確定性",
+          "購買台幣升值的外匯選擇權，用期權費換取保護",
+          "不做任何避險，長期均值回歸，台幣不會一直升"
+        ],
+        "correct": 1,
+        "explanation": "遠期合約是最直接的匯率避險工具：你今天就鎖定 6 個月後的賣匯匯率，完全消除不確定性。選擇權保留上行空間但需支付期權費，侵蝕利潤。對確定的出口應收款，遠期合約通常是首選——這也是 Shiller 講解期貨/遠期市場為何存在的核心用途。",
+        "shiller_quote": "Forward contracts precede futures contracts. The forward market for foreign exchange is enormous—it dwarfs the stock market. Companies all over the world use forward contracts to hedge their currency exposure. If you're an exporter, you know you'll receive foreign currency in the future—a forward contract lets you lock in the exchange rate today and eliminate that uncertainty entirely."
+      },
+      {
+        "id": "dt_05",
+        "lecture_id": "L15",
+        "youtube_id": "rxHu93YzHpc",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-15",
+        "text": "期貨的正價差（Contango）是描述什麼市場狀態？",
+        "choices": [
+          "期貨價格低於現貨價格，買入期貨比現貨更划算",
+          "期貨價格高於現貨價格，通常反映儲存成本、資金成本或對未來價格上漲的預期",
+          "買賣雙方人數相等的市場均衡狀態",
+          "交易所因異常波動暫停期貨交易的特殊情形"
+        ],
+        "correct": 1,
+        "explanation": "Contango 是期貨市場的正常狀態——持有實物需要儲存成本（石油需要租倉庫），加上資金占用的機會成本。逆價差（Backwardation）則相反，當現貨需求緊張（或短缺預期強烈），近月現貨溢價高於遠期。了解正逆價差是設計期貨避險策略的基礎。",
+        "shiller_quote": "So, why does it peak in December 2011, and then collapse? I'm guessing that has something to do with the crisis in the Middle East, that the people who trade in these markets are thinking that the crisis in the Middle East will drive up prices in the near term. That's what contango and backwardation are about—the term structure of futures prices."
+      },
+      {
+        "id": "dt_06",
+        "lecture_id": "L15",
+        "youtube_id": "rxHu93YzHpc",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-15",
+        "text": "期貨交易的每日結算（Mark-to-Market）機制如何有效控制信用風險？",
+        "choices": [
+          "每週結算一次，平衡了效率與風險管理",
+          "每日計算損益並即時調整保證金帳戶，確保虧損方持續有足夠擔保品，消除損失累積",
+          "要求所有交易方在開倉時預繳全額合約金額",
+          "僅在合約到期日進行一次性最終結算"
+        ],
+        "correct": 1,
+        "explanation": "每日結算的邏輯：與其等到合約到期才知道誰欠誰多少錢（此時可能違約金額巨大），不如每天小額結算。虧損方每天補充保證金；若不補（Margin Call），倉位強制平倉。這讓清算所的實際信用曝險永遠是「一天的波動」，而非幾個月的累積損失。",
+        "shiller_quote": "And I can quickly deplete my $5,000, right? The posted price keeps going up. And the margin call will be sent to me immediately, asking me to post more margin. If I can't post more margin, the clearinghouse will close out my position. This daily settlement mechanism is what makes futures markets safer than forward markets."
+      },
+      {
+        "id": "dt_07",
+        "lecture_id": "L17",
+        "youtube_id": "VkUEWUxI6u0",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-17",
+        "text": "賣出裸賣權（Naked Put Selling）的交易者面臨什麼核心風險？",
+        "choices": [
+          "標的資產大漲時損失全部期權費",
+          "標的資產價格大幅下跌時，須以遠高於市場的履約價買入資產，潛在損失幾乎無上限",
+          "利率上升會使期權費大幅縮水",
+          "流動性不足時無法在市場上快速平倉"
+        ],
+        "correct": 1,
+        "explanation": "賣出裸賣權的收益是有限的（最多賺到期權費），但損失卻可以很大——如果標的資產跌到零，你必須以履約價買入一個一文不值的資產。「裸」指的是沒有任何對沖保護。Nick Leeson 與多個避險基金的倒閉都涉及類似的不對稱損益結構。",
+        "shiller_quote": "Working with my colleagues and the Chicago Mercantile Exchange, we launched options in 2006 on single-family homes in the United States. We were hoping that people would buy put options to protect their home equity. A homeowner could buy a put option that would pay off if home prices in their area fell. The downside of the put seller is substantial if prices really collapse."
+      },
+      {
+        "id": "dt_08",
+        "lecture_id": "L17",
+        "youtube_id": "VkUEWUxI6u0",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-17",
+        "text": "COVID-19 爆發初期（2020 年 2-3 月），VIX 從 15 飆升至 85。一位有經驗的衍生品交易員最可能做出什麼判斷？",
+        "choices": [
+          "VIX 飆升代表市場崩潰，應立即平倉所有部位等待止跌",
+          "期權的隱含波動率異常高昂，賣出保護性賣權的溢酬已極度豐厚，有經驗的交易員會評估以適當規模賣出波動率（Short Vega）在極端恐慌時收取溢酬",
+          "VIX 高代表市場即將反彈，應立刻大量做多股票指數",
+          "VIX 只是媒體炒作的指標，有經驗的交易員不看這個數字"
+        ],
+        "correct": 1,
+        "explanation": "VIX 飆升至歷史高位時，期權的隱含波動率遠超歷史實現波動率。這代表市場在大量買入「保險」，推高期權費至極端水準。有經驗的交易員知道，在極端恐慌時成為「賣保險的人」（Short Vega）可以收取豐厚溢酬——前提是部位規模合理，不會因市場繼續惡化而爆倉。",
+        "shiller_quote": "And this is in percent per year. So, that means that the implied volatility in 1986 was 20%. And then, it shot way up to 60%, unimaginably quick. That might be the record high. The VIX going extremely high is telling you that options are very expensive—people are paying a lot for insurance. That's both a signal of fear and potentially an opportunity for those who can stomach the risk."
+      },
+      {
+        "id": "dt_09",
+        "lecture_id": "L17",
+        "youtube_id": "VkUEWUxI6u0",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-17",
+        "text": "「Delta 避險」（Delta Hedging）的核心邏輯是什麼？",
+        "choices": [
+          "買入標的資產的同時賣出期權，確保多頭和空頭部位完全匹配",
+          "持有與期權 Delta 值對應比例的標的資產，使組合對標的資產小幅波動免疫，但需要隨股價變動動態調整",
+          "把期權的期限縮短至最短，以最小化時間價值損耗",
+          "同時持有相同履約價的買權和賣權，創造無方向性的波動率暴露"
+        ],
+        "correct": 1,
+        "explanation": "Black-Scholes 模型的關鍵推導就是 Delta 避險：如果你持有期權，你可以持有 Delta 份的標的資產來對沖，創造「無風險組合」。由於 Delta 隨股價改變，需要持續動態調整（Rebalancing），這就是「動態避險」。",
+        "shiller_quote": "Black-Scholes hedging is dynamic. You have to rebalance your hedge as prices change. The delta tells you how many shares of stock to hold for each option. But the delta changes as the stock price changes—when the option is deep in the money, delta approaches one; when it's deep out of the money, delta approaches zero. So you're constantly adjusting your hedge."
+      },
+      {
+        "id": "dt_10",
+        "lecture_id": "L17",
+        "youtube_id": "VkUEWUxI6u0",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-17",
+        "text": "「買賣權平價關係」（Put-Call Parity）在期權定價中說明了什麼？",
+        "choices": [
+          "履約價相同的買權（Call）和賣權（Put）定價永遠完全相等",
+          "持有相同履約價和到期日的買權加無風險債券，等同於持有賣權加標的資產；違反這個關係就存在無風險套利機會",
+          "買權的價格永遠高於賣權，因為向上的空間理論上無限",
+          "買賣權平價只在美式期權中成立，歐式期權不適用"
+        ],
+        "correct": 1,
+        "explanation": "Put-Call Parity 是期權定價的基本等式，它不依賴任何定價模型，只依靠無套利假設。實務應用：如果你知道買權的價格，就能推算出賣權的合理價格。違反這個等式就有無風險套利空間，市場力量會迅速糾正偏差。",
+        "shiller_quote": "Put-call parity is a very fundamental relationship. C - P = S - PV(K). If you own a call and lend money equal to the present value of the strike price, that's the same as owning the stock and buying a put. This relationship must hold in a perfect market, or you'd have an arbitrage. It's one of the most reliable relationships in all of finance."
+      },
+      {
+        "id": "dt_11",
+        "lecture_id": "L17",
+        "youtube_id": "VkUEWUxI6u0",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-17",
+        "text": "「Gamma」（Γ）風險對期權做市商（Market Maker）意味著什麼？",
+        "choices": [
+          "Gamma 衡量期權對時間流逝的敏感性，做市商希望 Gamma 越高越好",
+          "Gamma 是 Delta 對股價的變化率；高 Gamma 意味著股價大幅波動時 Delta 快速變化，動態避險的成本（交易頻率）大幅上升",
+          "Gamma 衡量期權對利率的敏感性，利率越高 Gamma 損失越大",
+          "Gamma 是期權買方的唯一風險指標，賣方不需要管理 Gamma 風險"
+        ],
+        "correct": 1,
+        "explanation": "對期權做市商而言，Gamma 是痛苦之源：Gamma 高代表市場大幅波動時，需要頻繁調整 Delta 對沖——每次調整都有交易成本。Gamma 高的期權（如接近到期的平值期權）的動態避險成本最高。這也是為何做市商對 Gamma 風險特別敏感。",
+        "shiller_quote": "When you dynamically hedge, you are continuously trading. Every time the stock moves, you need to rebalance. The gamma tells you how quickly the delta changes—a high gamma option requires more frequent rebalancing, which means higher transaction costs. That's why short-gamma positions—selling options—can be profitable in calm markets but devastating in volatile ones."
+      },
+      {
+        "id": "dt_12",
+        "lecture_id": "L15",
+        "youtube_id": "rxHu93YzHpc",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-15",
+        "text": "「利率交換」（Interest Rate Swap）是怎樣運作的？企業為什麼使用它？",
+        "choices": [
+          "兩家公司交換股票，鎖定彼此的股息收益",
+          "一方支付固定利率給對方，換取對方支付浮動利率（如 LIBOR）；企業用它把浮動利率負債轉為固定成本，鎖定利率風險",
+          "央行與商業銀行之間的準備金交換協議",
+          "進出口商之間協議在未來某日交換等值外幣"
+        ],
+        "correct": 1,
+        "explanation": "利率交換是全球最大的衍生品市場（名義金額超過數百兆美元）。企業用固定利率發了一筆浮動利率債券，可以透過 Swap 把浮動支付轉為固定，鎖定融資成本，消除利率波動對財務的不確定性。反之，持有固定利率資產的機構也可以 Swap 成浮動。",
+        "shiller_quote": "An interest rate swap is where two parties agree to swap interest rate payments. One party pays a fixed rate and receives a floating rate; the other pays floating and receives fixed. Why would companies want this? Because some companies can borrow at fixed rates more cheaply, others at floating rates more cheaply. They swap to each get what they want at lower cost."
+      },
+      {
+        "id": "dt_13",
+        "lecture_id": "L15",
+        "youtube_id": "rxHu93YzHpc",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-15",
+        "text": "「基差風險」（Basis Risk）是什麼？為什麼即使使用期貨避險，也可能無法完美消除風險？",
+        "choices": [
+          "基差風險是指期貨合約的保證金不足以覆蓋損失的風險",
+          "期貨合約的標的與你實際持有的資產之間的價格差距（基差）可能不穩定，期貨價格的變動和現貨損失無法完全抵消，留下殘餘風險",
+          "基差風險是指交易對手在期貨到期時無法履約的違約風險",
+          "基差是指期貨的買賣價差，流動性越差的市場基差越大"
+        ],
+        "correct": 1,
+        "explanation": "以台灣出口商為例：你用台指期貨避險，但你的部位是個股，台指期貨與你的個股可能偏離。或者你用小麥期貨避險你的麵粉廠，但芝加哥小麥期貨與你採購的台灣在地小麥價格有差異。基差風險使「完美的避險」在實務上幾乎不存在。",
+        "shiller_quote": "Basis risk is the risk that the hedge doesn't work perfectly because the price of what you're hedging doesn't move exactly in sync with the futures you're using. For example, if you're a wheat farmer in Kansas, the Chicago wheat futures price and your local cash price don't move exactly together. The difference is the basis, and changes in the basis are the residual risk even after hedging."
+      },
+      {
+        "id": "dt_14",
+        "lecture_id": "L17",
+        "youtube_id": "VkUEWUxI6u0",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-17",
+        "text": "期權「隱含波動率微笑」（Volatility Smile / Skew）透露了什麼市場信息？",
+        "choices": [
+          "不同履約價的期權具有相同的隱含波動率，說明市場對所有情境的定價完全一致",
+          "深度虛值賣權（Put）往往有更高的隱含波動率，反映市場對大跌尾部風險的保護需求遠高於大漲，是不對稱的恐懼定價",
+          "隱含波動率微笑是 Black-Scholes 模型完美定價的直接證明",
+          "隱含波動率在平值期權最低、深度價內最高，說明流動性溢酬主導"
+        ],
+        "correct": 1,
+        "explanation": "Black-Scholes 假設股價服從對數常態分布，但市場顯示「尾部風險」遠超常態分布的預測。1987 年崩盤後，市場開始為深度虛值賣權定出更高的隱含波動率（買保險的需求），形成向左傾斜的「波動率歪斜」（Skew）。這是 Black-Scholes 模型最明顯的局限性之一。",
+        "shiller_quote": "After the crash of 1987, the options market developed what's called the volatility smile—or more accurately, for equity options, the volatility skew. Out-of-the-money puts became more expensive relative to what Black-Scholes predicts. The market was pricing in fat tails—the possibility of big drops. This tells you that real-world stock returns have fatter tails than the lognormal distribution assumes."
+      },
+      {
+        "id": "dt_15",
+        "lecture_id": "L15",
+        "youtube_id": "rxHu93YzHpc",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-15",
+        "text": "期貨市場中，「自然避險者」（Natural Hedgers）和「投機者」（Speculators）各自扮演什麼角色？",
+        "choices": [
+          "自然避險者是做多的一方，投機者是做空的一方",
+          "自然避險者（如農夫、出口商）透過期貨鎖定未來價格，把風險轉移給願意承擔風險的投機者；兩者缺一不可，共同創造流動性和價格發現功能",
+          "投機者是市場的危害，監管機構應限制投機者的參與",
+          "自然避險者和投機者都是做多，只是策略持有期間不同"
+        ],
+        "correct": 1,
+        "explanation": "Shiller 強調：投機者在期貨市場不是壞人，而是必要的存在。農夫（自然避險者）想賣出期貨鎖定小麥價格，但如果市場上只有農夫，就沒有買家。投機者是願意承擔對應風險的買家，他們提供流動性，使農夫能完成避險。兩者的互動才創造出有效的期貨市場。",
+        "shiller_quote": "There are natural hedgers—these are people with a natural risk that they want to lay off. And then there are speculators, who have no underlying position, but who are willing to take on the risk for profit. The natural hedger and the speculator need each other. The speculator is providing a service—providing liquidity so the hedger can manage their risk. Without speculators, futures markets wouldn't work."
+      },
+      {
+        "id": "dt_16",
+        "lecture_id": "L15",
+        "youtube_id": "rxHu93YzHpc",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-15",
+        "text": "「滾動期貨」（Rolling Futures）策略是什麼，為什麼長期持有期貨部位的人必須理解它？",
+        "choices": [
+          "每日平倉所有期貨部位，重新開倉，以避免每日結算帶來的資金壓力",
+          "在期貨合約到期前，平掉即將到期的合約並換倉至較長到期的合約，以維持持續的市場暴露；在 Contango 市場中，滾倉成本會持續侵蝕報酬",
+          "同時持有相同標的不同到期月份的多個合約，創造蝶式價差策略",
+          "每次到期後換到更接近到期的合約，利用近月溢價賺取差價"
+        ],
+        "correct": 1,
+        "explanation": "長期持有商品期貨（如石油 ETF）的人必須理解滾倉成本：如果遠期期貨比近月期貨貴（Contango），你每次滾倉都是「賣便宜、買貴」，長期累積的滾倉損失可能非常可觀。2020 年 WTI 原油期貨跌至負數，就與近月合約的滾倉壓力有直接關係。",
+        "shiller_quote": "If you hold oil futures long-term, you have to keep rolling—selling the expiring contract and buying the next one. In a contango market, where distant futures are more expensive than near futures, you are always selling low and buying high. This roll cost can be a major drag on long-term returns. It's one reason commodity ETFs often underperform spot commodity prices over time."
+      },
+      {
+        "id": "dt_17",
+        "lecture_id": "L17",
+        "youtube_id": "VkUEWUxI6u0",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-17",
+        "text": "信用違約交換（Credit Default Swap, CDS）的基本機制是什麼？",
+        "choices": [
+          "兩個公司互相交換固定和浮動利率的債務支付",
+          "CDS 的買方支付定期費用（CDS 利差），換取賣方在標的公司違約時補償損失的承諾，本質上是對信用事件的保險",
+          "投資人買入 CDS 後，可以強制要求標的公司提前償還債務",
+          "CDS 是一種允許機構在不持有債券的情況下收取利息的合成工具"
+        ],
+        "correct": 1,
+        "explanation": "CDS 是純粹的信用風險轉移工具。持有希臘國債的銀行，可以透過買入 CDS 消除違約風險（只要 CDS 賣方可靠）。2008 年 AIG 的問題正是在於：它大量賣出 CDS（承諾保護買方），卻沒有備妥足夠準備金，當違約事件大規模觸發時，無法履約。",
+        "shiller_quote": "A credit default swap is like insurance on a bond. You pay a premium to the seller of the CDS. And if the underlying borrower defaults, the CDS seller pays you the loss. AIG was selling credit default swaps in huge quantities—they were essentially the insurer of last resort for the whole mortgage-backed securities market. When housing collapsed, their exposure was catastrophic."
+      },
+      {
+        "id": "dt_18",
+        "lecture_id": "L15",
+        "youtube_id": "rxHu93YzHpc",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-15",
+        "text": "農夫預計 6 個月後收穫 10,000 噸小麥，擔心屆時小麥價格下跌壓縮獲利。以下哪個期貨操作可以有效鎖定銷售價格？",
+        "choices": [
+          "買入（做多）小麥期貨，到期後交割給買家",
+          "賣出（做空）對應數量的小麥期貨，鎖定今日的期貨價格為 6 個月後的銷售收入",
+          "買入小麥買權（Call Option），確保能以履約價賣出",
+          "什麼都不做，相信長期均值回歸，小麥價格不會一直低迷"
+        ],
+        "correct": 1,
+        "explanation": "農夫的自然曝險是「小麥多頭」（未來要賣小麥），所以應「做空期貨」來對沖。賣出期貨鎖定的是今日的期貨價格，無論 6 個月後小麥現貨漲跌，農夫都能以此價格賣出（透過基差調整）。這是 Shiller 在期貨市場主題中最核心的實務案例。",
+        "shiller_quote": "The first futures markets were in agricultural commodities—exactly for this purpose. A farmer who has planted wheat doesn't know what the price will be at harvest time. By selling wheat futures, the farmer can lock in a price today. This is called a short hedge—you're short futures to offset your natural long position in the physical commodity."
+      },
+      {
+        "id": "dt_19",
+        "lecture_id": "L17",
+        "youtube_id": "VkUEWUxI6u0",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-17",
+        "text": "「Theta」（時間價值衰減）對期權賣方（Short Options）意味著什麼？",
+        "choices": [
+          "Theta 是期權賣方最大的風險，代表隨時間增加的損失",
+          "期權賣方每天收取時間價值衰減——只要標的資產沒有大幅波動，Theta 就是賣方的持續收入來源",
+          "Theta 只與到期日超過一年的長期期權有關，短期期權的 Theta 可忽略",
+          "Theta 是期權買方的優勢——持有越久，時間價值越高"
+        ],
+        "correct": 1,
+        "explanation": "期權賣方的損益結構：賣出期權後，如果市場平靜（隱含波動率未實現），時間每過一天，期權的時間價值就減少一些（Theta 衰減），這是賣方的自然獲利。但如果市場突然大幅波動（Gamma 風險），Delta 快速變化，可能瞬間侵蝕所有 Theta 收益。這就是「慢慢收錢、一夕歸零」的風險結構。",
+        "shiller_quote": "Theta is the time decay of the option. Every day that passes, the option loses some value—assuming nothing else changes. For the option buyer, theta is a cost—you're paying for time. For the option seller, theta is income—you earn a little every day the option is alive. That's why selling options can be a steady income strategy in calm markets, but it's very risky in volatile markets."
+      },
+      {
+        "id": "dt_20",
+        "lecture_id": "L15",
+        "youtube_id": "rxHu93YzHpc",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-15",
+        "text": "一位台幣計價的基金經理人買入了美股部位，但沒有做任何外匯避險。半年後美股漲了 15%，但美元兌台幣貶值了 8%。他的台幣報酬大約是多少？",
+        "choices": [
+          "15%，股票漲幅就是最終報酬",
+          "約 5.8%，因為美元貶值侵蝕了部分股票漲幅（(1.15 × 0.92 - 1) ≈ 5.8%）",
+          "約 23%，因為美股漲幅加上換回台幣時的匯率收益",
+          "-8%，因為匯率損失抵消了所有股票漲幅"
+        ],
+        "correct": 1,
+        "explanation": "對台幣計價的投資人，美元資產的報酬必須用台幣衡量：台幣報酬 ≈ (1 + 股票報酬) × (1 + 匯率變動) - 1 = 1.15 × 0.92 - 1 ≈ 5.8%。這說明匯率避險對投資於外幣資產的機構至關重要——即使資產表現優異，未避險的匯率損失可能大幅侵蝕報酬。",
+        "shiller_quote": "When you invest internationally, you have two sources of return: the return on the foreign asset and the change in the exchange rate. A US stock might go up 15%, but if the dollar falls 8% against your home currency, your actual return in home currency terms is only about 6%. That's why international investors use currency forwards and futures—to separate the asset return decision from the currency risk decision."
+      }
+    ],
+    "investment_banker": [
+      {
+        "id": "ib_01",
+        "lecture_id": "L09",
+        "youtube_id": "78_GRGjlL6E",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-9",
+        "text": "在 IPO（首次公開發行）中，承銷商（Underwriter）扮演什麼核心角色？",
+        "choices": [
+          "保證公司股票上市後不會跌破發行價，否則承銷商補足差額",
+          "評估公司價值、設定發行價、向機構投資人推介，並承擔配售風險（Firm Commitment Underwriting）",
+          "長期管理公司上市後的投資組合策略",
+          "代表小額散戶投資人監督公司治理並行使投票權"
+        ],
+        "correct": 1,
+        "explanation": "在「承銷包銷」（Firm Commitment）模式下，投資銀行以議定價格買下所有股票，再賣給投資人——如果賣不掉，投資銀行自己扛。這要求投行對公司有深度了解並承擔定價風險。",
+        "shiller_quote": "If it's the first time you've issued shares, it's called an IPO. The investment banker has the roadshow, they go around and they find out what price they can sell shares at. And in a firm commitment underwriting, the investment bank buys all the shares and then resells them."
+      },
+      {
+        "id": "ib_02",
+        "lecture_id": "L19",
+        "youtube_id": "2yycGEFCNYE",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-19",
+        "text": "影子銀行（Shadow Banking）體系最大的系統性風險在哪裡？",
+        "choices": [
+          "影子銀行完全不受任何監管，可以無限槓桿",
+          "影子銀行不受存款保險保護，卻執行類似銀行的期限轉換，市場恐慌時可能遭遇類似銀行擠兌的流動性危機",
+          "影子銀行主要服務違規企業逃漏稅",
+          "影子銀行的資本充足率過高，反而讓貨幣政策失去傳導效果"
+        ],
+        "correct": 1,
+        "explanation": "雷曼兄弟、貝爾斯登都是影子銀行體系的核心。它們以短期回購協議（Repo）借入資金，持有長期抵押貸款證券——這正是期限錯配。當市場對其擔保品信心動搖，Repo 對手拒絕展期，雷曼 24 小時內就面臨流動性危機。",
+        "shiller_quote": "Let me tell you something about shadow banking, which is relevant here. The term shadow banking—shadow banking is banks that are not banks—financial institutions that do what banks do, namely borrowing short and lending long, creating liquidity, but that are not subject to banking regulation."
+      },
+      {
+        "id": "ib_03",
+        "lecture_id": "L19",
+        "youtube_id": "2yycGEFCNYE",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-19",
+        "text": "Gary Gorton 等學者認為，2008 年金融危機中回購協議（Repo）市場的崩潰，類比於哪個歷史事件？",
+        "choices": [
+          "1929 年股市崩盤引發的全面大蕭條",
+          "1970 年代石油危機造成的貨幣緊縮",
+          "傳統銀行擠兌——只是擠兌的不是個人存款人，而是機構投資人對 Repo 擔保品失去信心",
+          "2000 年網路泡沫破裂後的科技股崩盤"
+        ],
+        "correct": 2,
+        "explanation": "Gorton 的論點：機構投資人用「過夜 Repo」來存放閒置資金（類似存款）。當他們對作為擔保品的 MBS 失去信心，開始要求更高的「折扣率」（haircut），就等於是在「提款」。這個機制與傳統銀行擠兌完全相同，只是隱藏在更複雜的金融工具背後。",
+        "shiller_quote": "So, here's what happened, according to Gorton and others who agree with him. Investment banks, like Lehman Brothers, were not regulated like commercial banks. They were getting their funding through repo—repurchase agreements—which is, in Gorton's view, a form of banking. And when people lost confidence, it was like a bank run on the repo market."
+      },
+      {
+        "id": "ib_04",
+        "lecture_id": "L09",
+        "youtube_id": "78_GRGjlL6E",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-9",
+        "text": "有限責任公司（Limited Liability Corporation）制度如何從根本上促進了資本主義的發展？",
+        "choices": [
+          "讓公司可以合法不繳稅，大幅降低企業成本",
+          "允許股東在公司破產時不承擔個人無限責任，大幅降低投資風險，讓更多人願意投入資本",
+          "讓政府對企業擁有優先控制與收益分配權",
+          "取消了對公司可承擔債務金額的法定上限"
+        ],
+        "correct": 1,
+        "explanation": "有限責任是工業革命的關鍵制度創新。在此之前，投資公司的合夥人對所有債務承擔無限個人責任——這極大地限制了大型商業冒險的資本集結。有限責任讓不認識管理層的陌生人也敢投資，由此催生了現代股票市場。",
+        "shiller_quote": "But I wanted to really focus on a particular nuance that developed. It's limited liability. A limited liability corporation is a corporation that guarantees that you as a shareholder will not be liable for the debts of the corporation beyond the amount you put in. This was essential for the development of large corporations. Without limited liability, most people would be afraid to invest in corporations."
+      },
+      {
+        "id": "ib_05",
+        "lecture_id": "L09",
+        "youtube_id": "78_GRGjlL6E",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-9",
+        "text": "普通股（Common Stock）與特別股（Preferred Stock）的主要差別是什麼？",
+        "choices": [
+          "普通股的股利固定，特別股的股利隨盈餘波動",
+          "普通股享有投票權並承擔最後風險/最後剩餘收益，特別股有優先股利請求權但通常無投票權",
+          "特別股比普通股更容易在公開市場上交易",
+          "普通股只向機構法人開放，特別股才對散戶開放"
+        ],
+        "correct": 1,
+        "explanation": "特別股就像「低一級的債券」——有優先（但通常固定）的股利請求權，在清算時也優先於普通股，但通常沒有投票權，也不參與公司超額盈餘的分配。普通股才是公司真正的「所有者」——承擔最大風險，但享有剩餘利益的全部上行空間。",
+        "shiller_quote": "I wanted to mention, there's another kind of share called preferred. I've been talking here about common stock. Common stock is the real ownership in the company. In other words, you take all the profits, you get all the profits—the residual. You are the residual claimant. But preferred stock is like a bond in a sense—you get a fixed dividend."
+      },
+      {
+        "id": "ib_06",
+        "lecture_id": "L09",
+        "youtube_id": "78_GRGjlL6E",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-9",
+        "text": "你的投資銀行正為一家 AI 晶片公司承銷 IPO。發行人要求把定價訂在 DCF 估值中位數的 140%，理由是「同業最近 IPO 都這樣定價」。你最應該如何回應？",
+        "choices": [
+          "接受客戶要求——客戶最大，且競爭者都這樣做",
+          "解釋過高定價雖短期讓發行人募集更多資金，但上市後若股價破發，會傷害公司聲譽與未來融資能力，也讓承銷商信譽受損，應根據機構路演的真實需求定價",
+          "要求客戶降低定價至 DCF 估值 100%，否則拒絕承銷",
+          "接受定價，但悄悄在機構投資人推介時調低預期"
+        ],
+        "correct": 1,
+        "explanation": "IPO 定價是承銷商聲譽的核心考驗。過高定價的短期誘惑是更高的承銷費，但長期後果是機構投資人失去信任。最好的承銷商同時服務發行人和買方投資人，確保上市後市場能維持健康的股價表現——這是投資銀行長期關係建立的基礎。",
+        "shiller_quote": "If it's the first time you've issued shares, it's called an IPO. The investment banker has the roadshow, they go around and they find out what price they can sell shares at. There's a tension: the company wants a high price, but the investment banker needs to maintain credibility with investors. A good investment banker is a repeat player—their long-term reputation with investors matters more than maximizing one deal."
+      },
+      {
+        "id": "ib_07",
+        "lecture_id": "L19",
+        "youtube_id": "2yycGEFCNYE",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-19",
+        "text": "格拉斯-斯蒂格爾法案（Glass-Steagall Act）在 1999 年廢除的爭議，核心問題是什麼？",
+        "choices": [
+          "廢除是否讓外資更容易進入美國資本市場",
+          "商業銀行與投資銀行業務分離的廢除，使金融機構風險過度集中，被認為加速了 2008 年危機的形成",
+          "廢除後是否應大幅提高聯邦存款保險的理賠上限",
+          "廢除是否違反了美國憲法對金融監管的限制"
+        ],
+        "correct": 1,
+        "explanation": "格拉斯-斯蒂格爾法案（1933）在大蕭條後將商業銀行和投資銀行強制分離。1999 年廢除後，允許銀行控股公司同時從事兩類業務。批評者認為，這使花旗等大型機構風險過度集中，是 2008 年危機的制度性根源之一。",
+        "shiller_quote": "The Glass-Steagall Act—that was repealed in 1999. There's a question as to whether we've regretted that. We've tried to bring some of it back through the Volcker Rule, which is part of Dodd-Frank. The argument was that commercial banks and investment banks were doing different things, and you shouldn't have investment banks gambling with depositors' money."
+      },
+      {
+        "id": "ib_08",
+        "lecture_id": "L09",
+        "youtube_id": "78_GRGjlL6E",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-9",
+        "text": "你正為一個 PE 收購案進行財務盡職調查。賣方模型顯示未來 5 年 EBITDA 年均成長 35%，Terminal Value 佔整體估值的 75%。你最需要質疑什麼？",
+        "choices": [
+          "公司的商標和專利是否已正確登錄在資產負債表",
+          "35% 成長率的假設基礎是否合理（市場天花板、競爭格局），以及 Terminal Value 所隱含的永續成長率——後者往往被賣方不合理地設定過高",
+          "財務模型使用的 Excel 版本是否符合行業標準",
+          "賣方聘用的會計師事務所是否為四大"
+        ],
+        "correct": 1,
+        "explanation": "Terminal Value 佔估值 75% 是一個警訊——你為「未來無限期的增長」付了大部分的錢，而非可見的現金流。5 年 35% 成長意味著 EBITDA 成長 4.7 倍，需要非常強的市場地位支撐。盡職調查的核心是挑戰樂觀假設，保護客戶不為過度樂觀的未來付出過高代價。",
+        "shiller_quote": "The price of a stock is approximately equal to the dividend over the quantity r minus g. If g is close to r, the price goes to infinity. Terminal value in a DCF analysis is exactly this: a tiny change in the assumed long-run growth rate has a massive impact on value. That's why the terminal growth assumption is the most important—and most manipulated—number in any valuation."
+      },
+      {
+        "id": "ib_09",
+        "lecture_id": "L09",
+        "youtube_id": "78_GRGjlL6E",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-9",
+        "text": "DCF 估值中的「加權平均資金成本」（WACC）由哪些部分構成？",
+        "choices": [
+          "只由股東要求的報酬率（Cost of Equity）決定，債務成本不影響企業估值",
+          "股權成本（用 CAPM 估算）和稅後債務成本，按市值比例加權，反映企業以整體資本結構融資的機會成本",
+          "WACC 等同於企業過去五年的平均股東權益報酬率（ROE）",
+          "WACC 由監管機構為不同行業統一設定，確保公平比較"
+        ],
+        "correct": 1,
+        "explanation": "WACC = 股權成本 × (E/V) + 債務成本 × (D/V) × (1-稅率)。WACC 是 DCF 估值的折現率——代表公司的資本提供者（股東和債權人）的加權機會成本。WACC 假設選擇對估值影響極大：股權風險溢酬差 1%，對高成長企業的估值可能差 20-40%。",
+        "shiller_quote": "The discount rate in a DCF is the weighted average cost of capital. It reflects what all capital providers—both debt and equity—require as a return. Equity is more expensive because equity holders bear more risk. But debt has a tax advantage—interest is tax-deductible. The WACC blends these two costs in proportion to the capital structure. Getting this right is central to valuation."
+      },
+      {
+        "id": "ib_10",
+        "lecture_id": "L09",
+        "youtube_id": "78_GRGjlL6E",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-9",
+        "text": "可比公司分析（Comparable Company Analysis, Comps）最大的局限性是什麼？",
+        "choices": [
+          "Comps 需要大量財務數據，在缺乏公開資料的市場中難以執行",
+          "Comps 依賴「目前市場估值水準是合理的」這個隱含假設——如果整個行業估值泡沫化，Comps 會讓你得出一個「市場錯的很合理」的估值結論",
+          "Comps 只適用於有正現金流的成熟企業，對高成長科技公司無效",
+          "Comps 需要與每家可比公司的管理層溝通獲得授權才能使用其數據"
+        ],
+        "correct": 1,
+        "explanation": "Comps 的本質是「錨定市場定價」。2000 年網路泡沫期間，用 Comps 給科技公司估值，得出的「合理估值」全都泡沫化了。它只能告訴你相對於同業的溢價或折價，不能告訴你整個行業是否合理定價。好的投行分析師同時使用 DCF 和 Comps，兩者相互驗證。",
+        "shiller_quote": "Comparables are widely used in investment banking. You look at what similar companies are selling for. But there's a fundamental problem: this method assumes that the market is currently pricing things correctly. If there's a bubble in the sector, your comparables analysis will just tell you how to price within the bubble—not whether the whole sector is overvalued."
+      },
+      {
+        "id": "ib_11",
+        "lecture_id": "L09",
+        "youtube_id": "78_GRGjlL6E",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-9",
+        "text": "槓桿收購（LBO，Leveraged Buyout）的基本邏輯是什麼，PE 基金如何從中獲利？",
+        "choices": [
+          "PE 基金用 100% 自有資金收購公司，然後提高效率後再出售",
+          "PE 基金以少量自有資金加上大量借款（槓桿）收購公司，用被收購公司的現金流還債；若公司在持有期間改善運營或市場估值提升，槓桿效果放大股權報酬率",
+          "LBO 是一種敵意收購手段，目的是拆解公司資產分別出售",
+          "LBO 只適用於虧損企業的重整，盈利公司不需要外部 PE 介入"
+        ],
+        "correct": 1,
+        "explanation": "LBO 的核心是用被收購公司的資產和現金流作為抵押，透過高槓桿融資放大股權報酬。假設收購一家公司用 30% 自有資金、70% 借款：若公司價值漲 30%，股權報酬率是 100%（30%/30%=1，再加上借款的槓桿效果）。但反之亦然——若公司價值下跌，損失也被放大。",
+        "shiller_quote": "A leveraged buyout uses borrowed money to acquire a company. The debt is secured by the assets of the company you're buying—so you're using the target's own assets to finance the acquisition. The equity portion is small—maybe 20-30% of the purchase price. If the company does well, the returns on that equity are magnified by the leverage. If it does poorly, the equity can be wiped out."
+      },
+      {
+        "id": "ib_12",
+        "lecture_id": "L09",
+        "youtube_id": "78_GRGjlL6E",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-9",
+        "text": "M&A 交易中的「公正意見書」（Fairness Opinion）是什麼，它存在什麼利益衝突問題？",
+        "choices": [
+          "由目標公司主要股東委託出具的獨立評估報告，監管機構強制要求",
+          "由投行出具的說明「交易定價對股東是否公平合理」的評估意見；但出具意見的投行往往同時賺取交易佣金，可能傾向支持交易成交",
+          "由監管機構審核所有 M&A 交易後出具的官方合規證明",
+          "公正意見書只在敵意收購（Hostile Takeover）中才需要，友好收購不需要"
+        ],
+        "correct": 1,
+        "explanation": "公正意見書的核心利益衝突：投行收費通常與交易是否完成掛鉤。如果你只有在交易成功時才收到大筆佣金，你有強烈的誘因說「這個價格公平」，讓交易順利進行。這個衝突在 2000 年代多次 M&A 醜聞中被揭露，是企業治理的重要議題。",
+        "shiller_quote": "Investment banks in M&A have conflicts of interest. They get paid if the deal goes through. So when they issue a fairness opinion saying 'this deal is fair to shareholders,' you have to ask: is this truly independent analysis, or is it a rubber stamp to get their fee? The conflicts in investment banking are pervasive and need to be carefully managed."
+      },
+      {
+        "id": "ib_13",
+        "lecture_id": "L19",
+        "youtube_id": "2yycGEFCNYE",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-19",
+        "text": "可轉換債券（Convertible Bond）對發行企業有什麼吸引力？它對投資人意味著什麼？",
+        "choices": [
+          "可轉換債券讓企業可以不付利息，只在到期時一次性還本",
+          "企業可以以低於純債的票息融資（換取投資人的轉換權利）；投資人得到的是「債券保底 + 股票上行期權」的組合，下檔有保護、上檔可參與股價上漲",
+          "可轉換債券只能由銀行購買，是企業向銀行融資的一種特殊形式",
+          "可轉換債券在轉換為股票後，債務自動從資產負債表消失，無需還款"
+        ],
+        "correct": 1,
+        "explanation": "可轉換債券是典型的「混合工具」：對企業而言，以低息融資（因為投資人接受轉換期權作為補償）；對投資人而言，擁有債券的下檔保護（若股票下跌，仍可持有債券到期）和股票的上行潛力（若股票大漲，轉換後可獲利）。這種不對稱性讓它在高成長但高風險的科技公司融資中特別受歡迎。",
+        "shiller_quote": "Convertible bonds are hybrid securities. They give the holder the option to convert the bond into stock at a fixed price. Why would a company issue them? Because investors are willing to accept a lower interest rate in exchange for the conversion option. Why would investors buy them? Because they get some downside protection from the bond, but upside participation if the stock does well."
+      },
+      {
+        "id": "ib_14",
+        "lecture_id": "L09",
+        "youtube_id": "78_GRGjlL6E",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-9",
+        "text": "企業管理層在考慮股票回購（Share Buyback）vs. 現金股利（Cash Dividend）時，主要考慮因素是什麼？",
+        "choices": [
+          "兩者對股東的財務效果完全相同，選擇取決於公司傳統",
+          "股票回購更有彈性（可以不做）且在部分稅制下稅務效率更高；但如果管理層用回購來掩蓋股票期權的稀釋或在股票被高估時回購，則損害股東利益",
+          "股利必須優先於回購，因為股利代表對股東的直接承諾",
+          "回購會減少流通股數提高每股盈餘，永遠是比股利更好的選擇"
+        ],
+        "correct": 1,
+        "explanation": "回購 vs. 股利是資本配置的核心決策。理論上在稅中性的環境下兩者等效。但實務上：回購在股價低估時執行才創造價值；股利更能傳遞「管理層對未來現金流有信心」的信號。若管理層在股票高估時回購（或為了拉抬 EPS 指標），是在浪費股東的錢。",
+        "shiller_quote": "A company that repurchases its shares is returning cash to shareholders—just like a dividend. The difference is flexibility and tax treatment. Dividends create an expectation—once you start paying them, it's hard to cut. Buybacks are more flexible. But there's a real question: are companies buying back shares because they think the stock is cheap, or because it boosts EPS and triggers executive bonuses?"
+      },
+      {
+        "id": "ib_15",
+        "lecture_id": "L09",
+        "youtube_id": "78_GRGjlL6E",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-9",
+        "text": "你負責一個科技公司的 IPO，公司創辦人要求在招股書中把「用戶增長率」列為主要 KPI，但不顯示單位經濟（Unit Economics）。你的建議是？",
+        "choices": [
+          "同意，用戶增長是科技公司最重要的先行指標，投資人自己會做判斷",
+          "要求同時揭露客戶獲取成本（CAC）、客戶終身價值（LTV）和現金消耗率——機構投資人必然要求這些數據，不提反而引發更大疑慮，且可能有資訊揭露的法律風險",
+          "完全不揭露財務數據，只強調技術護城河和市場潛力",
+          "建議推遲 IPO，等到公司實現盈虧平衡後再上市"
+        ],
+        "correct": 1,
+        "explanation": "IPO 招股書必須充分揭露讓投資人做出合理判斷所需的全部重要信息。選擇性揭露在法律上有重大風險（SEC Regulation S-K 要求揭露所有重大信息），在商業上也反效果——機構投資人在路演時必然追問，上市前無法回答只會打擊信心。好的投行顧問幫助客戶以最好的方式呈現真實情況，而不是隱藏壞消息。",
+        "shiller_quote": "When a company goes public, it has to file a prospectus with the SEC. The prospectus must disclose all material information. The legal standard is: what would a reasonable investor consider important? If you hide information that later turns out to be material, the company and its underwriters face enormous legal liability. Full disclosure is not just a legal requirement—it's the foundation of investor trust."
+      },
+      {
+        "id": "ib_16",
+        "lecture_id": "L19",
+        "youtube_id": "2yycGEFCNYE",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-19",
+        "text": "「特殊目的收購公司」（SPAC）與傳統 IPO 相比，最主要的結構差異和潛在風險是什麼？",
+        "choices": [
+          "SPAC 只允許私人公司進行，公開市場投資人無法直接投資",
+          "SPAC 是「空白支票公司」先上市籌資，再尋找收購標的；跳過了傳統 IPO 的公開路演和盡職調查，潛在目標的估值和信息揭露品質往往較差",
+          "SPAC 的上市費用比傳統 IPO 高出數倍，只適合非常大型的交易",
+          "SPAC 必須由前任政府官員擔任發起人，以確保監管合規性"
+        ],
+        "correct": 1,
+        "explanation": "SPAC 的崛起（2020-2021 年超過 600 個 SPAC 上市）和隨後的大規模衰敗說明了一個問題：SPAC 允許公司繞過傳統 IPO 的嚴格審查和投資人路演，缺乏市場定價紀律。研究顯示 SPAC 完成合併後的平均表現顯著遜於傳統 IPO——信息不對稱的代價。",
+        "shiller_quote": "SPACs—special purpose acquisition companies—have raised concerns. You raise money first and then find an acquisition target. The problem is that you don't know what you're buying when you invest. The traditional IPO process—with roadshows, due diligence, and price discovery—exists for a reason. When you bypass it, you risk paying too much for targets that haven't been properly vetted."
+      },
+      {
+        "id": "ib_17",
+        "lecture_id": "L09",
+        "youtube_id": "78_GRGjlL6E",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-9",
+        "text": "M&A 交易中，「協同效益」（Synergies）被高估的常見原因是什麼？",
+        "choices": [
+          "協同效益是精算科學，不可能被高估",
+          "收購方的管理層有強烈的誘因高估協同效益（尤其是收入協同）以說服董事會批准交易，而成本節省等「容易實現」的協同效益往往被市場競爭侵蝕",
+          "被收購方管理層故意誇大協同效益以獲得更高的收購溢價",
+          "協同效益估算只有在完成收購後才開始，因此上市前的估算無意義"
+        ],
+        "correct": 1,
+        "explanation": "研究顯示超過 50% 的 M&A 最終未能創造股東價值，協同效益高估是最常見的原因。成本協同（裁員、系統整合）通常有具體的計算基礎；但收入協同（「合併後我們可以交叉銷售給雙方客戶」）往往是假設性的。管理層的「併購衝動」（Hubris）是行為財務研究中有充分記錄的偏誤。",
+        "shiller_quote": "The history of mergers and acquisitions is not a happy one. Many acquisitions turn out to destroy value. The classic problem is that buyers overpay. They get excited about synergies—cost savings, revenue opportunities—that turn out not to materialize. The empirical evidence is that on average, the acquiring company's stock price falls on the announcement of an acquisition."
+      },
+      {
+        "id": "ib_18",
+        "lecture_id": "L19",
+        "youtube_id": "2yycGEFCNYE",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-19",
+        "text": "《多德-弗蘭克法案》（Dodd-Frank）對「系統重要性金融機構」（SIFI）設置了特殊要求，其主要邏輯是什麼？",
+        "choices": [
+          "對大型機構徵收罰款以資助小型金融機構的發展",
+          "因為這些機構的倒閉可能引發系統性危機，要求它們持有更多資本、制定「生前遺囑」（Living Will），讓監管機構有能力有序解散而不依賴政府紓困",
+          "要求 SIFI 必須每年公開接受外部獨立機構的商業模式評估",
+          "強制 SIFI 將其風險資產打折計算，讓會計報表更保守"
+        ],
+        "correct": 1,
+        "explanation": "「大到不能倒」（Too Big to Fail）是 2008 年危機的核心教訓。如果市場知道政府一定會紓困某機構，該機構就有誘因承擔過度風險（道德風險）。SIFI 框架試圖打破這個循環：透過更高的資本要求和有序解散計畫，讓 SIFI 的失敗成為可能，從而約束其冒險行為。",
+        "shiller_quote": "The Dodd-Frank Act tried to address 'too big to fail.' The idea is that some institutions are so large and so interconnected that their failure would cause a systemic crisis. So they get extra scrutiny, higher capital requirements, and must prepare living wills—plans for how they would be wound down if they fail. The goal is to make failure possible again, without taxpayer bailouts."
+      },
+      {
+        "id": "ib_19",
+        "lecture_id": "L09",
+        "youtube_id": "78_GRGjlL6E",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-9",
+        "text": "高收益債券（High Yield Bond，俗稱「垃圾債」）的「債券契約」（Covenant Package）包含哪些典型保護條款？",
+        "choices": [
+          "要求發行人每年保持正淨利潤，否則債券持有人可以要求提前還款",
+          "財務維持條款（如最低 EBITDA/Interest 倍數）、限制性條款（如限制額外舉債、資產出售、股利支付），以及變更控制條款（出現 M&A 時債券持有人可要求溢價贖回）",
+          "要求發行人必須維持至少兩個評級機構的投資級評級",
+          "強制要求發行人每季更新財務預測並向債券持有人公開"
+        ],
+        "correct": 1,
+        "explanation": "高收益債的契約設計是投行工作中的核心技能之一。財務契約（Maintenance Covenants）是早期預警機制——觸發後雙方可以重談條款；限制性條款（Incurrence Covenants）防止發行人做損害債權人的動作；變更控制條款保護投資人不因惡意收購而成為「新老闆」的廉價融資工具。",
+        "shiller_quote": "When companies issue junk bonds, the bondholders need protection because these are high-risk borrowers. So you have covenants—promises the company makes to the bondholders. There are financial maintenance covenants: keep your leverage below this level, your interest coverage above that level. And incurrence covenants: don't take on more debt, don't pay excessive dividends. These covenants are the bondholder's safety net."
+      },
+      {
+        "id": "ib_20",
+        "lecture_id": "L09",
+        "youtube_id": "78_GRGjlL6E",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-9",
+        "text": "你在為一家傳統零售業客戶進行 M&A 估值，發現他們的「調整後 EBITDA」比一般公認會計原則（GAAP）下的 EBITDA 高出 45%。你最應該質疑什麼？",
+        "choices": [
+          "是否應該使用 EV/EBITDA 或 EV/Sales 作為估值倍數",
+          "所有的「一次性調整項目」是否真的是非經常性——如果每年都有不同名義的「一次性費用」，實際上就是正常的經常性成本，45% 的差異幾乎可以確定包含了重大的虛報",
+          "是否應該同時採用資產基礎估值法作為交叉驗證",
+          "零售業的 EBITDA 本來就比其他行業高，45% 的差異是正常的行業現象"
+        ],
+        "correct": 1,
+        "explanation": "「調整後 EBITDA」是 M&A 中最容易被操縱的指標。常見的虛報手法：把連年發生的重組費用稱為「一次性」、把高管薪酬調整掉、把客戶保留計畫費用資本化。45% 的差距是極端的警示信號。好的盡職調查要逐行審查每一個調整項目，還原真實的經常性盈利能力。",
+        "shiller_quote": "There is a lot of manipulation that goes on in the presentation of financial results. Adjusted EBITDA has become a way for companies to present their earnings in the most favorable light. When you see a large gap between GAAP earnings and adjusted earnings, you need to scrutinize every single adjustment. Is it truly a one-time item? Or is it a recurring cost being re-labeled each year?"
+      }
+    ],
+    "wealth_manager": [
+      {
+        "id": "wm_01",
+        "lecture_id": "L06",
+        "youtube_id": "wRdx7kVNQ_E",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-6",
+        "text": "David Swensen 的耶魯模式（Yale Model）最核心的投資哲學是什麼？",
+        "choices": [
+          "100% 投資美國大型股指數基金，徹底複製市場報酬",
+          "大量配置私募股權、不動產、林地等非流動性另類資產，換取長期流動性溢酬",
+          "頻繁調整資產配置以捕捉市場時機，主動提高報酬",
+          "將大部分資產保持現金等待市場崩盤後低點買入"
+        ],
+        "correct": 1,
+        "explanation": "耶魯捐贈基金的核心洞察：因為捐贈基金有永久性投資期限，不需要流動性，所以可以投資大量散戶和一般機構無法涉足的非流動性資產。非流動性本身就有「溢酬」——耐心資本的回報。這讓耶魯在過去 30 年的年均報酬遠超傳統 60/40 組合。",
+        "shiller_quote": "But the risks that exist in the portfolio aren't really captured by the standard deviation of the returns. Just a quick example: If you look at real estate, or timber, or even any of our illiquid assets, the standard deviation of the returns looks smaller than it is, because you're smoothing over illiquidity. Swensen understood that you could harvest an illiquidity premium if your institution doesn't need the liquidity."
+      },
+      {
+        "id": "wm_02",
+        "lecture_id": "L20",
+        "youtube_id": "txTaBKZ8qrs",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-20",
+        "text": "信託（Trust）在高淨值客戶財富傳承中扮演什麼核心角色？",
+        "choices": [
+          "協助超高淨值客戶完全合法地規避所有稅務義務",
+          "將資產法律所有權與受益權分離，由受託人依信託文件為受益人管理財富，實現保護、傳承與控制",
+          "確保家族所有成員平等分配遺產，防止爭產糾紛",
+          "作為高槓桿投資工具，最大化家族財富的長期複利"
+        ],
+        "correct": 1,
+        "explanation": "信託的本質是：你把財產「交給」受託人，但為了特定受益人的利益而管理。這個結構可以：（1）保護財產不被債權人追索；（2）指定嚴格的使用條件；（3）跨世代傳承而不需要每次重新走遺產程序。",
+        "shiller_quote": "Trusts were invented to create fiduciary relationships—where one party holds assets for the benefit of another. A trust separates legal ownership from beneficial ownership. The trustee has a legal obligation to manage the assets in the best interests of the beneficiary—not their own interests. This fiduciary duty is one of the most important concepts in wealth management."
+      },
+      {
+        "id": "wm_03",
+        "lecture_id": "L12",
+        "youtube_id": "W2BURItNYmI",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-12",
+        "text": "一位 55 歲的高淨值企業主興奮地告訴你，朋友介紹了一個「保證年報酬 12% 的私募基金」，他已決定投入 2,000 萬元，請你協助辦理。你最應該怎麼做？",
+        "choices": [
+          "協助辦理——客戶是成年人，有自主決定權",
+          "坦率指出「保證高報酬」是詐騙的典型特徵（如馬多夫案），建議他要求查看基金的監管登記、獨立稽核報告，並讓律師審閱合約後再做決定",
+          "投入一半（1,000 萬），另一半幫他放在安全的固收產品",
+          "轉介給公司法遵部門，自己不介入意見"
+        ],
+        "correct": 1,
+        "explanation": "馬多夫詐騙案（Madoff Ponzi）涉及超過 600 億美元，是有史以來最大的財富管理醜聞。「保證穩定高報酬」是所有龐氏騙局的共同標誌。受託人義務（Fiduciary Duty）要求顧問在發現可疑跡象時直言——即使客戶不悅，沉默的代價是共謀。",
+        "shiller_quote": "There are many manipulations and deceptions in finance. Bernie Madoff ran a Ponzi scheme for decades. The warning signs were there—remarkably consistent returns, no transparency, unwillingness to explain the strategy. The lesson is that if something sounds too good to be true, it probably is. A financial advisor's job is to protect clients from these schemes, even when the client is enthusiastic."
+      },
+      {
+        "id": "wm_04",
+        "lecture_id": "L06",
+        "youtube_id": "wRdx7kVNQ_E",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-6",
+        "text": "大學捐贈基金（Endowment）相較於一般退休基金，在投資策略上享有什麼獨特優勢？",
+        "choices": [
+          "可以享有最低的資本利得稅率，保留更多投資收益",
+          "捐贈基金的永久性投資期限讓它可以承受短期流動性不足，換取長期更高報酬",
+          "政府強制要求為大學存款提供本金保障",
+          "由知名校友管理，在私人市場擁有顯著的信息優勢"
+        ],
+        "correct": 1,
+        "explanation": "一般退休基金有明確的支付義務，流動性要求高。大學捐贈基金理論上是「永久」的，每年只需動用約 5% 支持校務，其餘可以長期鎖定在非流動性資產中。這讓耶魯得以承受私募股權 10 年以上的鎖定期，換取遠高於公開市場的長期報酬。",
+        "shiller_quote": "So, I'm going to give you another example. Boston University—this is much more recent—under John Silber, invested not the whole endowment of the university, but $90 million in one company called Seragen. And Seragen went bankrupt, so that was a disaster. Swensen's approach is different—diversify across many alternative asset classes, and take advantage of the university's long time horizon and liquidity tolerance."
+      },
+      {
+        "id": "wm_05",
+        "lecture_id": "L20",
+        "youtube_id": "txTaBKZ8qrs",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-20",
+        "text": "家族辦公室（Family Office）相較於一般私人銀行服務，最核心的優勢是什麼？",
+        "choices": [
+          "服務費率通常低於私人銀行，CP 值更高",
+          "僅服務單一家族（SFO）或少數家族（MFO），提供高度客製化且無產品銷售佣金利益衝突的財富管理",
+          "受到最嚴格的金融監管保護，本金有政府擔保",
+          "可以獲得公開市場上無法購買的政府專屬金融商品"
+        ],
+        "correct": 1,
+        "explanation": "私人銀行的利益衝突問題：理財顧問的報酬往往與銷售特定金融產品掛鉤，而非真正為客戶利益最大化。家族辦公室則以固定顧問費服務，沒有產品銷售誘因，能真正做到受託人標準（Fiduciary Standard）。",
+        "shiller_quote": "I recently spoke at a family office forum, down in Florida. They seemed to be very numerous. There's an awful lot of families. The families come to these conventions, and they hear people like me speak. A family office is a private wealth management firm that serves ultra-high-net-worth families. The key advantage is that they work only for the family, with no conflict of interest from product sales."
+      },
+      {
+        "id": "wm_06",
+        "lecture_id": "L22",
+        "youtube_id": "YAO0St7mPQM",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-22",
+        "text": "美國市政債（Municipal Bond）的主要稅務優勢是什麼？對哪類投資人最有吸引力？",
+        "choices": [
+          "本金完全由聯邦政府擔保，是最安全的固定收益工具",
+          "利息收入免徵聯邦所得稅（部分州還免州稅），對高稅率富裕投資人的稅後報酬特別有吸引力",
+          "可以完全抵扣投資損失，降低整體稅負",
+          "享有資本利得稅豁免，長期持有報酬率大幅優於國債"
+        ],
+        "correct": 1,
+        "explanation": "市政債的稅後殖利率才是真正的比較基準。假設聯邦稅率 37%，年殖利率 3% 的市政債，對高收入投資人等效於 4.76% 的應稅債券報酬。這讓市政債在高淨值客戶的資產配置中占有獨特地位。",
+        "shiller_quote": "Municipal bonds in the United States have a very important tax advantage. The interest on municipal bonds is exempt from federal income tax. So, rich people love these things. If you're in the highest tax bracket, you can get a much higher after-tax return from a municipal bond than from a corporate bond with a higher stated interest rate."
+      },
+      {
+        "id": "wm_07",
+        "lecture_id": "L20",
+        "youtube_id": "txTaBKZ8qrs",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-20",
+        "text": "避險基金（Hedge Fund）在法規上和共同基金最主要的差別是什麼？",
+        "choices": [
+          "避險基金只能投資債券和外匯，共同基金可以投資股票",
+          "避險基金不公開招募（只限合格投資人），監管較寬鬆，可使用槓桿、賣空等共同基金受限的策略",
+          "避險基金的費用率強制低於共同基金的兩倍",
+          "避險基金的本金由存款保險公司保障，共同基金則無"
+        ],
+        "correct": 1,
+        "explanation": "避險基金透過「豁免條款」不對一般公眾招募，只接受合格投資人（資產超過一定門檻）。這讓它們可以：（1）使用高槓桿；（2）做空；（3）投資流動性低的另類資產；（4）採用複雜衍生品策略。代價是鎖定期更長，透明度遠低於共同基金。",
+        "shiller_quote": "The SEC allows other companies to remain private, but it has rules about what you have to do to stay private. When you become a public company, you are involved in the public trust. And you have to, as a public company, disclose your financial situation. Hedge funds try to stay private to avoid these disclosure requirements—they're not for the general public."
+      },
+      {
+        "id": "wm_08",
+        "lecture_id": "L23",
+        "youtube_id": "2_pDTWgJg94",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-23",
+        "text": "Shiller 在最後一堂課（L23）對選擇進入金融業的年輕人，最核心的告誡是什麼？",
+        "choices": [
+          "盡快積累足夠資本，越早財務自由越好",
+          "金融是讓事情成真的技術，應以服務社會為目的，而非以賺錢為終極目標",
+          "進入最大型的投資銀行才能學到最完整的金融知識",
+          "要成功必須精通所有量化工具，數學能力是核心競爭力"
+        ],
+        "correct": 1,
+        "explanation": "這是 Shiller 整門課的精神總結。他認為金融業最大的問題，是人們把「賺錢」當成終極目的，而不是把它當成「讓重要的事成真」的工具。真正偉大的金融家——他引用許多慈善家和制度建立者——都是用金融力量服務更大的社會目的。",
+        "shiller_quote": "You're not here just to make money. I believe that the financial sector can and should contribute to human welfare. Finance is a technology for accomplishing things. It's about incentivizing people to do productive things, about managing risks, about making long-term investments. I hope that all of you, whether you go into finance or not, will think about how to use this knowledge for good."
+      },
+      {
+        "id": "wm_09",
+        "lecture_id": "L22",
+        "youtube_id": "YAO0St7mPQM",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-22",
+        "text": "「稅損收割」（Tax-Loss Harvesting）策略的基本邏輯是什麼？",
+        "choices": [
+          "在年底前出售所有虧損部位，永久退出這些投資以節稅",
+          "出售帳面虧損的資產實現損失，用來抵消已實現的資本利得，同時以高度相關但不完全相同的資產重建類似的市場暴露，維持整體投組不變",
+          "只在市場大跌時執行，因為只有在大跌中才有足夠的虧損可以收割",
+          "將虧損部位轉移給家族信託，使損失在稅務上消失"
+        ],
+        "correct": 1,
+        "explanation": "稅損收割的精髓是「推遲稅款、維持投資暴露」。你賣掉虧損的 A 股票，同時買入高度相關的 B 股票（避免「wash sale rule」）——投組的市場暴露幾乎不變，但帳面損失可以用來抵銷今年的資本利得稅。對高稅率的高淨值客戶，這個策略每年可以創造相當可觀的稅後節省。",
+        "shiller_quote": "Tax-loss harvesting is a strategy for high-net-worth investors. You sell securities that have declined in value to realize a loss for tax purposes, then immediately buy a similar security to maintain your market exposure. The loss can offset gains elsewhere. It's essentially a way to defer taxes—you're not avoiding them permanently, but the time value of deferral can be substantial."
+      },
+      {
+        "id": "wm_10",
+        "lecture_id": "L06",
+        "youtube_id": "wRdx7kVNQ_E",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-6",
+        "text": "傳統的「60/40 組合」（60% 股票 / 40% 債券）在什麼市場環境下最容易失效？",
+        "choices": [
+          "股市劇烈波動但債券穩定的市場環境",
+          "高通膨且央行快速升息的環境——股票因估值縮水下跌，債券同時因升息而大幅虧損，兩個「分散」的資產類別同時重挫，傳統的負相關性失效",
+          "低成長、低通膨的日式通縮環境，因為企業盈餘成長停滯",
+          "只有在新興市場才會出現 60/40 失效的情況，成熟市場不受影響"
+        ],
+        "correct": 1,
+        "explanation": "2022 年是 60/40 組合最痛苦的一年：美聯準快速升息，股票因 CAPE 估值高且升息衝擊下跌 20%，債券因利率上升而創下數十年最差表現，全年 60/40 組合跌幅超過 16%。這說明通膨衝擊打破了股債負相關性，是耶魯模式強調廣泛多元化（包括真實資產）的重要論據。",
+        "shiller_quote": "The 60/40 portfolio is not an eternal solution. The negative correlation between stocks and bonds that makes it work—when inflation is high and interest rates are rising, both can fall together. The Yale model's insight is precisely this: you need asset classes that are truly uncorrelated, not just historically uncorrelated under benign conditions."
+      },
+      {
+        "id": "wm_11",
+        "lecture_id": "L20",
+        "youtube_id": "txTaBKZ8qrs",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-20",
+        "text": "「報酬順序風險」（Sequence of Returns Risk）對退休早期的人為什麼特別危險？",
+        "choices": [
+          "退休早期的人擁有更多資產，市場下跌造成的絕對損失更大",
+          "如果退休初期遭遇市場大跌，同時又需要每年提領生活費，被迫在低點出售資產，縮小了日後反彈時的基礎，永久性損害了長期可持續的提領金額",
+          "報酬順序只對選擇固定金額提領的人有影響，按比例提領的人不受影響",
+          "退休早期的人通常有較高的健康保險費用，財務更脆弱"
+        ],
+        "correct": 1,
+        "explanation": "假設兩個人在相同的市場條件下，一個在退休初期遭遇熊市（先跌後漲），另一個先遭遇牛市（先漲後跌）——即使平均年化報酬相同，前者因為在資產較小時強迫低點賣出，最終能維持的可持續提領金額遠低於後者。這就是「路徑依賴」的退休風險。",
+        "shiller_quote": "The sequence of returns matters a lot in retirement. If you retire into a bear market, you're forced to sell assets at low prices to fund your living expenses. This depletes your portfolio before the recovery, so you benefit less from the eventual rebound. Two people with identical average returns over 30 years can end up with very different retirement outcomes depending on when the good and bad years occurred."
+      },
+      {
+        "id": "wm_12",
+        "lecture_id": "L06",
+        "youtube_id": "wRdx7kVNQ_E",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-6",
+        "text": "耶魯捐贈基金在私募股權（Private Equity）的大量配置，主要基於哪個假設？",
+        "choices": [
+          "私募股權的財務槓桿使報酬天然高於公開市場，且不承擔任何額外風險",
+          "鎖定期（通常 7-12 年）創造了「流動性溢酬」——散戶和流動性需求高的機構無法承受，使耶魯等長期投資者可以系統性地收取這個溢酬",
+          "私募市場的估值低於公開市場，因為缺乏市場競爭",
+          "私募股權基金的管理費收入最終會回到耶魯，形成有效的費用抵扣"
+        ],
+        "correct": 1,
+        "explanation": "Swensen 的核心邏輯：大學捐贈基金有永久性投資期限，不需要流動性。私募股權基金要求投資人接受 10 年以上鎖定期，換取的回報包括：主動改善被投公司運營的 Alpha，以及願意接受非流動性的流動性溢酬。這個策略要求機構有鋼鐵意志在市場恐慌時不被迫贖回。",
+        "shiller_quote": "Swensen argued that endowments have a long time horizon and can afford illiquidity. The illiquidity premium—the extra return you can get from investments that are hard to sell—is real. Public market investments are priced with a liquidity premium built in. By accepting illiquidity, you can earn that premium back. This is the core insight of the Yale model."
+      },
+      {
+        "id": "wm_13",
+        "lecture_id": "L23",
+        "youtube_id": "2_pDTWgJg94",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-23",
+        "text": "Shiller 主張金融業應該以「共善」（Common Good）為目標。對高淨值客戶的財富管理顧問，這個理念最具體意味著什麼？",
+        "choices": [
+          "顧問應該拒絕服務財富超過一定門檻的客戶，轉而服務普通大眾",
+          "在管理客戶財富的同時，主動協助客戶思考如何透過慈善規劃、影響力投資等，讓財富創造超越個人的社會價值——這也符合客戶長期的人生目標",
+          "顧問應將 10% 的管理費用捐贈給慈善機構，以履行社會責任",
+          "拒絕投資任何可能對環境有負面影響的行業"
+        ],
+        "correct": 1,
+        "explanation": "Shiller 的最後一堂課的核心訊息：金融不只是賺錢的工具，而是「讓重要的事成真」的技術。對財富管理顧問而言，最高層次的服務不只是優化報酬，而是幫助客戶把財富導向他們真正在乎的事——這可能包括傳承規劃、慈善基金會的設立、或對齊個人價值觀的影響力投資。",
+        "shiller_quote": "Finance is fundamentally about managing risks and allocating resources to their best uses. The highest form of financial advice is helping wealthy clients think about how to use their resources not just for their own benefit, but for purposes that matter to them—their legacy, their community, their values. That's finance as a force for human flourishing."
+      },
+      {
+        "id": "wm_14",
+        "lecture_id": "L20",
+        "youtube_id": "txTaBKZ8qrs",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-20",
+        "text": "一位 65 歲高淨值客戶問：「我應該把退休金全部放進年金嗎？」你應該如何回應？",
+        "choices": [
+          "應該，年金是退休後最安全的收入來源，應該全部轉換",
+          "年金可以覆蓋基本生活費支出，解決長壽風險；但應保留部分資產在投資組合中以應對通膨、突發醫療費用和傳承目標——年金 + 投資組合的混合配置比全進全出更靈活",
+          "65 歲不應該買年金，應該等到 80 歲才需要考慮",
+          "年金是保險公司的銷售產品，費用過高，高淨值客戶應完全迴避"
+        ],
+        "correct": 1,
+        "explanation": "「年金化悖論」：儘管年金能有效解決長壽風險，但大多數人不願意把全部資產年金化。原因包括：失去靈活性、無法應對突發需求、無法給子女留遺產。最佳實踐是「部分年金化」——用年金覆蓋基本固定支出（食衣住行），其餘資產繼續在投資組合中成長。",
+        "shiller_quote": "Annuities are underused. Most people don't buy enough annuity income in retirement. The puzzle is: why don't people annuitize more? Part of the answer is the bequest motive—people want to leave something to their children. Part is flexibility—you want to be able to access your assets in an emergency. The solution is partial annuitization: cover your essential expenses with an annuity, and keep the rest invested."
+      },
+      {
+        "id": "wm_15",
+        "lecture_id": "L22",
+        "youtube_id": "YAO0St7mPQM",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-22",
+        "text": "「通膨連結債券」（TIPS，Treasury Inflation-Protected Securities）在財富管理組合中扮演什麼角色？",
+        "choices": [
+          "TIPS 是高風險資產，因為通膨預期的波動會造成大幅價格波動",
+          "TIPS 的本金隨 CPI 調整，提供真實購買力的保護——對有長期實質支出義務的投資人（如退休人員）而言，TIPS 是真正的「無風險資產」，而非名目收益的固定利率債券",
+          "TIPS 只適合在通膨高於 5% 時才值得持有，低通膨環境應全換成名目債券",
+          "TIPS 的稅務處理比普通債券更複雜，因此不適合高淨值客戶"
+        ],
+        "correct": 1,
+        "explanation": "傳統的無風險資產「名目國債」對退休人員而言並不真的無風險——通膨會侵蝕購買力。TIPS 把「實質報酬」鎖定，讓投資人真正對抗通膨。Shiller 把 TIPS 的設計視為金融創新的典範：把金融工具的回報與真實的社會指標（CPI）掛鉤。",
+        "shiller_quote": "Inflation-indexed bonds are a wonderful invention. They give you a real return—a return that's guaranteed in real terms. When the government issues inflation-indexed bonds, it's taking on the inflation risk that would otherwise fall on investors. For retired people especially, who have fixed real expenses, TIPS are the truly risk-free asset—not nominal bonds, which are eroded by inflation."
+      },
+      {
+        "id": "wm_16",
+        "lecture_id": "L20",
+        "youtube_id": "txTaBKZ8qrs",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-20",
+        "text": "「慈善剩餘信託」（Charitable Remainder Trust, CRT）為高淨值客戶提供什麼獨特的稅務和傳承規劃優勢？",
+        "choices": [
+          "把資產轉入 CRT 可以讓繼承人直接繼承，完全免除遺產稅",
+          "捐贈人把高增值資產轉入信託，可在出售時免除資本利得稅，同時在設立時獲得即時的慈善捐款稅務扣除，並在生存期間持續領取收益；剩餘資產最終捐贈給慈善機構",
+          "CRT 可以讓子女繼承高增值資產的全額價值，不需要繳納任何遺產稅",
+          "CRT 只在美國適用，持有海外資產的客戶無法使用這個工具"
+        ],
+        "correct": 1,
+        "explanation": "假設你持有成本 100 萬、市值 1,000 萬的公司股票（90% 未實現增值）。直接賣掉需繳鉅額資本利得稅。把股票轉入 CRT 後，信託可以以市價出售並多元化投資，免除資本利得稅；你每年領取固定收益，設立時獲得部分稅務扣除。這是財富管理中結合稅務規劃、現金流管理和慈善目標的典型工具。",
+        "shiller_quote": "Trusts are very flexible tools for wealth management. A charitable remainder trust allows someone to make a large charitable gift, get a tax deduction today, and still receive income from the trust during their lifetime. It's a way to have your cake and eat it too—you support causes you care about, get a tax benefit, and maintain an income stream. These structures show how finance can serve both personal and social goals."
+      },
+      {
+        "id": "wm_17",
+        "lecture_id": "L06",
+        "youtube_id": "wRdx7kVNQ_E",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-6",
+        "text": "受託人義務（Fiduciary Duty）與「適合性標準」（Suitability Standard）的核心差異是什麼？",
+        "choices": [
+          "兩者在法律上沒有實質差異，只是適用於不同類型的金融機構",
+          "受託人義務要求顧問在所有情境下以客戶最佳利益為首要考量；適合性標準只要求推薦「不不適合」客戶的產品，允許在此基礎上優先推薦佣金更高的選擇",
+          "受託人義務只適用於管理超過一定金額的客戶，小額帳戶只需符合適合性標準",
+          "適合性標準比受託人義務更嚴格，因為它要求每個產品都有書面的適合性分析"
+        ],
+        "correct": 1,
+        "explanation": "這是財富管理的核心倫理問題。傳統券商顧問適用「適合性標準」：只要產品不明顯不適合，即使有更好、更便宜的替代方案，顧問仍可推薦佣金更高的產品。投資顧問（RIA）適用「受託人義務」：必須把客戶利益置於自己的利益之上。這個差距直接影響客戶的長期財務結果。",
+        "shiller_quote": "The distinction between suitability and fiduciary duty is crucial. Under suitability, a broker can recommend a product that's merely 'not unsuitable'—even if there's a better option available. Under fiduciary duty, advisors must act in the client's best interest, period. The Department of Labor tried to extend fiduciary duty to retirement accounts. The financial industry fought back hard—which tells you how much money is at stake."
+      },
+      {
+        "id": "wm_18",
+        "lecture_id": "L22",
+        "youtube_id": "YAO0St7mPQM",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-22",
+        "text": "一個富裕家族持有大量已高度增值的家族企業股票（佔淨資產 70%），準備規劃傳承。最需要考慮哪個核心問題？",
+        "choices": [
+          "如何讓子女在未來每年都能從股票中領取足夠的股利",
+          "集中持股的「退出路徑」規劃：如何在降低集中風險的同時，最大化稅務效率（如分期贈與、GRATs、慈善信託），並確保家族對企業的控制權（如果需要保留的話）安排得當",
+          "直接把所有股票賣掉，把現金分散在全球市場——分散是唯一正確的選擇",
+          "把所有股票轉入壽險保單，利用壽險的稅務優惠規避資本利得稅"
+        ],
+        "correct": 1,
+        "explanation": "集中持股的傳承規劃是財富管理最複雜的領域之一。沒有一個放諸四海皆準的方案：需要同時考慮稅務（資本利得稅、遺產稅）、流動性（大量非流動資產的分批退出路徑）、控制權（雙重股權結構）和家族治理（誰繼承決策權）。這需要律師、稅務顧問、投行和財富顧問的跨領域協作。",
+        "shiller_quote": "The problem of concentrated wealth in a single company is one of the central challenges in wealth management. Selling creates a tax event. Holding maintains concentration risk. The solutions—GRATs, charitable trusts, installment sales—are complex tax planning vehicles. The right answer depends on the family's goals: do they want to maintain control? Leave a legacy? Diversify efficiently? There's no one-size-fits-all solution."
+      },
+      {
+        "id": "wm_19",
+        "lecture_id": "L12",
+        "youtube_id": "W2BURItNYmI",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-12",
+        "text": "你的客戶是一位 45 歲的企業主，淨資產 5 億台幣，90% 在非流動的私人房地產。他說「我很有錢，不需要理財規劃」。你作為顧問最應該指出什麼？",
+        "choices": [
+          "同意他的觀點，有錢人確實不需要主動的財富管理",
+          "流動性不等於財富安全——持有大量非流動資產，一旦發生突發醫療、法律糾紛或家族緊急需求，可能面臨變現困難甚至被迫低價出售；需要建立流動性緩衝和系統性的傳承規劃",
+          "建議他立刻出售所有房地產換成現金，然後再進行規劃",
+          "建議他借款來增加流動性，同時保持現有的非流動資產配置"
+        ],
+        "correct": 1,
+        "explanation": "「有錢但沒有流動性」是高淨值客戶最容易被忽視的風險。私人房地產無法在需要時快速變現（尤其在市場不佳時）。財富管理的核心職能之一是「壓力情境規劃」：如果同時發生醫療支出、法律訴訟和景氣衰退，客戶的現金儲備能撐多久？這個問題的答案往往讓客戶意識到規劃的必要性。",
+        "shiller_quote": "Illiquidity is a hidden risk. People who have most of their wealth tied up in a family business or real estate may feel wealthy, but they're not liquid. In a crisis—health emergency, divorce, business downturn—they may not be able to access capital quickly without taking a large loss. Liquidity planning is as important as return optimization, especially for people whose wealth is concentrated in illiquid assets."
+      },
+      {
+        "id": "wm_20",
+        "lecture_id": "L06",
+        "youtube_id": "wRdx7kVNQ_E",
+        "oyc_url": "https://oyc.yale.edu/economics/econ-252-11/lecture-6",
+        "text": "「真實報酬率」（Real Return）與「名目報酬率」（Nominal Return）的差異，對退休規劃有什麼實際意涵？",
+        "choices": [
+          "兩者沒有本質差異，通膨在長期會自動被抵消",
+          "真實報酬率 = 名目報酬率 - 通膨率；如果你的名目報酬 6% 但通膨 3%，實質只增加了 3% 的購買力；退休規劃中所有的長期預測都必須用真實報酬率，否則會系統性低估目標金額",
+          "真實報酬率只對持有 20 年以上的長期投資有意義，短期規劃可以用名目報酬率",
+          "真實報酬率是稅後報酬率的別稱，只需扣除稅率不需要考慮通膨"
+        ],
+        "correct": 1,
+        "explanation": "這是退休規劃最常見的錯誤來源：用名目報酬率算出退休時的「大數字」，卻忘了那些錢的購買力已被通膨侵蝕。假設你現在需要每月 10 萬的生活費，30 年後在 3% 通膨下，你每月需要 24 萬才能維持同樣的生活水準。所有長期財務規劃必須以「實質購買力」為思考框架。",
+        "shiller_quote": "The real return is what matters for your actual standard of living. A nominal return of 8% sounds great. But if inflation is 4%, your real return is only 4%. That's what actually improves your purchasing power. For long-term planning—retirement, endowments, education funding—you must always think in real terms. Inflation is a silent tax on your savings."
+      }
+    ]
+  }
+}
